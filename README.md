@@ -1,5 +1,3 @@
-<div align=center>
-  <img src="public/images/lawin.jpg" alt="LawinServer Logo">
 
   ### LawinServer is a private server that supports all Fortnite versions! (Thanks to Milxnor for event keychain Btw the diffrence between his and mine is just mine is the latest lawin version which added stuff like matchmaker)
   
