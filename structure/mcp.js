@@ -5,6 +5,7 @@ const path = require("path");
 const iniparser = require("ini");
 const config = iniparser.parse(fs.readFileSync(path.join(__dirname, "..", "Config", "config.ini")).toString());
 const functions = require("./functions.js");
+const memory = require('./functions.js');
 const catalog = functions.getItemShop();
 
 express.use((req, res, next) => {
