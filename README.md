@@ -13,7 +13,7 @@
 ## Features:
 
 ### Save the World:
--Fixed locker for s12 and above
+- Fixed locker for s12 and above
 - CloudStorage and ClientSettings (Settings saving)
 - Llama purchasing and opening with random loot and choice packs
 - Every Hero, Weapon, Defender and Resource
@@ -50,7 +50,7 @@
 - Event Quests from Season 2 up to Season X & Season 24 (Can change)
 
 ### Battle Royale:
--Fixed locker for s12 and above
+- Fixed locker for s12 and above
 - CloudStorage and ClientSettings (Settings saving)
 - Winterfest presents opening (11.31, 19.01 & 23.10)
 - Purchasing Item Shop items
