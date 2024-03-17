@@ -1,7 +1,7 @@
 {
   "created": "2022-01-08T22:58:06.983Z",
   "updated": "2022-01-08T22:58:57.261Z",
-  "rvn": 8,
+  "rvn": 18,
   "wipeNumber": 1,
   "_id": "LawinServer",
   "profileId": "athena",
@@ -115,7 +115,7 @@
           "slots": {
             "Pickaxe": {
               "items": [
-                "AthenaPickaxe:pickaxe_id_370_blueflames"
+                "AthenaPickaxe:pickaxe_random"
               ],
               "activeVariants": []
             },
@@ -131,12 +131,12 @@
             },
             "Glider": {
               "items": [
-                "AthenaGlider:glider_id_070_darkviking"
+                "AthenaGlider:glider_random"
               ]
             },
             "Character": {
               "items": [
-                "AthenaCharacter:cid_701_athena_commando_m_bananaagent"
+                ""
               ],
               "activeVariants": [
                 {
@@ -151,7 +151,7 @@
             },
             "Backpack": {
               "items": [
-                "AthenaBackpack:bid_167_redknightwinterfemale"
+                ""
               ],
               "activeVariants": [
                 {
@@ -197,7 +197,7 @@
             },
             "SkyDiveContrail": {
               "items": [
-                "AthenaSkyDiveContrail:trails_id_047_ammobelt"
+                ""
               ],
               "activeVariants": [
                 null
@@ -65445,6 +65445,196 @@
       },
       "quantity": 1
     },
+    "S23_GIFTS": {
+      "templateId": "AthenaRewardGraph:s23_winterfest",
+      "attributes": {
+        "reward_nodes_claimed": [],
+        "unlock_epoch": "2022-12-12T14:00:00.000Z",
+        "unlock_keys_used": 0,
+        "player_random_seed": -2143043306,
+        "item_seen": false,
+        "player_state": [],
+        "reward_graph_purchased_timestamp": 1639693875638,
+        "reward_graph_purchased": true,
+        "reward_keys": [
+          {
+            "static_key_template_id": "Token:athena_s23_winterfest_key",
+            "static_key_max_count": 14,
+            "static_key_initial_count": 0,
+            "unlock_keys_used": 0
+          }
+        ]
+      },
+      "quantity": 1
+    },
+    "S23_GIFT_KEY": {
+      "templateId": "Token:athena_s23_winterfest_key",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": false,
+        "xp": 0,
+        "favorite": false
+      },
+      "quantity": 14
+    },
+    "S19_GIFTS": {
+      "templateId": "AthenaRewardGraph:s19_winterfest",
+      "attributes": {
+        "reward_nodes_claimed": [],
+        "unlock_epoch": "2021-12-16T13:52:10.000Z",
+        "unlock_keys_used": 0,
+        "player_random_seed": -2143043306,
+        "item_seen": false,
+        "player_state": [],
+        "reward_graph_purchased_timestamp": 1639693875638,
+        "reward_graph_purchased": true,
+        "reward_keys": [
+          {
+            "static_key_template_id": "Token:athena_s19_winterfest_key",
+            "static_key_max_count": 14,
+            "static_key_initial_count": 1,
+            "unlock_keys_used": 0
+          }
+        ]
+      },
+      "quantity": 1
+    },
+    "S19_GIFT_KEY": {
+      "templateId": "Token:athena_s19_winterfest_key",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": false,
+        "xp": 0,
+        "favorite": false
+      },
+      "quantity": 14
+    },
+    "S11_GIFTS": {
+      "templateId": "AthenaRewardGraph:winterfest",
+      "attributes": {
+        "reward_nodes_claimed": [],
+        "unlock_epoch": "2021-12-16T13:52:10.000Z",
+        "unlock_keys_used": 0,
+        "player_random_seed": -2143043306,
+        "item_seen": false,
+        "player_state": [],
+        "reward_graph_purchased_timestamp": 1639693875638,
+        "reward_graph_purchased": true,
+        "reward_keys": [
+          {
+            "static_key_template_id": "Token:athenawinterfest_key",
+            "static_key_max_count": 14,
+            "static_key_initial_count": 1,
+            "unlock_keys_used": 0
+          }
+        ]
+      },
+      "quantity": 1
+    },
+    "S11_GIFT_KEY": {
+      "templateId": "Token:athenawinterfest_key",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": false,
+        "xp": 0,
+        "favorite": false
+      },
+      "quantity": 14
+    },
+    "AthenaRewardEventGraphCosmetic:REG_ID_001_Winterfest": {
+      "templateId": "AthenaRewardEventGraphCosmetic:REG_ID_001_Winterfest",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": 1,
+        "xp": 0,
+        "variants": [
+          {
+            "channel": "RibbonType",
+            "active": "Mat1",
+            "owned": [
+              "Mat1",
+              "Mat2"
+            ]
+          },
+          {
+            "channel": "RibbonColor",
+            "active": "Mat1",
+            "owned": [
+              "Mat1",
+              "Mat2",
+              "Mat3",
+              "Mat4",
+              "Mat5",
+              "Mat6",
+              "Mat7"
+            ]
+          },
+          {
+            "channel": "WrappingColor",
+            "active": "Mat1",
+            "owned": [
+              "Mat1",
+              "Mat2",
+              "Mat3",
+              "Mat4",
+              "Mat5",
+              "Mat6"
+            ]
+          },
+          {
+            "channel": "NameTag",
+            "active": "Mat1",
+            "owned": [
+              "Mat1",
+              "Mat2",
+              "Mat3",
+              "Mat4",
+              "Mat5",
+              "Mat6"
+            ]
+          },
+          {
+            "channel": "WrappingStyle",
+            "active": "Mat1",
+            "owned": [
+              "Mat1",
+              "Mat2",
+              "Mat3"
+            ]
+          },
+          {
+            "channel": "Random",
+            "active": "Stage1",
+            "owned": [
+              "Stage1",
+              "Stage2",
+              "Stage3",
+              "Stage4",
+              "Stage5",
+              "Stage6",
+              "Stage7"
+            ]
+          },
+          {
+            "channel": "Defined",
+            "active": "Stage1",
+            "owned": [
+              "Stage1",
+              "Stage2",
+              "Stage3",
+              "Stage4",
+              "Stage8"
+            ]
+          }
+        ],
+        "favorite": false
+      },
+      "quantity": 1
+    },
     "caa0fc48-4f26-4f7d-8232-c3322aeb359d": {
       "templateId": "Quest:AthenaDaily_Squad_Top6",
       "attributes": {
@@ -65472,7 +65662,7 @@
     "S12-ChallengeBundleSchedule:Schedule_LTM_S12_SpyGames": {
       "templateId": "ChallengeBundleSchedule:Schedule_LTM_S12_SpyGames",
       "attributes": {
-        "unlock_epoch": "2024-03-17T14:56:53.035Z",
+        "unlock_epoch": "2024-03-17T16:23:33.982Z",
         "max_level_bonus": 0,
         "level": 1,
         "item_seen": true,
@@ -65487,7 +65677,7 @@
     "S12-ChallengeBundleSchedule:Season12_ABChallenges_Schedule": {
       "templateId": "ChallengeBundleSchedule:Season12_ABChallenges_Schedule",
       "attributes": {
-        "unlock_epoch": "2024-03-17T14:56:53.035Z",
+        "unlock_epoch": "2024-03-17T16:23:33.982Z",
         "max_level_bonus": 0,
         "level": 1,
         "item_seen": true,
@@ -65507,7 +65697,7 @@
     "S12-ChallengeBundleSchedule:Season12_DonutYachtChallenge_Schedule": {
       "templateId": "ChallengeBundleSchedule:Season12_DonutYachtChallenge_Schedule",
       "attributes": {
-        "unlock_epoch": "2024-03-17T14:56:53.035Z",
+        "unlock_epoch": "2024-03-17T16:23:33.982Z",
         "max_level_bonus": 0,
         "level": 1,
         "item_seen": true,
@@ -65522,7 +65712,7 @@
     "S12-ChallengeBundleSchedule:Season12_Donut_Schedule": {
       "templateId": "ChallengeBundleSchedule:Season12_Donut_Schedule",
       "attributes": {
-        "unlock_epoch": "2024-03-17T14:56:53.035Z",
+        "unlock_epoch": "2024-03-17T16:23:33.982Z",
         "max_level_bonus": 0,
         "level": 1,
         "item_seen": true,
@@ -65547,7 +65737,7 @@
     "S12-ChallengeBundleSchedule:Season12_Feat_BundleSchedule": {
       "templateId": "ChallengeBundleSchedule:Season12_Feat_BundleSchedule",
       "attributes": {
-        "unlock_epoch": "2024-03-17T14:56:53.035Z",
+        "unlock_epoch": "2024-03-17T16:23:33.982Z",
         "max_level_bonus": 0,
         "level": 1,
         "item_seen": true,
@@ -65562,7 +65752,7 @@
     "S12-ChallengeBundleSchedule:Season12_Jerky_Schedule": {
       "templateId": "ChallengeBundleSchedule:Season12_Jerky_Schedule",
       "attributes": {
-        "unlock_epoch": "2024-03-17T14:56:53.035Z",
+        "unlock_epoch": "2024-03-17T16:23:33.982Z",
         "max_level_bonus": 0,
         "level": 1,
         "item_seen": true,
@@ -65577,7 +65767,7 @@
     "S12-ChallengeBundleSchedule:Season12_Mission_Schedule": {
       "templateId": "ChallengeBundleSchedule:Season12_Mission_Schedule",
       "attributes": {
-        "unlock_epoch": "2024-03-17T14:56:53.035Z",
+        "unlock_epoch": "2024-03-17T16:23:33.982Z",
         "max_level_bonus": 0,
         "level": 1,
         "item_seen": true,
@@ -65603,7 +65793,7 @@
     "S12-ChallengeBundleSchedule:Season12_Schedule_Event_CoinCollect": {
       "templateId": "ChallengeBundleSchedule:Season12_Schedule_Event_CoinCollect",
       "attributes": {
-        "unlock_epoch": "2024-03-17T14:56:53.035Z",
+        "unlock_epoch": "2024-03-17T16:23:33.982Z",
         "max_level_bonus": 0,
         "level": 1,
         "item_seen": true,
@@ -65627,7 +65817,7 @@
     "S12-ChallengeBundleSchedule:Season12_Schedule_Event_Oro": {
       "templateId": "ChallengeBundleSchedule:Season12_Schedule_Event_Oro",
       "attributes": {
-        "unlock_epoch": "2024-03-17T14:56:53.035Z",
+        "unlock_epoch": "2024-03-17T16:23:33.982Z",
         "max_level_bonus": 0,
         "level": 1,
         "item_seen": true,
@@ -65642,7 +65832,7 @@
     "S12-ChallengeBundleSchedule:Season12_Schedule_Event_PeelySpy": {
       "templateId": "ChallengeBundleSchedule:Season12_Schedule_Event_PeelySpy",
       "attributes": {
-        "unlock_epoch": "2024-03-17T14:56:53.035Z",
+        "unlock_epoch": "2024-03-17T16:23:33.982Z",
         "max_level_bonus": 0,
         "level": 1,
         "item_seen": true,
@@ -65657,7 +65847,7 @@
     "S12-ChallengeBundleSchedule:Season12_Schedule_Event_StormTheAgency": {
       "templateId": "ChallengeBundleSchedule:Season12_Schedule_Event_StormTheAgency",
       "attributes": {
-        "unlock_epoch": "2024-03-17T14:56:53.035Z",
+        "unlock_epoch": "2024-03-17T16:23:33.982Z",
         "max_level_bonus": 0,
         "level": 1,
         "item_seen": true,
@@ -66854,7 +67044,7 @@
     "S12-Quest:quest_operation_damageplayers": {
       "templateId": "Quest:quest_operation_damageplayers",
       "attributes": {
-        "creation_time": "2024-03-17T14:56:53.036Z",
+        "creation_time": "2024-03-17T16:23:33.982Z",
         "level": -1,
         "item_seen": true,
         "playlists": [],
@@ -66865,7 +67055,7 @@
         "quest_pool": "",
         "quest_state": "Active",
         "bucket": "",
-        "last_state_change_time": "2024-03-17T14:56:53.036Z",
+        "last_state_change_time": "2024-03-17T16:23:33.982Z",
         "challenge_linked_quest_parent": "",
         "max_level_bonus": 0,
         "xp": 0,
@@ -66878,7 +67068,7 @@
     "S12-Quest:quest_operation_eliminateplayers": {
       "templateId": "Quest:quest_operation_eliminateplayers",
       "attributes": {
-        "creation_time": "2024-03-17T14:56:53.036Z",
+        "creation_time": "2024-03-17T16:23:33.982Z",
         "level": -1,
         "item_seen": true,
         "playlists": [],
@@ -66889,7 +67079,7 @@
         "quest_pool": "",
         "quest_state": "Active",
         "bucket": "",
-        "last_state_change_time": "2024-03-17T14:56:53.036Z",
+        "last_state_change_time": "2024-03-17T16:23:33.982Z",
         "challenge_linked_quest_parent": "",
         "max_level_bonus": 0,
         "xp": 0,
@@ -66902,7 +67092,7 @@
     "S12-Quest:quest_operation_winmatch": {
       "templateId": "Quest:quest_operation_winmatch",
       "attributes": {
-        "creation_time": "2024-03-17T14:56:53.036Z",
+        "creation_time": "2024-03-17T16:23:33.982Z",
         "level": -1,
         "item_seen": true,
         "playlists": [],
@@ -66913,7 +67103,7 @@
         "quest_pool": "",
         "quest_state": "Active",
         "bucket": "",
-        "last_state_change_time": "2024-03-17T14:56:53.036Z",
+        "last_state_change_time": "2024-03-17T16:23:33.982Z",
         "challenge_linked_quest_parent": "",
         "max_level_bonus": 0,
         "xp": 0,
@@ -66926,7 +67116,7 @@
     "S12-Quest:quest_AB_photographer_alter": {
       "templateId": "Quest:quest_AB_photographer_alter",
       "attributes": {
-        "creation_time": "2024-03-17T14:56:53.036Z",
+        "creation_time": "2024-03-17T16:23:33.982Z",
         "level": -1,
         "item_seen": true,
         "playlists": [],
@@ -66937,7 +67127,7 @@
         "quest_pool": "",
         "quest_state": "Active",
         "bucket": "",
-        "last_state_change_time": "2024-03-17T14:56:53.036Z",
+        "last_state_change_time": "2024-03-17T16:23:33.982Z",
         "challenge_linked_quest_parent": "",
         "max_level_bonus": 0,
         "xp": 0,
@@ -66950,7 +67140,7 @@
     "S12-Quest:quest_AB_photographer_ego": {
       "templateId": "Quest:quest_AB_photographer_ego",
       "attributes": {
-        "creation_time": "2024-03-17T14:56:53.036Z",
+        "creation_time": "2024-03-17T16:23:33.982Z",
         "level": -1,
         "item_seen": true,
         "playlists": [],
@@ -66961,7 +67151,7 @@
         "quest_pool": "",
         "quest_state": "Active",
         "bucket": "",
-        "last_state_change_time": "2024-03-17T14:56:53.036Z",
+        "last_state_change_time": "2024-03-17T16:23:33.982Z",
         "challenge_linked_quest_parent": "",
         "max_level_bonus": 0,
         "xp": 0,
@@ -66974,7 +67164,7 @@
     "S12-Quest:quest_ab_buffcat_alter": {
       "templateId": "Quest:quest_ab_buffcat_alter",
       "attributes": {
-        "creation_time": "2024-03-17T14:56:53.036Z",
+        "creation_time": "2024-03-17T16:23:33.982Z",
         "level": -1,
         "item_seen": true,
         "playlists": [],
@@ -66985,7 +67175,7 @@
         "quest_pool": "",
         "quest_state": "Active",
         "bucket": "",
-        "last_state_change_time": "2024-03-17T14:56:53.036Z",
+        "last_state_change_time": "2024-03-17T16:23:33.982Z",
         "challenge_linked_quest_parent": "",
         "max_level_bonus": 0,
         "xp": 0,
@@ -66998,7 +67188,7 @@
     "S12-Quest:quest_ab_buffcat_ego": {
       "templateId": "Quest:quest_ab_buffcat_ego",
       "attributes": {
-        "creation_time": "2024-03-17T14:56:53.036Z",
+        "creation_time": "2024-03-17T16:23:33.982Z",
         "level": -1,
         "item_seen": true,
         "playlists": [],
@@ -67009,7 +67199,7 @@
         "quest_pool": "",
         "quest_state": "Active",
         "bucket": "",
-        "last_state_change_time": "2024-03-17T14:56:53.036Z",
+        "last_state_change_time": "2024-03-17T16:23:33.982Z",
         "challenge_linked_quest_parent": "",
         "max_level_bonus": 0,
         "xp": 0,
@@ -67022,7 +67212,7 @@
     "S12-Quest:quest_ab_midas_alter": {
       "templateId": "Quest:quest_ab_midas_alter",
       "attributes": {
-        "creation_time": "2024-03-17T14:56:53.036Z",
+        "creation_time": "2024-03-17T16:23:33.982Z",
         "level": -1,
         "item_seen": true,
         "playlists": [],
@@ -67033,7 +67223,7 @@
         "quest_pool": "",
         "quest_state": "Active",
         "bucket": "",
-        "last_state_change_time": "2024-03-17T14:56:53.036Z",
+        "last_state_change_time": "2024-03-17T16:23:33.982Z",
         "challenge_linked_quest_parent": "",
         "max_level_bonus": 0,
         "xp": 0,
@@ -67046,7 +67236,7 @@
     "S12-Quest:quest_ab_midas_ego": {
       "templateId": "Quest:quest_ab_midas_ego",
       "attributes": {
-        "creation_time": "2024-03-17T14:56:53.036Z",
+        "creation_time": "2024-03-17T16:23:33.982Z",
         "level": -1,
         "item_seen": true,
         "playlists": [],
@@ -67057,7 +67247,7 @@
         "quest_pool": "",
         "quest_state": "Active",
         "bucket": "",
-        "last_state_change_time": "2024-03-17T14:56:53.036Z",
+        "last_state_change_time": "2024-03-17T16:23:33.982Z",
         "challenge_linked_quest_parent": "",
         "max_level_bonus": 0,
         "xp": 0,
@@ -67070,7 +67260,7 @@
     "S12-Quest:quest_AB_skulldude_alter": {
       "templateId": "Quest:quest_AB_skulldude_alter",
       "attributes": {
-        "creation_time": "2024-03-17T14:56:53.036Z",
+        "creation_time": "2024-03-17T16:23:33.982Z",
         "level": -1,
         "item_seen": true,
         "playlists": [],
@@ -67081,7 +67271,7 @@
         "quest_pool": "",
         "quest_state": "Active",
         "bucket": "",
-        "last_state_change_time": "2024-03-17T14:56:53.036Z",
+        "last_state_change_time": "2024-03-17T16:23:33.982Z",
         "challenge_linked_quest_parent": "",
         "max_level_bonus": 0,
         "xp": 0,
@@ -67094,7 +67284,7 @@
     "S12-Quest:quest_AB_skulldude_ego": {
       "templateId": "Quest:quest_AB_skulldude_ego",
       "attributes": {
-        "creation_time": "2024-03-17T14:56:53.036Z",
+        "creation_time": "2024-03-17T16:23:33.982Z",
         "level": -1,
         "item_seen": true,
         "playlists": [],
@@ -67105,7 +67295,7 @@
         "quest_pool": "",
         "quest_state": "Active",
         "bucket": "",
-        "last_state_change_time": "2024-03-17T14:56:53.036Z",
+        "last_state_change_time": "2024-03-17T16:23:33.982Z",
         "challenge_linked_quest_parent": "",
         "max_level_bonus": 0,
         "xp": 0,
@@ -67118,7 +67308,7 @@
     "S12-Quest:AB_tntina_alter": {
       "templateId": "Quest:AB_tntina_alter",
       "attributes": {
-        "creation_time": "2024-03-17T14:56:53.036Z",
+        "creation_time": "2024-03-17T16:23:33.982Z",
         "level": -1,
         "item_seen": true,
         "playlists": [],
@@ -67129,7 +67319,7 @@
         "quest_pool": "",
         "quest_state": "Active",
         "bucket": "",
-        "last_state_change_time": "2024-03-17T14:56:53.036Z",
+        "last_state_change_time": "2024-03-17T16:23:33.982Z",
         "challenge_linked_quest_parent": "",
         "max_level_bonus": 0,
         "xp": 0,
@@ -67142,7 +67332,7 @@
     "S12-Quest:AB_tntina_ego": {
       "templateId": "Quest:AB_tntina_ego",
       "attributes": {
-        "creation_time": "2024-03-17T14:56:53.036Z",
+        "creation_time": "2024-03-17T16:23:33.982Z",
         "level": -1,
         "item_seen": true,
         "playlists": [],
@@ -67153,7 +67343,7 @@
         "quest_pool": "",
         "quest_state": "Active",
         "bucket": "",
-        "last_state_change_time": "2024-03-17T14:56:53.036Z",
+        "last_state_change_time": "2024-03-17T16:23:33.982Z",
         "challenge_linked_quest_parent": "",
         "max_level_bonus": 0,
         "xp": 0,
@@ -67166,7 +67356,7 @@
     "S12-Quest:quest_style_superlevel_bananaAgent": {
       "templateId": "Quest:quest_style_superlevel_bananaAgent",
       "attributes": {
-        "creation_time": "2024-03-17T14:56:53.036Z",
+        "creation_time": "2024-03-17T16:23:33.982Z",
         "level": -1,
         "item_seen": true,
         "playlists": [],
@@ -67177,7 +67367,7 @@
         "quest_pool": "",
         "quest_state": "Active",
         "bucket": "",
-        "last_state_change_time": "2024-03-17T14:56:53.036Z",
+        "last_state_change_time": "2024-03-17T16:23:33.982Z",
         "challenge_linked_quest_parent": "",
         "max_level_bonus": 0,
         "xp": 0,
@@ -67190,7 +67380,7 @@
     "S12-Quest:quest_style_superlevel_buffcat": {
       "templateId": "Quest:quest_style_superlevel_buffcat",
       "attributes": {
-        "creation_time": "2024-03-17T14:56:53.036Z",
+        "creation_time": "2024-03-17T16:23:33.982Z",
         "level": -1,
         "item_seen": true,
         "playlists": [],
@@ -67201,7 +67391,7 @@
         "quest_pool": "",
         "quest_state": "Active",
         "bucket": "",
-        "last_state_change_time": "2024-03-17T14:56:53.036Z",
+        "last_state_change_time": "2024-03-17T16:23:33.982Z",
         "challenge_linked_quest_parent": "",
         "max_level_bonus": 0,
         "xp": 0,
@@ -67214,7 +67404,7 @@
     "S12-Quest:quest_style_superlevel_midas": {
       "templateId": "Quest:quest_style_superlevel_midas",
       "attributes": {
-        "creation_time": "2024-03-17T14:56:53.036Z",
+        "creation_time": "2024-03-17T16:23:33.982Z",
         "level": -1,
         "item_seen": true,
         "playlists": [],
@@ -67225,7 +67415,7 @@
         "quest_pool": "",
         "quest_state": "Active",
         "bucket": "",
-        "last_state_change_time": "2024-03-17T14:56:53.036Z",
+        "last_state_change_time": "2024-03-17T16:23:33.982Z",
         "challenge_linked_quest_parent": "",
         "max_level_bonus": 0,
         "xp": 0,
@@ -67238,7 +67428,7 @@
     "S12-Quest:quest_style_superlevel_photographer": {
       "templateId": "Quest:quest_style_superlevel_photographer",
       "attributes": {
-        "creation_time": "2024-03-17T14:56:53.036Z",
+        "creation_time": "2024-03-17T16:23:33.982Z",
         "level": -1,
         "item_seen": true,
         "playlists": [],
@@ -67249,7 +67439,7 @@
         "quest_pool": "",
         "quest_state": "Active",
         "bucket": "",
-        "last_state_change_time": "2024-03-17T14:56:53.036Z",
+        "last_state_change_time": "2024-03-17T16:23:33.982Z",
         "challenge_linked_quest_parent": "",
         "max_level_bonus": 0,
         "xp": 0,
@@ -67262,7 +67452,7 @@
     "S12-Quest:quest_style_superlevel_skulldude": {
       "templateId": "Quest:quest_style_superlevel_skulldude",
       "attributes": {
-        "creation_time": "2024-03-17T14:56:53.036Z",
+        "creation_time": "2024-03-17T16:23:33.982Z",
         "level": -1,
         "item_seen": true,
         "playlists": [],
@@ -67273,7 +67463,7 @@
         "quest_pool": "",
         "quest_state": "Active",
         "bucket": "",
-        "last_state_change_time": "2024-03-17T14:56:53.036Z",
+        "last_state_change_time": "2024-03-17T16:23:33.982Z",
         "challenge_linked_quest_parent": "",
         "max_level_bonus": 0,
         "xp": 0,
@@ -67286,7 +67476,7 @@
     "S12-Quest:quest_style_superlevel_TNTina": {
       "templateId": "Quest:quest_style_superlevel_TNTina",
       "attributes": {
-        "creation_time": "2024-03-17T14:56:53.036Z",
+        "creation_time": "2024-03-17T16:23:33.982Z",
         "level": -1,
         "item_seen": true,
         "playlists": [],
@@ -67297,7 +67487,7 @@
         "quest_pool": "",
         "quest_state": "Active",
         "bucket": "",
-        "last_state_change_time": "2024-03-17T14:56:53.036Z",
+        "last_state_change_time": "2024-03-17T16:23:33.982Z",
         "challenge_linked_quest_parent": "",
         "max_level_bonus": 0,
         "xp": 0,
@@ -67310,7 +67500,7 @@
     "S12-Quest:Quest_S12_Donut_YachtChallenge": {
       "templateId": "Quest:Quest_S12_Donut_YachtChallenge",
       "attributes": {
-        "creation_time": "2024-03-17T14:56:53.036Z",
+        "creation_time": "2024-03-17T16:23:33.982Z",
         "level": -1,
         "item_seen": true,
         "playlists": [],
@@ -67321,7 +67511,7 @@
         "quest_pool": "",
         "quest_state": "Active",
         "bucket": "",
-        "last_state_change_time": "2024-03-17T14:56:53.036Z",
+        "last_state_change_time": "2024-03-17T16:23:33.982Z",
         "challenge_linked_quest_parent": "",
         "max_level_bonus": 0,
         "xp": 0,
@@ -67334,7 +67524,7 @@
     "S12-Quest:Quest_S12_Donut_W1_A": {
       "templateId": "Quest:Quest_S12_Donut_W1_A",
       "attributes": {
-        "creation_time": "2024-03-17T14:56:53.036Z",
+        "creation_time": "2024-03-17T16:23:33.982Z",
         "level": -1,
         "item_seen": true,
         "playlists": [],
@@ -67345,7 +67535,7 @@
         "quest_pool": "",
         "quest_state": "Active",
         "bucket": "",
-        "last_state_change_time": "2024-03-17T14:56:53.036Z",
+        "last_state_change_time": "2024-03-17T16:23:33.982Z",
         "challenge_linked_quest_parent": "",
         "max_level_bonus": 0,
         "xp": 0,
@@ -67358,7 +67548,7 @@
     "S12-Quest:Quest_S12_Donut_W1_B": {
       "templateId": "Quest:Quest_S12_Donut_W1_B",
       "attributes": {
-        "creation_time": "2024-03-17T14:56:53.036Z",
+        "creation_time": "2024-03-17T16:23:33.982Z",
         "level": -1,
         "item_seen": true,
         "playlists": [],
@@ -67369,7 +67559,7 @@
         "quest_pool": "",
         "quest_state": "Active",
         "bucket": "",
-        "last_state_change_time": "2024-03-17T14:56:53.036Z",
+        "last_state_change_time": "2024-03-17T16:23:33.982Z",
         "challenge_linked_quest_parent": "",
         "max_level_bonus": 0,
         "xp": 0,
@@ -67382,7 +67572,7 @@
     "S12-Quest:Quest_S12_Donut_W2_A": {
       "templateId": "Quest:Quest_S12_Donut_W2_A",
       "attributes": {
-        "creation_time": "2024-03-17T14:56:53.036Z",
+        "creation_time": "2024-03-17T16:23:33.982Z",
         "level": -1,
         "item_seen": true,
         "playlists": [],
@@ -67393,7 +67583,7 @@
         "quest_pool": "",
         "quest_state": "Active",
         "bucket": "",
-        "last_state_change_time": "2024-03-17T14:56:53.036Z",
+        "last_state_change_time": "2024-03-17T16:23:33.982Z",
         "challenge_linked_quest_parent": "",
         "max_level_bonus": 0,
         "xp": 0,
@@ -67406,7 +67596,7 @@
     "S12-Quest:Quest_S12_Donut_W2_B": {
       "templateId": "Quest:Quest_S12_Donut_W2_B",
       "attributes": {
-        "creation_time": "2024-03-17T14:56:53.036Z",
+        "creation_time": "2024-03-17T16:23:33.982Z",
         "level": -1,
         "item_seen": true,
         "playlists": [],
@@ -67417,7 +67607,7 @@
         "quest_pool": "",
         "quest_state": "Active",
         "bucket": "",
-        "last_state_change_time": "2024-03-17T14:56:53.036Z",
+        "last_state_change_time": "2024-03-17T16:23:33.982Z",
         "challenge_linked_quest_parent": "",
         "max_level_bonus": 0,
         "xp": 0,
@@ -67432,7 +67622,7 @@
     "S12-Quest:Quest_S12_Donut_W3_A": {
       "templateId": "Quest:Quest_S12_Donut_W3_A",
       "attributes": {
-        "creation_time": "2024-03-17T14:56:53.036Z",
+        "creation_time": "2024-03-17T16:23:33.982Z",
         "level": -1,
         "item_seen": true,
         "playlists": [],
@@ -67443,7 +67633,7 @@
         "quest_pool": "",
         "quest_state": "Active",
         "bucket": "",
-        "last_state_change_time": "2024-03-17T14:56:53.036Z",
+        "last_state_change_time": "2024-03-17T16:23:33.982Z",
         "challenge_linked_quest_parent": "",
         "max_level_bonus": 0,
         "xp": 0,
@@ -67456,7 +67646,7 @@
     "S12-Quest:Quest_S12_Donut_W3_B": {
       "templateId": "Quest:Quest_S12_Donut_W3_B",
       "attributes": {
-        "creation_time": "2024-03-17T14:56:53.036Z",
+        "creation_time": "2024-03-17T16:23:33.982Z",
         "level": -1,
         "item_seen": true,
         "playlists": [],
@@ -67467,7 +67657,7 @@
         "quest_pool": "",
         "quest_state": "Active",
         "bucket": "",
-        "last_state_change_time": "2024-03-17T14:56:53.036Z",
+        "last_state_change_time": "2024-03-17T16:23:33.982Z",
         "challenge_linked_quest_parent": "",
         "max_level_bonus": 0,
         "xp": 0,
@@ -67480,7 +67670,7 @@
     "S12-Quest:Quest_S12_Donut_W4_A": {
       "templateId": "Quest:Quest_S12_Donut_W4_A",
       "attributes": {
-        "creation_time": "2024-03-17T14:56:53.036Z",
+        "creation_time": "2024-03-17T16:23:33.982Z",
         "level": -1,
         "item_seen": true,
         "playlists": [],
@@ -67491,7 +67681,7 @@
         "quest_pool": "",
         "quest_state": "Active",
         "bucket": "",
-        "last_state_change_time": "2024-03-17T14:56:53.036Z",
+        "last_state_change_time": "2024-03-17T16:23:33.982Z",
         "challenge_linked_quest_parent": "",
         "max_level_bonus": 0,
         "xp": 0,
@@ -67505,7 +67695,7 @@
     "S12-Quest:Quest_S12_Donut_W4_B": {
       "templateId": "Quest:Quest_S12_Donut_W4_B",
       "attributes": {
-        "creation_time": "2024-03-17T14:56:53.036Z",
+        "creation_time": "2024-03-17T16:23:33.982Z",
         "level": -1,
         "item_seen": true,
         "playlists": [],
@@ -67516,7 +67706,7 @@
         "quest_pool": "",
         "quest_state": "Active",
         "bucket": "",
-        "last_state_change_time": "2024-03-17T14:56:53.036Z",
+        "last_state_change_time": "2024-03-17T16:23:33.982Z",
         "challenge_linked_quest_parent": "",
         "max_level_bonus": 0,
         "xp": 0,
@@ -67529,7 +67719,7 @@
     "S12-Quest:Quest_S12_Donut_W5_A": {
       "templateId": "Quest:Quest_S12_Donut_W5_A",
       "attributes": {
-        "creation_time": "2024-03-17T14:56:53.036Z",
+        "creation_time": "2024-03-17T16:23:33.982Z",
         "level": -1,
         "item_seen": true,
         "playlists": [],
@@ -67540,7 +67730,7 @@
         "quest_pool": "",
         "quest_state": "Active",
         "bucket": "",
-        "last_state_change_time": "2024-03-17T14:56:53.036Z",
+        "last_state_change_time": "2024-03-17T16:23:33.982Z",
         "challenge_linked_quest_parent": "",
         "max_level_bonus": 0,
         "xp": 0,
@@ -67553,7 +67743,7 @@
     "S12-Quest:Quest_S12_Donut_W5_B": {
       "templateId": "Quest:Quest_S12_Donut_W5_B",
       "attributes": {
-        "creation_time": "2024-03-17T14:56:53.036Z",
+        "creation_time": "2024-03-17T16:23:33.982Z",
         "level": -1,
         "item_seen": true,
         "playlists": [],
@@ -67564,7 +67754,7 @@
         "quest_pool": "",
         "quest_state": "Active",
         "bucket": "",
-        "last_state_change_time": "2024-03-17T14:56:53.036Z",
+        "last_state_change_time": "2024-03-17T16:23:33.982Z",
         "challenge_linked_quest_parent": "",
         "max_level_bonus": 0,
         "xp": 0,
@@ -67581,7 +67771,7 @@
     "S12-Quest:Quest_S12_Donut_W6_A": {
       "templateId": "Quest:Quest_S12_Donut_W6_A",
       "attributes": {
-        "creation_time": "2024-03-17T14:56:53.036Z",
+        "creation_time": "2024-03-17T16:23:33.982Z",
         "level": -1,
         "item_seen": true,
         "playlists": [],
@@ -67592,7 +67782,7 @@
         "quest_pool": "",
         "quest_state": "Active",
         "bucket": "",
-        "last_state_change_time": "2024-03-17T14:56:53.036Z",
+        "last_state_change_time": "2024-03-17T16:23:33.982Z",
         "challenge_linked_quest_parent": "",
         "max_level_bonus": 0,
         "xp": 0,
@@ -67605,7 +67795,7 @@
     "S12-Quest:Quest_S12_Donut_W6_B": {
       "templateId": "Quest:Quest_S12_Donut_W6_B",
       "attributes": {
-        "creation_time": "2024-03-17T14:56:53.036Z",
+        "creation_time": "2024-03-17T16:23:33.982Z",
         "level": -1,
         "item_seen": true,
         "playlists": [],
@@ -67616,7 +67806,7 @@
         "quest_pool": "",
         "quest_state": "Active",
         "bucket": "",
-        "last_state_change_time": "2024-03-17T14:56:53.036Z",
+        "last_state_change_time": "2024-03-17T16:23:33.982Z",
         "challenge_linked_quest_parent": "",
         "max_level_bonus": 0,
         "xp": 0,
@@ -67629,7 +67819,7 @@
     "S12-Quest:Quest_S12_Donut_W7_A": {
       "templateId": "Quest:Quest_S12_Donut_W7_A",
       "attributes": {
-        "creation_time": "2024-03-17T14:56:53.036Z",
+        "creation_time": "2024-03-17T16:23:33.982Z",
         "level": -1,
         "item_seen": true,
         "playlists": [],
@@ -67640,7 +67830,7 @@
         "quest_pool": "",
         "quest_state": "Active",
         "bucket": "",
-        "last_state_change_time": "2024-03-17T14:56:53.036Z",
+        "last_state_change_time": "2024-03-17T16:23:33.982Z",
         "challenge_linked_quest_parent": "",
         "max_level_bonus": 0,
         "xp": 0,
@@ -67654,7 +67844,7 @@
     "S12-Quest:Quest_S12_Donut_W7_B": {
       "templateId": "Quest:Quest_S12_Donut_W7_B",
       "attributes": {
-        "creation_time": "2024-03-17T14:56:53.036Z",
+        "creation_time": "2024-03-17T16:23:33.982Z",
         "level": -1,
         "item_seen": true,
         "playlists": [],
@@ -67665,7 +67855,7 @@
         "quest_pool": "",
         "quest_state": "Active",
         "bucket": "",
-        "last_state_change_time": "2024-03-17T14:56:53.036Z",
+        "last_state_change_time": "2024-03-17T16:23:33.982Z",
         "challenge_linked_quest_parent": "",
         "max_level_bonus": 0,
         "xp": 0,
@@ -67678,7 +67868,7 @@
     "S12-Quest:Quest_S12_Donut_W7_A_ToastForInGame": {
       "templateId": "Quest:Quest_S12_Donut_W7_A_ToastForInGame",
       "attributes": {
-        "creation_time": "2024-03-17T14:56:53.036Z",
+        "creation_time": "2024-03-17T16:23:33.982Z",
         "level": -1,
         "item_seen": true,
         "playlists": [],
@@ -67689,7 +67879,7 @@
         "quest_pool": "",
         "quest_state": "Active",
         "bucket": "",
-        "last_state_change_time": "2024-03-17T14:56:53.036Z",
+        "last_state_change_time": "2024-03-17T16:23:33.982Z",
         "challenge_linked_quest_parent": "",
         "max_level_bonus": 0,
         "xp": 0,
@@ -67702,7 +67892,7 @@
     "S12-Quest:Quest_S12_Donut_W7_Dummy": {
       "templateId": "Quest:Quest_S12_Donut_W7_Dummy",
       "attributes": {
-        "creation_time": "2024-03-17T14:56:53.036Z",
+        "creation_time": "2024-03-17T16:23:33.982Z",
         "level": -1,
         "item_seen": true,
         "playlists": [],
@@ -67713,7 +67903,7 @@
         "quest_pool": "",
         "quest_state": "Active",
         "bucket": "",
-        "last_state_change_time": "2024-03-17T14:56:53.036Z",
+        "last_state_change_time": "2024-03-17T16:23:33.982Z",
         "challenge_linked_quest_parent": "",
         "max_level_bonus": 0,
         "xp": 0,
@@ -67726,7 +67916,7 @@
     "S12-Quest:Quest_S12_Donut_W8_A": {
       "templateId": "Quest:Quest_S12_Donut_W8_A",
       "attributes": {
-        "creation_time": "2024-03-17T14:56:53.036Z",
+        "creation_time": "2024-03-17T16:23:33.983Z",
         "level": -1,
         "item_seen": true,
         "playlists": [],
@@ -67737,7 +67927,7 @@
         "quest_pool": "",
         "quest_state": "Active",
         "bucket": "",
-        "last_state_change_time": "2024-03-17T14:56:53.036Z",
+        "last_state_change_time": "2024-03-17T16:23:33.983Z",
         "challenge_linked_quest_parent": "",
         "max_level_bonus": 0,
         "xp": 0,
@@ -67750,7 +67940,7 @@
     "S12-Quest:Quest_S12_Donut_W8_B": {
       "templateId": "Quest:Quest_S12_Donut_W8_B",
       "attributes": {
-        "creation_time": "2024-03-17T14:56:53.036Z",
+        "creation_time": "2024-03-17T16:23:33.983Z",
         "level": -1,
         "item_seen": true,
         "playlists": [],
@@ -67761,7 +67951,7 @@
         "quest_pool": "",
         "quest_state": "Active",
         "bucket": "",
-        "last_state_change_time": "2024-03-17T14:56:53.036Z",
+        "last_state_change_time": "2024-03-17T16:23:33.983Z",
         "challenge_linked_quest_parent": "",
         "max_level_bonus": 0,
         "xp": 0,
@@ -67774,7 +67964,7 @@
     "S12-Quest:Quest_S12_Donut_W9_A": {
       "templateId": "Quest:Quest_S12_Donut_W9_A",
       "attributes": {
-        "creation_time": "2024-03-17T14:56:53.036Z",
+        "creation_time": "2024-03-17T16:23:33.983Z",
         "level": -1,
         "item_seen": true,
         "playlists": [],
@@ -67785,7 +67975,7 @@
         "quest_pool": "",
         "quest_state": "Active",
         "bucket": "",
-        "last_state_change_time": "2024-03-17T14:56:53.036Z",
+        "last_state_change_time": "2024-03-17T16:23:33.983Z",
         "challenge_linked_quest_parent": "",
         "max_level_bonus": 0,
         "xp": 0,
@@ -67798,7 +67988,7 @@
     "S12-Quest:Quest_S12_Donut_W9_B": {
       "templateId": "Quest:Quest_S12_Donut_W9_B",
       "attributes": {
-        "creation_time": "2024-03-17T14:56:53.036Z",
+        "creation_time": "2024-03-17T16:23:33.983Z",
         "level": -1,
         "item_seen": true,
         "playlists": [],
@@ -67809,7 +67999,7 @@
         "quest_pool": "",
         "quest_state": "Active",
         "bucket": "",
-        "last_state_change_time": "2024-03-17T14:56:53.036Z",
+        "last_state_change_time": "2024-03-17T16:23:33.983Z",
         "challenge_linked_quest_parent": "",
         "max_level_bonus": 0,
         "xp": 0,
@@ -67822,7 +68012,7 @@
     "S12-Quest:quest_jerky_bounce": {
       "templateId": "Quest:quest_jerky_bounce",
       "attributes": {
-        "creation_time": "2024-03-17T14:56:53.036Z",
+        "creation_time": "2024-03-17T16:23:33.983Z",
         "level": -1,
         "item_seen": true,
         "playlists": [],
@@ -67833,7 +68023,7 @@
         "quest_pool": "",
         "quest_state": "Active",
         "bucket": "",
-        "last_state_change_time": "2024-03-17T14:56:53.036Z",
+        "last_state_change_time": "2024-03-17T16:23:33.983Z",
         "challenge_linked_quest_parent": "",
         "max_level_bonus": 0,
         "xp": 0,
@@ -67850,7 +68040,7 @@
     "S12-Quest:quest_jerky_dance": {
       "templateId": "Quest:quest_jerky_dance",
       "attributes": {
-        "creation_time": "2024-03-17T14:56:53.036Z",
+        "creation_time": "2024-03-17T16:23:33.983Z",
         "level": -1,
         "item_seen": true,
         "playlists": [],
@@ -67861,7 +68051,7 @@
         "quest_pool": "",
         "quest_state": "Active",
         "bucket": "",
-        "last_state_change_time": "2024-03-17T14:56:53.036Z",
+        "last_state_change_time": "2024-03-17T16:23:33.983Z",
         "challenge_linked_quest_parent": "",
         "max_level_bonus": 0,
         "xp": 0,
@@ -67874,7 +68064,7 @@
     "S12-Quest:quest_jerky_visit": {
       "templateId": "Quest:quest_jerky_visit",
       "attributes": {
-        "creation_time": "2024-03-17T14:56:53.037Z",
+        "creation_time": "2024-03-17T16:23:33.983Z",
         "level": -1,
         "item_seen": true,
         "playlists": [],
@@ -67885,7 +68075,7 @@
         "quest_pool": "",
         "quest_state": "Active",
         "bucket": "",
-        "last_state_change_time": "2024-03-17T14:56:53.037Z",
+        "last_state_change_time": "2024-03-17T16:23:33.983Z",
         "challenge_linked_quest_parent": "",
         "max_level_bonus": 0,
         "xp": 0,
@@ -67898,7 +68088,7 @@
     "S12-Quest:quest_s12_locationdomination_w1_q01a": {
       "templateId": "Quest:quest_s12_locationdomination_w1_q01a",
       "attributes": {
-        "creation_time": "2024-03-17T14:56:53.037Z",
+        "creation_time": "2024-03-17T16:23:33.983Z",
         "level": -1,
         "item_seen": true,
         "playlists": [],
@@ -67909,7 +68099,7 @@
         "quest_pool": "",
         "quest_state": "Active",
         "bucket": "",
-        "last_state_change_time": "2024-03-17T14:56:53.037Z",
+        "last_state_change_time": "2024-03-17T16:23:33.983Z",
         "challenge_linked_quest_parent": "",
         "max_level_bonus": 0,
         "xp": 0,
@@ -67922,7 +68112,7 @@
     "S12-Quest:quest_s12_locationdomination_w1_q01b": {
       "templateId": "Quest:quest_s12_locationdomination_w1_q01b",
       "attributes": {
-        "creation_time": "2024-03-17T14:56:53.037Z",
+        "creation_time": "2024-03-17T16:23:33.983Z",
         "level": -1,
         "item_seen": true,
         "playlists": [],
@@ -67933,7 +68123,7 @@
         "quest_pool": "",
         "quest_state": "Active",
         "bucket": "",
-        "last_state_change_time": "2024-03-17T14:56:53.037Z",
+        "last_state_change_time": "2024-03-17T16:23:33.983Z",
         "challenge_linked_quest_parent": "",
         "max_level_bonus": 0,
         "xp": 0,
@@ -67946,7 +68136,7 @@
     "S12-Quest:quest_s12_locationdomination_w1_q01c": {
       "templateId": "Quest:quest_s12_locationdomination_w1_q01c",
       "attributes": {
-        "creation_time": "2024-03-17T14:56:53.037Z",
+        "creation_time": "2024-03-17T16:23:33.983Z",
         "level": -1,
         "item_seen": true,
         "playlists": [],
@@ -67957,7 +68147,7 @@
         "quest_pool": "",
         "quest_state": "Active",
         "bucket": "",
-        "last_state_change_time": "2024-03-17T14:56:53.037Z",
+        "last_state_change_time": "2024-03-17T16:23:33.983Z",
         "challenge_linked_quest_parent": "",
         "max_level_bonus": 0,
         "xp": 0,
@@ -67970,7 +68160,7 @@
     "S12-Quest:quest_s12_locationdomination_w1_q02a": {
       "templateId": "Quest:quest_s12_locationdomination_w1_q02a",
       "attributes": {
-        "creation_time": "2024-03-17T14:56:53.037Z",
+        "creation_time": "2024-03-17T16:23:33.983Z",
         "level": -1,
         "item_seen": true,
         "playlists": [],
@@ -67981,7 +68171,7 @@
         "quest_pool": "",
         "quest_state": "Active",
         "bucket": "",
-        "last_state_change_time": "2024-03-17T14:56:53.037Z",
+        "last_state_change_time": "2024-03-17T16:23:33.983Z",
         "challenge_linked_quest_parent": "",
         "max_level_bonus": 0,
         "xp": 0,
@@ -67994,7 +68184,7 @@
     "S12-Quest:quest_s12_locationdomination_w1_q02b": {
       "templateId": "Quest:quest_s12_locationdomination_w1_q02b",
       "attributes": {
-        "creation_time": "2024-03-17T14:56:53.037Z",
+        "creation_time": "2024-03-17T16:23:33.983Z",
         "level": -1,
         "item_seen": true,
         "playlists": [],
@@ -68005,7 +68195,7 @@
         "quest_pool": "",
         "quest_state": "Active",
         "bucket": "",
-        "last_state_change_time": "2024-03-17T14:56:53.037Z",
+        "last_state_change_time": "2024-03-17T16:23:33.983Z",
         "challenge_linked_quest_parent": "",
         "max_level_bonus": 0,
         "xp": 0,
@@ -68018,7 +68208,7 @@
     "S12-Quest:quest_s12_locationdomination_w1_q02c": {
       "templateId": "Quest:quest_s12_locationdomination_w1_q02c",
       "attributes": {
-        "creation_time": "2024-03-17T14:56:53.037Z",
+        "creation_time": "2024-03-17T16:23:33.983Z",
         "level": -1,
         "item_seen": true,
         "playlists": [],
@@ -68029,7 +68219,7 @@
         "quest_pool": "",
         "quest_state": "Active",
         "bucket": "",
-        "last_state_change_time": "2024-03-17T14:56:53.037Z",
+        "last_state_change_time": "2024-03-17T16:23:33.983Z",
         "challenge_linked_quest_parent": "",
         "max_level_bonus": 0,
         "xp": 0,
@@ -68042,7 +68232,7 @@
     "S12-Quest:quest_s12_locationdomination_w1_q03a": {
       "templateId": "Quest:quest_s12_locationdomination_w1_q03a",
       "attributes": {
-        "creation_time": "2024-03-17T14:56:53.037Z",
+        "creation_time": "2024-03-17T16:23:33.983Z",
         "level": -1,
         "item_seen": true,
         "playlists": [],
@@ -68053,7 +68243,7 @@
         "quest_pool": "",
         "quest_state": "Active",
         "bucket": "",
-        "last_state_change_time": "2024-03-17T14:56:53.037Z",
+        "last_state_change_time": "2024-03-17T16:23:33.983Z",
         "challenge_linked_quest_parent": "",
         "max_level_bonus": 0,
         "xp": 0,
@@ -68066,7 +68256,7 @@
     "S12-Quest:quest_s12_locationdomination_w1_q03b": {
       "templateId": "Quest:quest_s12_locationdomination_w1_q03b",
       "attributes": {
-        "creation_time": "2024-03-17T14:56:53.037Z",
+        "creation_time": "2024-03-17T16:23:33.983Z",
         "level": -1,
         "item_seen": true,
         "playlists": [],
@@ -68077,7 +68267,7 @@
         "quest_pool": "",
         "quest_state": "Active",
         "bucket": "",
-        "last_state_change_time": "2024-03-17T14:56:53.037Z",
+        "last_state_change_time": "2024-03-17T16:23:33.983Z",
         "challenge_linked_quest_parent": "",
         "max_level_bonus": 0,
         "xp": 0,
@@ -68090,7 +68280,7 @@
     "S12-Quest:quest_s12_locationdomination_w1_q03c": {
       "templateId": "Quest:quest_s12_locationdomination_w1_q03c",
       "attributes": {
-        "creation_time": "2024-03-17T14:56:53.037Z",
+        "creation_time": "2024-03-17T16:23:33.983Z",
         "level": -1,
         "item_seen": true,
         "playlists": [],
@@ -68101,7 +68291,7 @@
         "quest_pool": "",
         "quest_state": "Active",
         "bucket": "",
-        "last_state_change_time": "2024-03-17T14:56:53.037Z",
+        "last_state_change_time": "2024-03-17T16:23:33.983Z",
         "challenge_linked_quest_parent": "",
         "max_level_bonus": 0,
         "xp": 0,
@@ -68114,7 +68304,7 @@
     "S12-Quest:quest_s12_locationdomination_w1_q04a": {
       "templateId": "Quest:quest_s12_locationdomination_w1_q04a",
       "attributes": {
-        "creation_time": "2024-03-17T14:56:53.037Z",
+        "creation_time": "2024-03-17T16:23:33.983Z",
         "level": -1,
         "item_seen": true,
         "playlists": [],
@@ -68125,7 +68315,7 @@
         "quest_pool": "",
         "quest_state": "Active",
         "bucket": "",
-        "last_state_change_time": "2024-03-17T14:56:53.037Z",
+        "last_state_change_time": "2024-03-17T16:23:33.983Z",
         "challenge_linked_quest_parent": "",
         "max_level_bonus": 0,
         "xp": 0,
@@ -68138,7 +68328,7 @@
     "S12-Quest:quest_s12_locationdomination_w1_q04b": {
       "templateId": "Quest:quest_s12_locationdomination_w1_q04b",
       "attributes": {
-        "creation_time": "2024-03-17T14:56:53.037Z",
+        "creation_time": "2024-03-17T16:23:33.983Z",
         "level": -1,
         "item_seen": true,
         "playlists": [],
@@ -68149,7 +68339,7 @@
         "quest_pool": "",
         "quest_state": "Active",
         "bucket": "",
-        "last_state_change_time": "2024-03-17T14:56:53.037Z",
+        "last_state_change_time": "2024-03-17T16:23:33.983Z",
         "challenge_linked_quest_parent": "",
         "max_level_bonus": 0,
         "xp": 0,
@@ -68162,7 +68352,7 @@
     "S12-Quest:quest_s12_locationdomination_w1_q04c": {
       "templateId": "Quest:quest_s12_locationdomination_w1_q04c",
       "attributes": {
-        "creation_time": "2024-03-17T14:56:53.037Z",
+        "creation_time": "2024-03-17T16:23:33.983Z",
         "level": -1,
         "item_seen": true,
         "playlists": [],
@@ -68173,7 +68363,7 @@
         "quest_pool": "",
         "quest_state": "Active",
         "bucket": "",
-        "last_state_change_time": "2024-03-17T14:56:53.037Z",
+        "last_state_change_time": "2024-03-17T16:23:33.983Z",
         "challenge_linked_quest_parent": "",
         "max_level_bonus": 0,
         "xp": 0,
@@ -68186,7 +68376,7 @@
     "S12-Quest:quest_s12_locationdomination_w1_q05a": {
       "templateId": "Quest:quest_s12_locationdomination_w1_q05a",
       "attributes": {
-        "creation_time": "2024-03-17T14:56:53.037Z",
+        "creation_time": "2024-03-17T16:23:33.983Z",
         "level": -1,
         "item_seen": true,
         "playlists": [],
@@ -68197,7 +68387,7 @@
         "quest_pool": "",
         "quest_state": "Active",
         "bucket": "",
-        "last_state_change_time": "2024-03-17T14:56:53.037Z",
+        "last_state_change_time": "2024-03-17T16:23:33.983Z",
         "challenge_linked_quest_parent": "",
         "max_level_bonus": 0,
         "xp": 0,
@@ -68210,7 +68400,7 @@
     "S12-Quest:quest_s12_locationdomination_w1_q05b": {
       "templateId": "Quest:quest_s12_locationdomination_w1_q05b",
       "attributes": {
-        "creation_time": "2024-03-17T14:56:53.037Z",
+        "creation_time": "2024-03-17T16:23:33.983Z",
         "level": -1,
         "item_seen": true,
         "playlists": [],
@@ -68221,7 +68411,7 @@
         "quest_pool": "",
         "quest_state": "Active",
         "bucket": "",
-        "last_state_change_time": "2024-03-17T14:56:53.037Z",
+        "last_state_change_time": "2024-03-17T16:23:33.983Z",
         "challenge_linked_quest_parent": "",
         "max_level_bonus": 0,
         "xp": 0,
@@ -68234,7 +68424,7 @@
     "S12-Quest:quest_s12_locationdomination_w1_q05c": {
       "templateId": "Quest:quest_s12_locationdomination_w1_q05c",
       "attributes": {
-        "creation_time": "2024-03-17T14:56:53.037Z",
+        "creation_time": "2024-03-17T16:23:33.983Z",
         "level": -1,
         "item_seen": true,
         "playlists": [],
@@ -68245,7 +68435,7 @@
         "quest_pool": "",
         "quest_state": "Active",
         "bucket": "",
-        "last_state_change_time": "2024-03-17T14:56:53.037Z",
+        "last_state_change_time": "2024-03-17T16:23:33.983Z",
         "challenge_linked_quest_parent": "",
         "max_level_bonus": 0,
         "xp": 0,
@@ -68258,7 +68448,7 @@
     "S12-Quest:quest_s12_locationdomination_w1_q06a": {
       "templateId": "Quest:quest_s12_locationdomination_w1_q06a",
       "attributes": {
-        "creation_time": "2024-03-17T14:56:53.037Z",
+        "creation_time": "2024-03-17T16:23:33.983Z",
         "level": -1,
         "item_seen": true,
         "playlists": [],
@@ -68269,7 +68459,7 @@
         "quest_pool": "",
         "quest_state": "Active",
         "bucket": "",
-        "last_state_change_time": "2024-03-17T14:56:53.037Z",
+        "last_state_change_time": "2024-03-17T16:23:33.983Z",
         "challenge_linked_quest_parent": "",
         "max_level_bonus": 0,
         "xp": 0,
@@ -68282,7 +68472,7 @@
     "S12-Quest:quest_s12_locationdomination_w1_q06b": {
       "templateId": "Quest:quest_s12_locationdomination_w1_q06b",
       "attributes": {
-        "creation_time": "2024-03-17T14:56:53.037Z",
+        "creation_time": "2024-03-17T16:23:33.983Z",
         "level": -1,
         "item_seen": true,
         "playlists": [],
@@ -68293,7 +68483,7 @@
         "quest_pool": "",
         "quest_state": "Active",
         "bucket": "",
-        "last_state_change_time": "2024-03-17T14:56:53.037Z",
+        "last_state_change_time": "2024-03-17T16:23:33.983Z",
         "challenge_linked_quest_parent": "",
         "max_level_bonus": 0,
         "xp": 0,
@@ -68306,7 +68496,7 @@
     "S12-Quest:quest_s12_locationdomination_w1_q06c": {
       "templateId": "Quest:quest_s12_locationdomination_w1_q06c",
       "attributes": {
-        "creation_time": "2024-03-17T14:56:53.037Z",
+        "creation_time": "2024-03-17T16:23:33.983Z",
         "level": -1,
         "item_seen": true,
         "playlists": [],
@@ -68317,7 +68507,7 @@
         "quest_pool": "",
         "quest_state": "Active",
         "bucket": "",
-        "last_state_change_time": "2024-03-17T14:56:53.037Z",
+        "last_state_change_time": "2024-03-17T16:23:33.983Z",
         "challenge_linked_quest_parent": "",
         "max_level_bonus": 0,
         "xp": 0,
@@ -68330,7 +68520,7 @@
     "S12-Quest:quest_s12_locationdomination_w1_q07a": {
       "templateId": "Quest:quest_s12_locationdomination_w1_q07a",
       "attributes": {
-        "creation_time": "2024-03-17T14:56:53.037Z",
+        "creation_time": "2024-03-17T16:23:33.983Z",
         "level": -1,
         "item_seen": true,
         "playlists": [],
@@ -68341,7 +68531,7 @@
         "quest_pool": "",
         "quest_state": "Active",
         "bucket": "",
-        "last_state_change_time": "2024-03-17T14:56:53.037Z",
+        "last_state_change_time": "2024-03-17T16:23:33.983Z",
         "challenge_linked_quest_parent": "",
         "max_level_bonus": 0,
         "xp": 0,
@@ -68354,7 +68544,7 @@
     "S12-Quest:quest_s12_locationdomination_w1_q07b": {
       "templateId": "Quest:quest_s12_locationdomination_w1_q07b",
       "attributes": {
-        "creation_time": "2024-03-17T14:56:53.037Z",
+        "creation_time": "2024-03-17T16:23:33.983Z",
         "level": -1,
         "item_seen": true,
         "playlists": [],
@@ -68365,7 +68555,7 @@
         "quest_pool": "",
         "quest_state": "Active",
         "bucket": "",
-        "last_state_change_time": "2024-03-17T14:56:53.037Z",
+        "last_state_change_time": "2024-03-17T16:23:33.983Z",
         "challenge_linked_quest_parent": "",
         "max_level_bonus": 0,
         "xp": 0,
@@ -68378,7 +68568,7 @@
     "S12-Quest:quest_s12_locationdomination_w1_q07c": {
       "templateId": "Quest:quest_s12_locationdomination_w1_q07c",
       "attributes": {
-        "creation_time": "2024-03-17T14:56:53.037Z",
+        "creation_time": "2024-03-17T16:23:33.983Z",
         "level": -1,
         "item_seen": true,
         "playlists": [],
@@ -68389,7 +68579,7 @@
         "quest_pool": "",
         "quest_state": "Active",
         "bucket": "",
-        "last_state_change_time": "2024-03-17T14:56:53.037Z",
+        "last_state_change_time": "2024-03-17T16:23:33.983Z",
         "challenge_linked_quest_parent": "",
         "max_level_bonus": 0,
         "xp": 0,
@@ -68402,7 +68592,7 @@
     "S12-Quest:quest_s12_locationdomination_w1_q08a": {
       "templateId": "Quest:quest_s12_locationdomination_w1_q08a",
       "attributes": {
-        "creation_time": "2024-03-17T14:56:53.037Z",
+        "creation_time": "2024-03-17T16:23:33.983Z",
         "level": -1,
         "item_seen": true,
         "playlists": [],
@@ -68413,7 +68603,7 @@
         "quest_pool": "",
         "quest_state": "Active",
         "bucket": "",
-        "last_state_change_time": "2024-03-17T14:56:53.037Z",
+        "last_state_change_time": "2024-03-17T16:23:33.983Z",
         "challenge_linked_quest_parent": "",
         "max_level_bonus": 0,
         "xp": 0,
@@ -68426,7 +68616,7 @@
     "S12-Quest:quest_s12_locationdomination_w1_q08b": {
       "templateId": "Quest:quest_s12_locationdomination_w1_q08b",
       "attributes": {
-        "creation_time": "2024-03-17T14:56:53.037Z",
+        "creation_time": "2024-03-17T16:23:33.983Z",
         "level": -1,
         "item_seen": true,
         "playlists": [],
@@ -68437,7 +68627,7 @@
         "quest_pool": "",
         "quest_state": "Active",
         "bucket": "",
-        "last_state_change_time": "2024-03-17T14:56:53.037Z",
+        "last_state_change_time": "2024-03-17T16:23:33.983Z",
         "challenge_linked_quest_parent": "",
         "max_level_bonus": 0,
         "xp": 0,
@@ -68450,7 +68640,7 @@
     "S12-Quest:quest_s12_locationdomination_w1_q08c": {
       "templateId": "Quest:quest_s12_locationdomination_w1_q08c",
       "attributes": {
-        "creation_time": "2024-03-17T14:56:53.037Z",
+        "creation_time": "2024-03-17T16:23:33.983Z",
         "level": -1,
         "item_seen": true,
         "playlists": [],
@@ -68461,7 +68651,7 @@
         "quest_pool": "",
         "quest_state": "Active",
         "bucket": "",
-        "last_state_change_time": "2024-03-17T14:56:53.037Z",
+        "last_state_change_time": "2024-03-17T16:23:33.983Z",
         "challenge_linked_quest_parent": "",
         "max_level_bonus": 0,
         "xp": 0,
@@ -68474,7 +68664,7 @@
     "S12-Quest:quest_s12_locationdomination_w1_q09a": {
       "templateId": "Quest:quest_s12_locationdomination_w1_q09a",
       "attributes": {
-        "creation_time": "2024-03-17T14:56:53.037Z",
+        "creation_time": "2024-03-17T16:23:33.983Z",
         "level": -1,
         "item_seen": true,
         "playlists": [],
@@ -68485,7 +68675,7 @@
         "quest_pool": "",
         "quest_state": "Active",
         "bucket": "",
-        "last_state_change_time": "2024-03-17T14:56:53.037Z",
+        "last_state_change_time": "2024-03-17T16:23:33.983Z",
         "challenge_linked_quest_parent": "",
         "max_level_bonus": 0,
         "xp": 0,
@@ -68498,7 +68688,7 @@
     "S12-Quest:quest_s12_locationdomination_w1_q09b": {
       "templateId": "Quest:quest_s12_locationdomination_w1_q09b",
       "attributes": {
-        "creation_time": "2024-03-17T14:56:53.037Z",
+        "creation_time": "2024-03-17T16:23:33.983Z",
         "level": -1,
         "item_seen": true,
         "playlists": [],
@@ -68509,7 +68699,7 @@
         "quest_pool": "",
         "quest_state": "Active",
         "bucket": "",
-        "last_state_change_time": "2024-03-17T14:56:53.037Z",
+        "last_state_change_time": "2024-03-17T16:23:33.983Z",
         "challenge_linked_quest_parent": "",
         "max_level_bonus": 0,
         "xp": 0,
@@ -68522,7 +68712,7 @@
     "S12-Quest:quest_s12_locationdomination_w1_q09c": {
       "templateId": "Quest:quest_s12_locationdomination_w1_q09c",
       "attributes": {
-        "creation_time": "2024-03-17T14:56:53.037Z",
+        "creation_time": "2024-03-17T16:23:33.983Z",
         "level": -1,
         "item_seen": true,
         "playlists": [],
@@ -68533,7 +68723,7 @@
         "quest_pool": "",
         "quest_state": "Active",
         "bucket": "",
-        "last_state_change_time": "2024-03-17T14:56:53.037Z",
+        "last_state_change_time": "2024-03-17T16:23:33.983Z",
         "challenge_linked_quest_parent": "",
         "max_level_bonus": 0,
         "xp": 0,
@@ -68546,7 +68736,7 @@
     "S12-Quest:quest_s12_locationdomination_w1_q10a": {
       "templateId": "Quest:quest_s12_locationdomination_w1_q10a",
       "attributes": {
-        "creation_time": "2024-03-17T14:56:53.037Z",
+        "creation_time": "2024-03-17T16:23:33.983Z",
         "level": -1,
         "item_seen": true,
         "playlists": [],
@@ -68557,7 +68747,7 @@
         "quest_pool": "",
         "quest_state": "Active",
         "bucket": "",
-        "last_state_change_time": "2024-03-17T14:56:53.037Z",
+        "last_state_change_time": "2024-03-17T16:23:33.983Z",
         "challenge_linked_quest_parent": "",
         "max_level_bonus": 0,
         "xp": 0,
@@ -68570,7 +68760,7 @@
     "S12-Quest:quest_s12_locationdomination_w1_q10b": {
       "templateId": "Quest:quest_s12_locationdomination_w1_q10b",
       "attributes": {
-        "creation_time": "2024-03-17T14:56:53.037Z",
+        "creation_time": "2024-03-17T16:23:33.983Z",
         "level": -1,
         "item_seen": true,
         "playlists": [],
@@ -68581,7 +68771,7 @@
         "quest_pool": "",
         "quest_state": "Active",
         "bucket": "",
-        "last_state_change_time": "2024-03-17T14:56:53.037Z",
+        "last_state_change_time": "2024-03-17T16:23:33.983Z",
         "challenge_linked_quest_parent": "",
         "max_level_bonus": 0,
         "xp": 0,
@@ -68594,7 +68784,7 @@
     "S12-Quest:quest_s12_locationdomination_w1_q10c": {
       "templateId": "Quest:quest_s12_locationdomination_w1_q10c",
       "attributes": {
-        "creation_time": "2024-03-17T14:56:53.037Z",
+        "creation_time": "2024-03-17T16:23:33.983Z",
         "level": -1,
         "item_seen": true,
         "playlists": [],
@@ -68605,7 +68795,7 @@
         "quest_pool": "",
         "quest_state": "Active",
         "bucket": "",
-        "last_state_change_time": "2024-03-17T14:56:53.037Z",
+        "last_state_change_time": "2024-03-17T16:23:33.983Z",
         "challenge_linked_quest_parent": "",
         "max_level_bonus": 0,
         "xp": 0,
@@ -68618,7 +68808,7 @@
     "S12-Quest:quest_s12_locationdomination_w2_q01a": {
       "templateId": "Quest:quest_s12_locationdomination_w2_q01a",
       "attributes": {
-        "creation_time": "2024-03-17T14:56:53.037Z",
+        "creation_time": "2024-03-17T16:23:33.983Z",
         "level": -1,
         "item_seen": true,
         "playlists": [],
@@ -68629,7 +68819,7 @@
         "quest_pool": "",
         "quest_state": "Active",
         "bucket": "",
-        "last_state_change_time": "2024-03-17T14:56:53.037Z",
+        "last_state_change_time": "2024-03-17T16:23:33.983Z",
         "challenge_linked_quest_parent": "",
         "max_level_bonus": 0,
         "xp": 0,
@@ -68642,7 +68832,7 @@
     "S12-Quest:quest_s12_locationdomination_w2_q01b": {
       "templateId": "Quest:quest_s12_locationdomination_w2_q01b",
       "attributes": {
-        "creation_time": "2024-03-17T14:56:53.037Z",
+        "creation_time": "2024-03-17T16:23:33.983Z",
         "level": -1,
         "item_seen": true,
         "playlists": [],
@@ -68653,7 +68843,7 @@
         "quest_pool": "",
         "quest_state": "Active",
         "bucket": "",
-        "last_state_change_time": "2024-03-17T14:56:53.037Z",
+        "last_state_change_time": "2024-03-17T16:23:33.983Z",
         "challenge_linked_quest_parent": "",
         "max_level_bonus": 0,
         "xp": 0,
@@ -68666,7 +68856,7 @@
     "S12-Quest:quest_s12_locationdomination_w2_q01c": {
       "templateId": "Quest:quest_s12_locationdomination_w2_q01c",
       "attributes": {
-        "creation_time": "2024-03-17T14:56:53.037Z",
+        "creation_time": "2024-03-17T16:23:33.983Z",
         "level": -1,
         "item_seen": true,
         "playlists": [],
@@ -68677,7 +68867,7 @@
         "quest_pool": "",
         "quest_state": "Active",
         "bucket": "",
-        "last_state_change_time": "2024-03-17T14:56:53.037Z",
+        "last_state_change_time": "2024-03-17T16:23:33.983Z",
         "challenge_linked_quest_parent": "",
         "max_level_bonus": 0,
         "xp": 0,
@@ -68690,7 +68880,7 @@
     "S12-Quest:quest_s12_locationdomination_w2_q02a": {
       "templateId": "Quest:quest_s12_locationdomination_w2_q02a",
       "attributes": {
-        "creation_time": "2024-03-17T14:56:53.037Z",
+        "creation_time": "2024-03-17T16:23:33.983Z",
         "level": -1,
         "item_seen": true,
         "playlists": [],
@@ -68701,7 +68891,7 @@
         "quest_pool": "",
         "quest_state": "Active",
         "bucket": "",
-        "last_state_change_time": "2024-03-17T14:56:53.037Z",
+        "last_state_change_time": "2024-03-17T16:23:33.983Z",
         "challenge_linked_quest_parent": "",
         "max_level_bonus": 0,
         "xp": 0,
@@ -68714,7 +68904,7 @@
     "S12-Quest:quest_s12_locationdomination_w2_q02b": {
       "templateId": "Quest:quest_s12_locationdomination_w2_q02b",
       "attributes": {
-        "creation_time": "2024-03-17T14:56:53.037Z",
+        "creation_time": "2024-03-17T16:23:33.983Z",
         "level": -1,
         "item_seen": true,
         "playlists": [],
@@ -68725,7 +68915,7 @@
         "quest_pool": "",
         "quest_state": "Active",
         "bucket": "",
-        "last_state_change_time": "2024-03-17T14:56:53.037Z",
+        "last_state_change_time": "2024-03-17T16:23:33.983Z",
         "challenge_linked_quest_parent": "",
         "max_level_bonus": 0,
         "xp": 0,
@@ -68738,7 +68928,7 @@
     "S12-Quest:quest_s12_locationdomination_w2_q02c": {
       "templateId": "Quest:quest_s12_locationdomination_w2_q02c",
       "attributes": {
-        "creation_time": "2024-03-17T14:56:53.037Z",
+        "creation_time": "2024-03-17T16:23:33.983Z",
         "level": -1,
         "item_seen": true,
         "playlists": [],
@@ -68749,7 +68939,7 @@
         "quest_pool": "",
         "quest_state": "Active",
         "bucket": "",
-        "last_state_change_time": "2024-03-17T14:56:53.037Z",
+        "last_state_change_time": "2024-03-17T16:23:33.983Z",
         "challenge_linked_quest_parent": "",
         "max_level_bonus": 0,
         "xp": 0,
@@ -68762,7 +68952,7 @@
     "S12-Quest:quest_s12_locationdomination_w2_q03a": {
       "templateId": "Quest:quest_s12_locationdomination_w2_q03a",
       "attributes": {
-        "creation_time": "2024-03-17T14:56:53.037Z",
+        "creation_time": "2024-03-17T16:23:33.983Z",
         "level": -1,
         "item_seen": true,
         "playlists": [],
@@ -68773,7 +68963,7 @@
         "quest_pool": "",
         "quest_state": "Active",
         "bucket": "",
-        "last_state_change_time": "2024-03-17T14:56:53.037Z",
+        "last_state_change_time": "2024-03-17T16:23:33.983Z",
         "challenge_linked_quest_parent": "",
         "max_level_bonus": 0,
         "xp": 0,
@@ -68786,7 +68976,7 @@
     "S12-Quest:quest_s12_locationdomination_w2_q03b": {
       "templateId": "Quest:quest_s12_locationdomination_w2_q03b",
       "attributes": {
-        "creation_time": "2024-03-17T14:56:53.037Z",
+        "creation_time": "2024-03-17T16:23:33.983Z",
         "level": -1,
         "item_seen": true,
         "playlists": [],
@@ -68797,7 +68987,7 @@
         "quest_pool": "",
         "quest_state": "Active",
         "bucket": "",
-        "last_state_change_time": "2024-03-17T14:56:53.037Z",
+        "last_state_change_time": "2024-03-17T16:23:33.983Z",
         "challenge_linked_quest_parent": "",
         "max_level_bonus": 0,
         "xp": 0,
@@ -68810,7 +69000,7 @@
     "S12-Quest:quest_s12_locationdomination_w2_q03c": {
       "templateId": "Quest:quest_s12_locationdomination_w2_q03c",
       "attributes": {
-        "creation_time": "2024-03-17T14:56:53.037Z",
+        "creation_time": "2024-03-17T16:23:33.983Z",
         "level": -1,
         "item_seen": true,
         "playlists": [],
@@ -68821,7 +69011,7 @@
         "quest_pool": "",
         "quest_state": "Active",
         "bucket": "",
-        "last_state_change_time": "2024-03-17T14:56:53.037Z",
+        "last_state_change_time": "2024-03-17T16:23:33.983Z",
         "challenge_linked_quest_parent": "",
         "max_level_bonus": 0,
         "xp": 0,
@@ -68834,7 +69024,7 @@
     "S12-Quest:quest_s12_locationdomination_w2_q04a": {
       "templateId": "Quest:quest_s12_locationdomination_w2_q04a",
       "attributes": {
-        "creation_time": "2024-03-17T14:56:53.037Z",
+        "creation_time": "2024-03-17T16:23:33.983Z",
         "level": -1,
         "item_seen": true,
         "playlists": [],
@@ -68845,7 +69035,7 @@
         "quest_pool": "",
         "quest_state": "Active",
         "bucket": "",
-        "last_state_change_time": "2024-03-17T14:56:53.037Z",
+        "last_state_change_time": "2024-03-17T16:23:33.983Z",
         "challenge_linked_quest_parent": "",
         "max_level_bonus": 0,
         "xp": 0,
@@ -68858,7 +69048,7 @@
     "S12-Quest:quest_s12_locationdomination_w2_q04b": {
       "templateId": "Quest:quest_s12_locationdomination_w2_q04b",
       "attributes": {
-        "creation_time": "2024-03-17T14:56:53.038Z",
+        "creation_time": "2024-03-17T16:23:33.983Z",
         "level": -1,
         "item_seen": true,
         "playlists": [],
@@ -68869,7 +69059,7 @@
         "quest_pool": "",
         "quest_state": "Active",
         "bucket": "",
-        "last_state_change_time": "2024-03-17T14:56:53.038Z",
+        "last_state_change_time": "2024-03-17T16:23:33.983Z",
         "challenge_linked_quest_parent": "",
         "max_level_bonus": 0,
         "xp": 0,
@@ -68882,7 +69072,7 @@
     "S12-Quest:quest_s12_locationdomination_w2_q04c": {
       "templateId": "Quest:quest_s12_locationdomination_w2_q04c",
       "attributes": {
-        "creation_time": "2024-03-17T14:56:53.038Z",
+        "creation_time": "2024-03-17T16:23:33.983Z",
         "level": -1,
         "item_seen": true,
         "playlists": [],
@@ -68893,7 +69083,7 @@
         "quest_pool": "",
         "quest_state": "Active",
         "bucket": "",
-        "last_state_change_time": "2024-03-17T14:56:53.038Z",
+        "last_state_change_time": "2024-03-17T16:23:33.983Z",
         "challenge_linked_quest_parent": "",
         "max_level_bonus": 0,
         "xp": 0,
@@ -68906,7 +69096,7 @@
     "S12-Quest:quest_s12_locationdomination_w2_q05a": {
       "templateId": "Quest:quest_s12_locationdomination_w2_q05a",
       "attributes": {
-        "creation_time": "2024-03-17T14:56:53.038Z",
+        "creation_time": "2024-03-17T16:23:33.983Z",
         "level": -1,
         "item_seen": true,
         "playlists": [],
@@ -68917,7 +69107,7 @@
         "quest_pool": "",
         "quest_state": "Active",
         "bucket": "",
-        "last_state_change_time": "2024-03-17T14:56:53.038Z",
+        "last_state_change_time": "2024-03-17T16:23:33.983Z",
         "challenge_linked_quest_parent": "",
         "max_level_bonus": 0,
         "xp": 0,
@@ -68930,7 +69120,7 @@
     "S12-Quest:quest_s12_locationdomination_w2_q05b": {
       "templateId": "Quest:quest_s12_locationdomination_w2_q05b",
       "attributes": {
-        "creation_time": "2024-03-17T14:56:53.038Z",
+        "creation_time": "2024-03-17T16:23:33.983Z",
         "level": -1,
         "item_seen": true,
         "playlists": [],
@@ -68941,7 +69131,7 @@
         "quest_pool": "",
         "quest_state": "Active",
         "bucket": "",
-        "last_state_change_time": "2024-03-17T14:56:53.038Z",
+        "last_state_change_time": "2024-03-17T16:23:33.983Z",
         "challenge_linked_quest_parent": "",
         "max_level_bonus": 0,
         "xp": 0,
@@ -68954,7 +69144,7 @@
     "S12-Quest:quest_s12_locationdomination_w2_q05c": {
       "templateId": "Quest:quest_s12_locationdomination_w2_q05c",
       "attributes": {
-        "creation_time": "2024-03-17T14:56:53.038Z",
+        "creation_time": "2024-03-17T16:23:33.983Z",
         "level": -1,
         "item_seen": true,
         "playlists": [],
@@ -68965,7 +69155,7 @@
         "quest_pool": "",
         "quest_state": "Active",
         "bucket": "",
-        "last_state_change_time": "2024-03-17T14:56:53.038Z",
+        "last_state_change_time": "2024-03-17T16:23:33.983Z",
         "challenge_linked_quest_parent": "",
         "max_level_bonus": 0,
         "xp": 0,
@@ -68978,7 +69168,7 @@
     "S12-Quest:quest_s12_locationdomination_w2_q06a": {
       "templateId": "Quest:quest_s12_locationdomination_w2_q06a",
       "attributes": {
-        "creation_time": "2024-03-17T14:56:53.038Z",
+        "creation_time": "2024-03-17T16:23:33.983Z",
         "level": -1,
         "item_seen": true,
         "playlists": [],
@@ -68989,7 +69179,7 @@
         "quest_pool": "",
         "quest_state": "Active",
         "bucket": "",
-        "last_state_change_time": "2024-03-17T14:56:53.038Z",
+        "last_state_change_time": "2024-03-17T16:23:33.983Z",
         "challenge_linked_quest_parent": "",
         "max_level_bonus": 0,
         "xp": 0,
@@ -69002,7 +69192,7 @@
     "S12-Quest:quest_s12_locationdomination_w2_q06b": {
       "templateId": "Quest:quest_s12_locationdomination_w2_q06b",
       "attributes": {
-        "creation_time": "2024-03-17T14:56:53.038Z",
+        "creation_time": "2024-03-17T16:23:33.983Z",
         "level": -1,
         "item_seen": true,
         "playlists": [],
@@ -69013,7 +69203,7 @@
         "quest_pool": "",
         "quest_state": "Active",
         "bucket": "",
-        "last_state_change_time": "2024-03-17T14:56:53.038Z",
+        "last_state_change_time": "2024-03-17T16:23:33.983Z",
         "challenge_linked_quest_parent": "",
         "max_level_bonus": 0,
         "xp": 0,
@@ -69026,7 +69216,7 @@
     "S12-Quest:quest_s12_locationdomination_w2_q06c": {
       "templateId": "Quest:quest_s12_locationdomination_w2_q06c",
       "attributes": {
-        "creation_time": "2024-03-17T14:56:53.038Z",
+        "creation_time": "2024-03-17T16:23:33.983Z",
         "level": -1,
         "item_seen": true,
         "playlists": [],
@@ -69037,7 +69227,7 @@
         "quest_pool": "",
         "quest_state": "Active",
         "bucket": "",
-        "last_state_change_time": "2024-03-17T14:56:53.038Z",
+        "last_state_change_time": "2024-03-17T16:23:33.983Z",
         "challenge_linked_quest_parent": "",
         "max_level_bonus": 0,
         "xp": 0,
@@ -69050,7 +69240,7 @@
     "S12-Quest:quest_s12_locationdomination_w2_q07a": {
       "templateId": "Quest:quest_s12_locationdomination_w2_q07a",
       "attributes": {
-        "creation_time": "2024-03-17T14:56:53.038Z",
+        "creation_time": "2024-03-17T16:23:33.983Z",
         "level": -1,
         "item_seen": true,
         "playlists": [],
@@ -69061,7 +69251,7 @@
         "quest_pool": "",
         "quest_state": "Active",
         "bucket": "",
-        "last_state_change_time": "2024-03-17T14:56:53.038Z",
+        "last_state_change_time": "2024-03-17T16:23:33.983Z",
         "challenge_linked_quest_parent": "",
         "max_level_bonus": 0,
         "xp": 0,
@@ -69074,7 +69264,7 @@
     "S12-Quest:quest_s12_locationdomination_w2_q07b": {
       "templateId": "Quest:quest_s12_locationdomination_w2_q07b",
       "attributes": {
-        "creation_time": "2024-03-17T14:56:53.038Z",
+        "creation_time": "2024-03-17T16:23:33.983Z",
         "level": -1,
         "item_seen": true,
         "playlists": [],
@@ -69085,7 +69275,7 @@
         "quest_pool": "",
         "quest_state": "Active",
         "bucket": "",
-        "last_state_change_time": "2024-03-17T14:56:53.038Z",
+        "last_state_change_time": "2024-03-17T16:23:33.983Z",
         "challenge_linked_quest_parent": "",
         "max_level_bonus": 0,
         "xp": 0,
@@ -69098,7 +69288,7 @@
     "S12-Quest:quest_s12_locationdomination_w2_q07c": {
       "templateId": "Quest:quest_s12_locationdomination_w2_q07c",
       "attributes": {
-        "creation_time": "2024-03-17T14:56:53.038Z",
+        "creation_time": "2024-03-17T16:23:33.983Z",
         "level": -1,
         "item_seen": true,
         "playlists": [],
@@ -69109,7 +69299,7 @@
         "quest_pool": "",
         "quest_state": "Active",
         "bucket": "",
-        "last_state_change_time": "2024-03-17T14:56:53.038Z",
+        "last_state_change_time": "2024-03-17T16:23:33.983Z",
         "challenge_linked_quest_parent": "",
         "max_level_bonus": 0,
         "xp": 0,
@@ -69122,7 +69312,7 @@
     "S12-Quest:quest_s12_locationdomination_w2_q08a": {
       "templateId": "Quest:quest_s12_locationdomination_w2_q08a",
       "attributes": {
-        "creation_time": "2024-03-17T14:56:53.038Z",
+        "creation_time": "2024-03-17T16:23:33.983Z",
         "level": -1,
         "item_seen": true,
         "playlists": [],
@@ -69133,7 +69323,7 @@
         "quest_pool": "",
         "quest_state": "Active",
         "bucket": "",
-        "last_state_change_time": "2024-03-17T14:56:53.038Z",
+        "last_state_change_time": "2024-03-17T16:23:33.983Z",
         "challenge_linked_quest_parent": "",
         "max_level_bonus": 0,
         "xp": 0,
@@ -69146,7 +69336,7 @@
     "S12-Quest:quest_s12_locationdomination_w2_q08b": {
       "templateId": "Quest:quest_s12_locationdomination_w2_q08b",
       "attributes": {
-        "creation_time": "2024-03-17T14:56:53.038Z",
+        "creation_time": "2024-03-17T16:23:33.983Z",
         "level": -1,
         "item_seen": true,
         "playlists": [],
@@ -69157,7 +69347,7 @@
         "quest_pool": "",
         "quest_state": "Active",
         "bucket": "",
-        "last_state_change_time": "2024-03-17T14:56:53.038Z",
+        "last_state_change_time": "2024-03-17T16:23:33.983Z",
         "challenge_linked_quest_parent": "",
         "max_level_bonus": 0,
         "xp": 0,
@@ -69170,7 +69360,7 @@
     "S12-Quest:quest_s12_locationdomination_w2_q08c": {
       "templateId": "Quest:quest_s12_locationdomination_w2_q08c",
       "attributes": {
-        "creation_time": "2024-03-17T14:56:53.038Z",
+        "creation_time": "2024-03-17T16:23:33.983Z",
         "level": -1,
         "item_seen": true,
         "playlists": [],
@@ -69181,7 +69371,7 @@
         "quest_pool": "",
         "quest_state": "Active",
         "bucket": "",
-        "last_state_change_time": "2024-03-17T14:56:53.038Z",
+        "last_state_change_time": "2024-03-17T16:23:33.983Z",
         "challenge_linked_quest_parent": "",
         "max_level_bonus": 0,
         "xp": 0,
@@ -69194,7 +69384,7 @@
     "S12-Quest:quest_s12_locationdomination_w2_q09a": {
       "templateId": "Quest:quest_s12_locationdomination_w2_q09a",
       "attributes": {
-        "creation_time": "2024-03-17T14:56:53.038Z",
+        "creation_time": "2024-03-17T16:23:33.983Z",
         "level": -1,
         "item_seen": true,
         "playlists": [],
@@ -69205,7 +69395,7 @@
         "quest_pool": "",
         "quest_state": "Active",
         "bucket": "",
-        "last_state_change_time": "2024-03-17T14:56:53.038Z",
+        "last_state_change_time": "2024-03-17T16:23:33.983Z",
         "challenge_linked_quest_parent": "",
         "max_level_bonus": 0,
         "xp": 0,
@@ -69218,7 +69408,7 @@
     "S12-Quest:quest_s12_locationdomination_w2_q09b": {
       "templateId": "Quest:quest_s12_locationdomination_w2_q09b",
       "attributes": {
-        "creation_time": "2024-03-17T14:56:53.038Z",
+        "creation_time": "2024-03-17T16:23:33.983Z",
         "level": -1,
         "item_seen": true,
         "playlists": [],
@@ -69229,7 +69419,7 @@
         "quest_pool": "",
         "quest_state": "Active",
         "bucket": "",
-        "last_state_change_time": "2024-03-17T14:56:53.038Z",
+        "last_state_change_time": "2024-03-17T16:23:33.983Z",
         "challenge_linked_quest_parent": "",
         "max_level_bonus": 0,
         "xp": 0,
@@ -69242,7 +69432,7 @@
     "S12-Quest:quest_s12_locationdomination_w2_q09c": {
       "templateId": "Quest:quest_s12_locationdomination_w2_q09c",
       "attributes": {
-        "creation_time": "2024-03-17T14:56:53.038Z",
+        "creation_time": "2024-03-17T16:23:33.983Z",
         "level": -1,
         "item_seen": true,
         "playlists": [],
@@ -69253,7 +69443,7 @@
         "quest_pool": "",
         "quest_state": "Active",
         "bucket": "",
-        "last_state_change_time": "2024-03-17T14:56:53.038Z",
+        "last_state_change_time": "2024-03-17T16:23:33.983Z",
         "challenge_linked_quest_parent": "",
         "max_level_bonus": 0,
         "xp": 0,
@@ -69266,7 +69456,7 @@
     "S12-Quest:quest_s12_locationdomination_w2_q10a": {
       "templateId": "Quest:quest_s12_locationdomination_w2_q10a",
       "attributes": {
-        "creation_time": "2024-03-17T14:56:53.038Z",
+        "creation_time": "2024-03-17T16:23:33.983Z",
         "level": -1,
         "item_seen": true,
         "playlists": [],
@@ -69277,7 +69467,7 @@
         "quest_pool": "",
         "quest_state": "Active",
         "bucket": "",
-        "last_state_change_time": "2024-03-17T14:56:53.038Z",
+        "last_state_change_time": "2024-03-17T16:23:33.983Z",
         "challenge_linked_quest_parent": "",
         "max_level_bonus": 0,
         "xp": 0,
@@ -69290,7 +69480,7 @@
     "S12-Quest:quest_s12_locationdomination_w2_q10b": {
       "templateId": "Quest:quest_s12_locationdomination_w2_q10b",
       "attributes": {
-        "creation_time": "2024-03-17T14:56:53.038Z",
+        "creation_time": "2024-03-17T16:23:33.984Z",
         "level": -1,
         "item_seen": true,
         "playlists": [],
@@ -69301,7 +69491,7 @@
         "quest_pool": "",
         "quest_state": "Active",
         "bucket": "",
-        "last_state_change_time": "2024-03-17T14:56:53.038Z",
+        "last_state_change_time": "2024-03-17T16:23:33.984Z",
         "challenge_linked_quest_parent": "",
         "max_level_bonus": 0,
         "xp": 0,
@@ -69314,7 +69504,7 @@
     "S12-Quest:quest_s12_locationdomination_w2_q10c": {
       "templateId": "Quest:quest_s12_locationdomination_w2_q10c",
       "attributes": {
-        "creation_time": "2024-03-17T14:56:53.038Z",
+        "creation_time": "2024-03-17T16:23:33.984Z",
         "level": -1,
         "item_seen": true,
         "playlists": [],
@@ -69325,7 +69515,7 @@
         "quest_pool": "",
         "quest_state": "Active",
         "bucket": "",
-        "last_state_change_time": "2024-03-17T14:56:53.038Z",
+        "last_state_change_time": "2024-03-17T16:23:33.984Z",
         "challenge_linked_quest_parent": "",
         "max_level_bonus": 0,
         "xp": 0,
@@ -69338,7 +69528,7 @@
     "S12-Quest:quest_s12_w1_q01": {
       "templateId": "Quest:quest_s12_w1_q01",
       "attributes": {
-        "creation_time": "2024-03-17T14:56:53.038Z",
+        "creation_time": "2024-03-17T16:23:33.984Z",
         "level": -1,
         "item_seen": true,
         "playlists": [],
@@ -69349,7 +69539,7 @@
         "quest_pool": "",
         "quest_state": "Active",
         "bucket": "",
-        "last_state_change_time": "2024-03-17T14:56:53.038Z",
+        "last_state_change_time": "2024-03-17T16:23:33.984Z",
         "challenge_linked_quest_parent": "",
         "max_level_bonus": 0,
         "xp": 0,
@@ -69362,7 +69552,7 @@
     "S12-Quest:quest_s12_w1_q02": {
       "templateId": "Quest:quest_s12_w1_q02",
       "attributes": {
-        "creation_time": "2024-03-17T14:56:53.038Z",
+        "creation_time": "2024-03-17T16:23:33.984Z",
         "level": -1,
         "item_seen": true,
         "playlists": [],
@@ -69373,7 +69563,7 @@
         "quest_pool": "",
         "quest_state": "Active",
         "bucket": "",
-        "last_state_change_time": "2024-03-17T14:56:53.038Z",
+        "last_state_change_time": "2024-03-17T16:23:33.984Z",
         "challenge_linked_quest_parent": "",
         "max_level_bonus": 0,
         "xp": 0,
@@ -69386,7 +69576,7 @@
     "S12-Quest:quest_s12_w1_q03": {
       "templateId": "Quest:quest_s12_w1_q03",
       "attributes": {
-        "creation_time": "2024-03-17T14:56:53.038Z",
+        "creation_time": "2024-03-17T16:23:33.984Z",
         "level": -1,
         "item_seen": true,
         "playlists": [],
@@ -69397,7 +69587,7 @@
         "quest_pool": "",
         "quest_state": "Active",
         "bucket": "",
-        "last_state_change_time": "2024-03-17T14:56:53.038Z",
+        "last_state_change_time": "2024-03-17T16:23:33.984Z",
         "challenge_linked_quest_parent": "",
         "max_level_bonus": 0,
         "xp": 0,
@@ -69410,7 +69600,7 @@
     "S12-Quest:quest_s12_w1_q04": {
       "templateId": "Quest:quest_s12_w1_q04",
       "attributes": {
-        "creation_time": "2024-03-17T14:56:53.038Z",
+        "creation_time": "2024-03-17T16:23:33.984Z",
         "level": -1,
         "item_seen": true,
         "playlists": [],
@@ -69421,7 +69611,7 @@
         "quest_pool": "",
         "quest_state": "Active",
         "bucket": "",
-        "last_state_change_time": "2024-03-17T14:56:53.038Z",
+        "last_state_change_time": "2024-03-17T16:23:33.984Z",
         "challenge_linked_quest_parent": "",
         "max_level_bonus": 0,
         "xp": 0,
@@ -69434,7 +69624,7 @@
     "S12-Quest:quest_s12_w1_q05": {
       "templateId": "Quest:quest_s12_w1_q05",
       "attributes": {
-        "creation_time": "2024-03-17T14:56:53.038Z",
+        "creation_time": "2024-03-17T16:23:33.984Z",
         "level": -1,
         "item_seen": true,
         "playlists": [],
@@ -69445,7 +69635,7 @@
         "quest_pool": "",
         "quest_state": "Active",
         "bucket": "",
-        "last_state_change_time": "2024-03-17T14:56:53.038Z",
+        "last_state_change_time": "2024-03-17T16:23:33.984Z",
         "challenge_linked_quest_parent": "",
         "max_level_bonus": 0,
         "xp": 0,
@@ -69458,7 +69648,7 @@
     "S12-Quest:quest_s12_w1_q06": {
       "templateId": "Quest:quest_s12_w1_q06",
       "attributes": {
-        "creation_time": "2024-03-17T14:56:53.038Z",
+        "creation_time": "2024-03-17T16:23:33.984Z",
         "level": -1,
         "item_seen": true,
         "playlists": [],
@@ -69469,7 +69659,7 @@
         "quest_pool": "",
         "quest_state": "Active",
         "bucket": "",
-        "last_state_change_time": "2024-03-17T14:56:53.038Z",
+        "last_state_change_time": "2024-03-17T16:23:33.984Z",
         "challenge_linked_quest_parent": "",
         "max_level_bonus": 0,
         "xp": 0,
@@ -69482,7 +69672,7 @@
     "S12-Quest:quest_s12_w1_q07": {
       "templateId": "Quest:quest_s12_w1_q07",
       "attributes": {
-        "creation_time": "2024-03-17T14:56:53.038Z",
+        "creation_time": "2024-03-17T16:23:33.984Z",
         "level": -1,
         "item_seen": true,
         "playlists": [],
@@ -69493,7 +69683,7 @@
         "quest_pool": "",
         "quest_state": "Active",
         "bucket": "",
-        "last_state_change_time": "2024-03-17T14:56:53.038Z",
+        "last_state_change_time": "2024-03-17T16:23:33.984Z",
         "challenge_linked_quest_parent": "",
         "max_level_bonus": 0,
         "xp": 0,
@@ -69512,7 +69702,7 @@
     "S12-Quest:quest_s12_w1_q08": {
       "templateId": "Quest:quest_s12_w1_q08",
       "attributes": {
-        "creation_time": "2024-03-17T14:56:53.038Z",
+        "creation_time": "2024-03-17T16:23:33.984Z",
         "level": -1,
         "item_seen": true,
         "playlists": [],
@@ -69523,7 +69713,7 @@
         "quest_pool": "",
         "quest_state": "Active",
         "bucket": "",
-        "last_state_change_time": "2024-03-17T14:56:53.038Z",
+        "last_state_change_time": "2024-03-17T16:23:33.984Z",
         "challenge_linked_quest_parent": "",
         "max_level_bonus": 0,
         "xp": 0,
@@ -69536,7 +69726,7 @@
     "S12-Quest:quest_s12_w1_q09": {
       "templateId": "Quest:quest_s12_w1_q09",
       "attributes": {
-        "creation_time": "2024-03-17T14:56:53.038Z",
+        "creation_time": "2024-03-17T16:23:33.984Z",
         "level": -1,
         "item_seen": true,
         "playlists": [],
@@ -69547,7 +69737,7 @@
         "quest_pool": "",
         "quest_state": "Active",
         "bucket": "",
-        "last_state_change_time": "2024-03-17T14:56:53.038Z",
+        "last_state_change_time": "2024-03-17T16:23:33.984Z",
         "challenge_linked_quest_parent": "",
         "max_level_bonus": 0,
         "xp": 0,
@@ -69562,7 +69752,7 @@
     "S12-Quest:quest_s12_w1_q10": {
       "templateId": "Quest:quest_s12_w1_q10",
       "attributes": {
-        "creation_time": "2024-03-17T14:56:53.038Z",
+        "creation_time": "2024-03-17T16:23:33.984Z",
         "level": -1,
         "item_seen": true,
         "playlists": [],
@@ -69573,7 +69763,7 @@
         "quest_pool": "",
         "quest_state": "Active",
         "bucket": "",
-        "last_state_change_time": "2024-03-17T14:56:53.038Z",
+        "last_state_change_time": "2024-03-17T16:23:33.984Z",
         "challenge_linked_quest_parent": "",
         "max_level_bonus": 0,
         "xp": 0,
@@ -69586,7 +69776,7 @@
     "S12-Quest:quest_s12_w2_q01": {
       "templateId": "Quest:quest_s12_w2_q01",
       "attributes": {
-        "creation_time": "2024-03-17T14:56:53.038Z",
+        "creation_time": "2024-03-17T16:23:33.984Z",
         "level": -1,
         "item_seen": true,
         "playlists": [],
@@ -69597,7 +69787,7 @@
         "quest_pool": "",
         "quest_state": "Active",
         "bucket": "",
-        "last_state_change_time": "2024-03-17T14:56:53.038Z",
+        "last_state_change_time": "2024-03-17T16:23:33.984Z",
         "challenge_linked_quest_parent": "",
         "max_level_bonus": 0,
         "xp": 0,
@@ -69614,7 +69804,7 @@
     "S12-Quest:quest_s12_w2_q02": {
       "templateId": "Quest:quest_s12_w2_q02",
       "attributes": {
-        "creation_time": "2024-03-17T14:56:53.038Z",
+        "creation_time": "2024-03-17T16:23:33.984Z",
         "level": -1,
         "item_seen": true,
         "playlists": [],
@@ -69625,7 +69815,7 @@
         "quest_pool": "",
         "quest_state": "Active",
         "bucket": "",
-        "last_state_change_time": "2024-03-17T14:56:53.038Z",
+        "last_state_change_time": "2024-03-17T16:23:33.984Z",
         "challenge_linked_quest_parent": "",
         "max_level_bonus": 0,
         "xp": 0,
@@ -69638,7 +69828,7 @@
     "S12-Quest:quest_s12_w2_q03": {
       "templateId": "Quest:quest_s12_w2_q03",
       "attributes": {
-        "creation_time": "2024-03-17T14:56:53.038Z",
+        "creation_time": "2024-03-17T16:23:33.984Z",
         "level": -1,
         "item_seen": true,
         "playlists": [],
@@ -69649,7 +69839,7 @@
         "quest_pool": "",
         "quest_state": "Active",
         "bucket": "",
-        "last_state_change_time": "2024-03-17T14:56:53.038Z",
+        "last_state_change_time": "2024-03-17T16:23:33.984Z",
         "challenge_linked_quest_parent": "",
         "max_level_bonus": 0,
         "xp": 0,
@@ -69662,7 +69852,7 @@
     "S12-Quest:quest_s12_w2_q04": {
       "templateId": "Quest:quest_s12_w2_q04",
       "attributes": {
-        "creation_time": "2024-03-17T14:56:53.038Z",
+        "creation_time": "2024-03-17T16:23:33.984Z",
         "level": -1,
         "item_seen": true,
         "playlists": [],
@@ -69673,7 +69863,7 @@
         "quest_pool": "",
         "quest_state": "Active",
         "bucket": "",
-        "last_state_change_time": "2024-03-17T14:56:53.038Z",
+        "last_state_change_time": "2024-03-17T16:23:33.984Z",
         "challenge_linked_quest_parent": "",
         "max_level_bonus": 0,
         "xp": 0,
@@ -69686,7 +69876,7 @@
     "S12-Quest:quest_s12_w2_q05": {
       "templateId": "Quest:quest_s12_w2_q05",
       "attributes": {
-        "creation_time": "2024-03-17T14:56:53.038Z",
+        "creation_time": "2024-03-17T16:23:33.984Z",
         "level": -1,
         "item_seen": true,
         "playlists": [],
@@ -69697,7 +69887,7 @@
         "quest_pool": "",
         "quest_state": "Active",
         "bucket": "",
-        "last_state_change_time": "2024-03-17T14:56:53.038Z",
+        "last_state_change_time": "2024-03-17T16:23:33.984Z",
         "challenge_linked_quest_parent": "",
         "max_level_bonus": 0,
         "xp": 0,
@@ -69710,7 +69900,7 @@
     "S12-Quest:quest_s12_w2_q06": {
       "templateId": "Quest:quest_s12_w2_q06",
       "attributes": {
-        "creation_time": "2024-03-17T14:56:53.038Z",
+        "creation_time": "2024-03-17T16:23:33.984Z",
         "level": -1,
         "item_seen": true,
         "playlists": [],
@@ -69721,7 +69911,7 @@
         "quest_pool": "",
         "quest_state": "Active",
         "bucket": "",
-        "last_state_change_time": "2024-03-17T14:56:53.038Z",
+        "last_state_change_time": "2024-03-17T16:23:33.984Z",
         "challenge_linked_quest_parent": "",
         "max_level_bonus": 0,
         "xp": 0,
@@ -69734,7 +69924,7 @@
     "S12-Quest:quest_s12_w2_q07": {
       "templateId": "Quest:quest_s12_w2_q07",
       "attributes": {
-        "creation_time": "2024-03-17T14:56:53.038Z",
+        "creation_time": "2024-03-17T16:23:33.984Z",
         "level": -1,
         "item_seen": true,
         "playlists": [],
@@ -69745,7 +69935,7 @@
         "quest_pool": "",
         "quest_state": "Active",
         "bucket": "",
-        "last_state_change_time": "2024-03-17T14:56:53.038Z",
+        "last_state_change_time": "2024-03-17T16:23:33.984Z",
         "challenge_linked_quest_parent": "",
         "max_level_bonus": 0,
         "xp": 0,
@@ -69758,7 +69948,7 @@
     "S12-Quest:quest_s12_w2_q08": {
       "templateId": "Quest:quest_s12_w2_q08",
       "attributes": {
-        "creation_time": "2024-03-17T14:56:53.038Z",
+        "creation_time": "2024-03-17T16:23:33.984Z",
         "level": -1,
         "item_seen": true,
         "playlists": [],
@@ -69769,7 +69959,7 @@
         "quest_pool": "",
         "quest_state": "Active",
         "bucket": "",
-        "last_state_change_time": "2024-03-17T14:56:53.038Z",
+        "last_state_change_time": "2024-03-17T16:23:33.984Z",
         "challenge_linked_quest_parent": "",
         "max_level_bonus": 0,
         "xp": 0,
@@ -69782,7 +69972,7 @@
     "S12-Quest:quest_s12_w2_q09": {
       "templateId": "Quest:quest_s12_w2_q09",
       "attributes": {
-        "creation_time": "2024-03-17T14:56:53.038Z",
+        "creation_time": "2024-03-17T16:23:33.984Z",
         "level": -1,
         "item_seen": true,
         "playlists": [],
@@ -69793,7 +69983,7 @@
         "quest_pool": "",
         "quest_state": "Active",
         "bucket": "",
-        "last_state_change_time": "2024-03-17T14:56:53.038Z",
+        "last_state_change_time": "2024-03-17T16:23:33.984Z",
         "challenge_linked_quest_parent": "",
         "max_level_bonus": 0,
         "xp": 0,
@@ -69806,7 +69996,7 @@
     "S12-Quest:quest_s12_w2_q10": {
       "templateId": "Quest:quest_s12_w2_q10",
       "attributes": {
-        "creation_time": "2024-03-17T14:56:53.038Z",
+        "creation_time": "2024-03-17T16:23:33.984Z",
         "level": -1,
         "item_seen": true,
         "playlists": [],
@@ -69817,7 +70007,7 @@
         "quest_pool": "",
         "quest_state": "Active",
         "bucket": "",
-        "last_state_change_time": "2024-03-17T14:56:53.038Z",
+        "last_state_change_time": "2024-03-17T16:23:33.984Z",
         "challenge_linked_quest_parent": "",
         "max_level_bonus": 0,
         "xp": 0,
@@ -69832,7 +70022,7 @@
     "S12-Quest:quest_s12_w3_q01": {
       "templateId": "Quest:quest_s12_w3_q01",
       "attributes": {
-        "creation_time": "2024-03-17T14:56:53.038Z",
+        "creation_time": "2024-03-17T16:23:33.984Z",
         "level": -1,
         "item_seen": true,
         "playlists": [],
@@ -69843,7 +70033,7 @@
         "quest_pool": "",
         "quest_state": "Active",
         "bucket": "",
-        "last_state_change_time": "2024-03-17T14:56:53.038Z",
+        "last_state_change_time": "2024-03-17T16:23:33.984Z",
         "challenge_linked_quest_parent": "",
         "max_level_bonus": 0,
         "xp": 0,
@@ -69856,7 +70046,7 @@
     "S12-Quest:quest_s12_w3_q02": {
       "templateId": "Quest:quest_s12_w3_q02",
       "attributes": {
-        "creation_time": "2024-03-17T14:56:53.038Z",
+        "creation_time": "2024-03-17T16:23:33.984Z",
         "level": -1,
         "item_seen": true,
         "playlists": [],
@@ -69867,7 +70057,7 @@
         "quest_pool": "",
         "quest_state": "Active",
         "bucket": "",
-        "last_state_change_time": "2024-03-17T14:56:53.038Z",
+        "last_state_change_time": "2024-03-17T16:23:33.984Z",
         "challenge_linked_quest_parent": "",
         "max_level_bonus": 0,
         "xp": 0,
@@ -69880,7 +70070,7 @@
     "S12-Quest:quest_s12_w3_q03": {
       "templateId": "Quest:quest_s12_w3_q03",
       "attributes": {
-        "creation_time": "2024-03-17T14:56:53.038Z",
+        "creation_time": "2024-03-17T16:23:33.984Z",
         "level": -1,
         "item_seen": true,
         "playlists": [],
@@ -69891,7 +70081,7 @@
         "quest_pool": "",
         "quest_state": "Active",
         "bucket": "",
-        "last_state_change_time": "2024-03-17T14:56:53.038Z",
+        "last_state_change_time": "2024-03-17T16:23:33.984Z",
         "challenge_linked_quest_parent": "",
         "max_level_bonus": 0,
         "xp": 0,
@@ -69904,7 +70094,7 @@
     "S12-Quest:quest_s12_w3_q04": {
       "templateId": "Quest:quest_s12_w3_q04",
       "attributes": {
-        "creation_time": "2024-03-17T14:56:53.038Z",
+        "creation_time": "2024-03-17T16:23:33.984Z",
         "level": -1,
         "item_seen": true,
         "playlists": [],
@@ -69915,7 +70105,7 @@
         "quest_pool": "",
         "quest_state": "Active",
         "bucket": "",
-        "last_state_change_time": "2024-03-17T14:56:53.038Z",
+        "last_state_change_time": "2024-03-17T16:23:33.984Z",
         "challenge_linked_quest_parent": "",
         "max_level_bonus": 0,
         "xp": 0,
@@ -69928,7 +70118,7 @@
     "S12-Quest:quest_s12_w3_q05": {
       "templateId": "Quest:quest_s12_w3_q05",
       "attributes": {
-        "creation_time": "2024-03-17T14:56:53.038Z",
+        "creation_time": "2024-03-17T16:23:33.984Z",
         "level": -1,
         "item_seen": true,
         "playlists": [],
@@ -69939,7 +70129,7 @@
         "quest_pool": "",
         "quest_state": "Active",
         "bucket": "",
-        "last_state_change_time": "2024-03-17T14:56:53.038Z",
+        "last_state_change_time": "2024-03-17T16:23:33.984Z",
         "challenge_linked_quest_parent": "",
         "max_level_bonus": 0,
         "xp": 0,
@@ -70029,7 +70219,7 @@
     "S12-Quest:quest_s12_w3_q06": {
       "templateId": "Quest:quest_s12_w3_q06",
       "attributes": {
-        "creation_time": "2024-03-17T14:56:53.039Z",
+        "creation_time": "2024-03-17T16:23:33.984Z",
         "level": -1,
         "item_seen": true,
         "playlists": [],
@@ -70040,7 +70230,7 @@
         "quest_pool": "",
         "quest_state": "Active",
         "bucket": "",
-        "last_state_change_time": "2024-03-17T14:56:53.039Z",
+        "last_state_change_time": "2024-03-17T16:23:33.984Z",
         "challenge_linked_quest_parent": "",
         "max_level_bonus": 0,
         "xp": 0,
@@ -70053,7 +70243,7 @@
     "S12-Quest:quest_s12_w3_q07": {
       "templateId": "Quest:quest_s12_w3_q07",
       "attributes": {
-        "creation_time": "2024-03-17T14:56:53.039Z",
+        "creation_time": "2024-03-17T16:23:33.984Z",
         "level": -1,
         "item_seen": true,
         "playlists": [],
@@ -70064,7 +70254,7 @@
         "quest_pool": "",
         "quest_state": "Active",
         "bucket": "",
-        "last_state_change_time": "2024-03-17T14:56:53.039Z",
+        "last_state_change_time": "2024-03-17T16:23:33.984Z",
         "challenge_linked_quest_parent": "",
         "max_level_bonus": 0,
         "xp": 0,
@@ -70077,7 +70267,7 @@
     "S12-Quest:quest_s12_w3_q08": {
       "templateId": "Quest:quest_s12_w3_q08",
       "attributes": {
-        "creation_time": "2024-03-17T14:56:53.039Z",
+        "creation_time": "2024-03-17T16:23:33.984Z",
         "level": -1,
         "item_seen": true,
         "playlists": [],
@@ -70088,7 +70278,7 @@
         "quest_pool": "",
         "quest_state": "Active",
         "bucket": "",
-        "last_state_change_time": "2024-03-17T14:56:53.039Z",
+        "last_state_change_time": "2024-03-17T16:23:33.984Z",
         "challenge_linked_quest_parent": "",
         "max_level_bonus": 0,
         "xp": 0,
@@ -70103,7 +70293,7 @@
     "S12-Quest:quest_s12_w3_q09": {
       "templateId": "Quest:quest_s12_w3_q09",
       "attributes": {
-        "creation_time": "2024-03-17T14:56:53.039Z",
+        "creation_time": "2024-03-17T16:23:33.984Z",
         "level": -1,
         "item_seen": true,
         "playlists": [],
@@ -70114,7 +70304,7 @@
         "quest_pool": "",
         "quest_state": "Active",
         "bucket": "",
-        "last_state_change_time": "2024-03-17T14:56:53.039Z",
+        "last_state_change_time": "2024-03-17T16:23:33.984Z",
         "challenge_linked_quest_parent": "",
         "max_level_bonus": 0,
         "xp": 0,
@@ -70127,7 +70317,7 @@
     "S12-Quest:quest_s12_w3_q10": {
       "templateId": "Quest:quest_s12_w3_q10",
       "attributes": {
-        "creation_time": "2024-03-17T14:56:53.039Z",
+        "creation_time": "2024-03-17T16:23:33.984Z",
         "level": -1,
         "item_seen": true,
         "playlists": [],
@@ -70138,7 +70328,7 @@
         "quest_pool": "",
         "quest_state": "Active",
         "bucket": "",
-        "last_state_change_time": "2024-03-17T14:56:53.039Z",
+        "last_state_change_time": "2024-03-17T16:23:33.984Z",
         "challenge_linked_quest_parent": "",
         "max_level_bonus": 0,
         "xp": 0,
@@ -70151,7 +70341,7 @@
     "S12-Quest:quest_s12_w4_q01": {
       "templateId": "Quest:quest_s12_w4_q01",
       "attributes": {
-        "creation_time": "2024-03-17T14:56:53.039Z",
+        "creation_time": "2024-03-17T16:23:33.984Z",
         "level": -1,
         "item_seen": true,
         "playlists": [],
@@ -70162,7 +70352,7 @@
         "quest_pool": "",
         "quest_state": "Active",
         "bucket": "",
-        "last_state_change_time": "2024-03-17T14:56:53.039Z",
+        "last_state_change_time": "2024-03-17T16:23:33.984Z",
         "challenge_linked_quest_parent": "",
         "max_level_bonus": 0,
         "xp": 0,
@@ -70175,7 +70365,7 @@
     "S12-Quest:quest_s12_w4_q02": {
       "templateId": "Quest:quest_s12_w4_q02",
       "attributes": {
-        "creation_time": "2024-03-17T14:56:53.039Z",
+        "creation_time": "2024-03-17T16:23:33.984Z",
         "level": -1,
         "item_seen": true,
         "playlists": [],
@@ -70186,7 +70376,7 @@
         "quest_pool": "",
         "quest_state": "Active",
         "bucket": "",
-        "last_state_change_time": "2024-03-17T14:56:53.039Z",
+        "last_state_change_time": "2024-03-17T16:23:33.984Z",
         "challenge_linked_quest_parent": "",
         "max_level_bonus": 0,
         "xp": 0,
@@ -70199,7 +70389,7 @@
     "S12-Quest:quest_s12_w4_q03": {
       "templateId": "Quest:quest_s12_w4_q03",
       "attributes": {
-        "creation_time": "2024-03-17T14:56:53.039Z",
+        "creation_time": "2024-03-17T16:23:33.984Z",
         "level": -1,
         "item_seen": true,
         "playlists": [],
@@ -70210,7 +70400,7 @@
         "quest_pool": "",
         "quest_state": "Active",
         "bucket": "",
-        "last_state_change_time": "2024-03-17T14:56:53.039Z",
+        "last_state_change_time": "2024-03-17T16:23:33.984Z",
         "challenge_linked_quest_parent": "",
         "max_level_bonus": 0,
         "xp": 0,
@@ -70223,7 +70413,7 @@
     "S12-Quest:quest_s12_w4_q04": {
       "templateId": "Quest:quest_s12_w4_q04",
       "attributes": {
-        "creation_time": "2024-03-17T14:56:53.039Z",
+        "creation_time": "2024-03-17T16:23:33.984Z",
         "level": -1,
         "item_seen": true,
         "playlists": [],
@@ -70234,7 +70424,7 @@
         "quest_pool": "",
         "quest_state": "Active",
         "bucket": "",
-        "last_state_change_time": "2024-03-17T14:56:53.039Z",
+        "last_state_change_time": "2024-03-17T16:23:33.984Z",
         "challenge_linked_quest_parent": "",
         "max_level_bonus": 0,
         "xp": 0,
@@ -70247,7 +70437,7 @@
     "S12-Quest:quest_s12_w4_q05": {
       "templateId": "Quest:quest_s12_w4_q05",
       "attributes": {
-        "creation_time": "2024-03-17T14:56:53.039Z",
+        "creation_time": "2024-03-17T16:23:33.984Z",
         "level": -1,
         "item_seen": true,
         "playlists": [],
@@ -70258,7 +70448,7 @@
         "quest_pool": "",
         "quest_state": "Active",
         "bucket": "",
-        "last_state_change_time": "2024-03-17T14:56:53.039Z",
+        "last_state_change_time": "2024-03-17T16:23:33.984Z",
         "challenge_linked_quest_parent": "",
         "max_level_bonus": 0,
         "xp": 0,
@@ -70289,7 +70479,7 @@
     "S12-Quest:quest_s12_w4_q06": {
       "templateId": "Quest:quest_s12_w4_q06",
       "attributes": {
-        "creation_time": "2024-03-17T14:56:53.039Z",
+        "creation_time": "2024-03-17T16:23:33.984Z",
         "level": -1,
         "item_seen": true,
         "playlists": [],
@@ -70300,7 +70490,7 @@
         "quest_pool": "",
         "quest_state": "Active",
         "bucket": "",
-        "last_state_change_time": "2024-03-17T14:56:53.039Z",
+        "last_state_change_time": "2024-03-17T16:23:33.984Z",
         "challenge_linked_quest_parent": "",
         "max_level_bonus": 0,
         "xp": 0,
@@ -70313,7 +70503,7 @@
     "S12-Quest:quest_s12_w4_q07": {
       "templateId": "Quest:quest_s12_w4_q07",
       "attributes": {
-        "creation_time": "2024-03-17T14:56:53.039Z",
+        "creation_time": "2024-03-17T16:23:33.984Z",
         "level": -1,
         "item_seen": true,
         "playlists": [],
@@ -70324,7 +70514,7 @@
         "quest_pool": "",
         "quest_state": "Active",
         "bucket": "",
-        "last_state_change_time": "2024-03-17T14:56:53.039Z",
+        "last_state_change_time": "2024-03-17T16:23:33.984Z",
         "challenge_linked_quest_parent": "",
         "max_level_bonus": 0,
         "xp": 0,
@@ -70337,7 +70527,7 @@
     "S12-Quest:quest_s12_w4_q08": {
       "templateId": "Quest:quest_s12_w4_q08",
       "attributes": {
-        "creation_time": "2024-03-17T14:56:53.039Z",
+        "creation_time": "2024-03-17T16:23:33.984Z",
         "level": -1,
         "item_seen": true,
         "playlists": [],
@@ -70348,7 +70538,7 @@
         "quest_pool": "",
         "quest_state": "Active",
         "bucket": "",
-        "last_state_change_time": "2024-03-17T14:56:53.039Z",
+        "last_state_change_time": "2024-03-17T16:23:33.984Z",
         "challenge_linked_quest_parent": "",
         "max_level_bonus": 0,
         "xp": 0,
@@ -70361,7 +70551,7 @@
     "S12-Quest:quest_s12_w4_q09": {
       "templateId": "Quest:quest_s12_w4_q09",
       "attributes": {
-        "creation_time": "2024-03-17T14:56:53.039Z",
+        "creation_time": "2024-03-17T16:23:33.984Z",
         "level": -1,
         "item_seen": true,
         "playlists": [],
@@ -70372,7 +70562,7 @@
         "quest_pool": "",
         "quest_state": "Active",
         "bucket": "",
-        "last_state_change_time": "2024-03-17T14:56:53.039Z",
+        "last_state_change_time": "2024-03-17T16:23:33.984Z",
         "challenge_linked_quest_parent": "",
         "max_level_bonus": 0,
         "xp": 0,
@@ -70387,7 +70577,7 @@
     "S12-Quest:quest_s12_w4_q10": {
       "templateId": "Quest:quest_s12_w4_q10",
       "attributes": {
-        "creation_time": "2024-03-17T14:56:53.039Z",
+        "creation_time": "2024-03-17T16:23:33.984Z",
         "level": -1,
         "item_seen": true,
         "playlists": [],
@@ -70398,7 +70588,7 @@
         "quest_pool": "",
         "quest_state": "Active",
         "bucket": "",
-        "last_state_change_time": "2024-03-17T14:56:53.039Z",
+        "last_state_change_time": "2024-03-17T16:23:33.984Z",
         "challenge_linked_quest_parent": "",
         "max_level_bonus": 0,
         "xp": 0,
@@ -70416,7 +70606,7 @@
     "S12-Quest:quest_s12_w5_q01": {
       "templateId": "Quest:quest_s12_w5_q01",
       "attributes": {
-        "creation_time": "2024-03-17T14:56:53.039Z",
+        "creation_time": "2024-03-17T16:23:33.984Z",
         "level": -1,
         "item_seen": true,
         "playlists": [],
@@ -70427,7 +70617,7 @@
         "quest_pool": "",
         "quest_state": "Active",
         "bucket": "",
-        "last_state_change_time": "2024-03-17T14:56:53.039Z",
+        "last_state_change_time": "2024-03-17T16:23:33.984Z",
         "challenge_linked_quest_parent": "",
         "max_level_bonus": 0,
         "xp": 0,
@@ -70440,7 +70630,7 @@
     "S12-Quest:quest_s12_w5_q02": {
       "templateId": "Quest:quest_s12_w5_q02",
       "attributes": {
-        "creation_time": "2024-03-17T14:56:53.039Z",
+        "creation_time": "2024-03-17T16:23:33.984Z",
         "level": -1,
         "item_seen": true,
         "playlists": [],
@@ -70451,7 +70641,7 @@
         "quest_pool": "",
         "quest_state": "Active",
         "bucket": "",
-        "last_state_change_time": "2024-03-17T14:56:53.039Z",
+        "last_state_change_time": "2024-03-17T16:23:33.984Z",
         "challenge_linked_quest_parent": "",
         "max_level_bonus": 0,
         "xp": 0,
@@ -70464,7 +70654,7 @@
     "S12-Quest:quest_s12_w5_q03": {
       "templateId": "Quest:quest_s12_w5_q03",
       "attributes": {
-        "creation_time": "2024-03-17T14:56:53.039Z",
+        "creation_time": "2024-03-17T16:23:33.984Z",
         "level": -1,
         "item_seen": true,
         "playlists": [],
@@ -70475,7 +70665,7 @@
         "quest_pool": "",
         "quest_state": "Active",
         "bucket": "",
-        "last_state_change_time": "2024-03-17T14:56:53.039Z",
+        "last_state_change_time": "2024-03-17T16:23:33.984Z",
         "challenge_linked_quest_parent": "",
         "max_level_bonus": 0,
         "xp": 0,
@@ -70488,7 +70678,7 @@
     "S12-Quest:quest_s12_w5_q04": {
       "templateId": "Quest:quest_s12_w5_q04",
       "attributes": {
-        "creation_time": "2024-03-17T14:56:53.039Z",
+        "creation_time": "2024-03-17T16:23:33.984Z",
         "level": -1,
         "item_seen": true,
         "playlists": [],
@@ -70499,7 +70689,7 @@
         "quest_pool": "",
         "quest_state": "Active",
         "bucket": "",
-        "last_state_change_time": "2024-03-17T14:56:53.039Z",
+        "last_state_change_time": "2024-03-17T16:23:33.984Z",
         "challenge_linked_quest_parent": "",
         "max_level_bonus": 0,
         "xp": 0,
@@ -70512,7 +70702,7 @@
     "S12-Quest:quest_s12_w5_q05": {
       "templateId": "Quest:quest_s12_w5_q05",
       "attributes": {
-        "creation_time": "2024-03-17T14:56:53.039Z",
+        "creation_time": "2024-03-17T16:23:33.984Z",
         "level": -1,
         "item_seen": true,
         "playlists": [],
@@ -70523,7 +70713,7 @@
         "quest_pool": "",
         "quest_state": "Active",
         "bucket": "",
-        "last_state_change_time": "2024-03-17T14:56:53.039Z",
+        "last_state_change_time": "2024-03-17T16:23:33.984Z",
         "challenge_linked_quest_parent": "",
         "max_level_bonus": 0,
         "xp": 0,
@@ -70536,7 +70726,7 @@
     "S12-Quest:quest_s12_w5_q06": {
       "templateId": "Quest:quest_s12_w5_q06",
       "attributes": {
-        "creation_time": "2024-03-17T14:56:53.039Z",
+        "creation_time": "2024-03-17T16:23:33.984Z",
         "level": -1,
         "item_seen": true,
         "playlists": [],
@@ -70547,7 +70737,7 @@
         "quest_pool": "",
         "quest_state": "Active",
         "bucket": "",
-        "last_state_change_time": "2024-03-17T14:56:53.039Z",
+        "last_state_change_time": "2024-03-17T16:23:33.984Z",
         "challenge_linked_quest_parent": "",
         "max_level_bonus": 0,
         "xp": 0,
@@ -70560,7 +70750,7 @@
     "S12-Quest:quest_s12_w5_q07": {
       "templateId": "Quest:quest_s12_w5_q07",
       "attributes": {
-        "creation_time": "2024-03-17T14:56:53.039Z",
+        "creation_time": "2024-03-17T16:23:33.984Z",
         "level": -1,
         "item_seen": true,
         "playlists": [],
@@ -70571,7 +70761,7 @@
         "quest_pool": "",
         "quest_state": "Active",
         "bucket": "",
-        "last_state_change_time": "2024-03-17T14:56:53.039Z",
+        "last_state_change_time": "2024-03-17T16:23:33.984Z",
         "challenge_linked_quest_parent": "",
         "max_level_bonus": 0,
         "xp": 0,
@@ -70586,7 +70776,7 @@
     "S12-Quest:quest_s12_w5_q08": {
       "templateId": "Quest:quest_s12_w5_q08",
       "attributes": {
-        "creation_time": "2024-03-17T14:56:53.039Z",
+        "creation_time": "2024-03-17T16:23:33.984Z",
         "level": -1,
         "item_seen": true,
         "playlists": [],
@@ -70597,7 +70787,7 @@
         "quest_pool": "",
         "quest_state": "Active",
         "bucket": "",
-        "last_state_change_time": "2024-03-17T14:56:53.039Z",
+        "last_state_change_time": "2024-03-17T16:23:33.984Z",
         "challenge_linked_quest_parent": "",
         "max_level_bonus": 0,
         "xp": 0,
@@ -70610,7 +70800,7 @@
     "S12-Quest:quest_s12_w5_q09": {
       "templateId": "Quest:quest_s12_w5_q09",
       "attributes": {
-        "creation_time": "2024-03-17T14:56:53.039Z",
+        "creation_time": "2024-03-17T16:23:33.984Z",
         "level": -1,
         "item_seen": true,
         "playlists": [],
@@ -70621,7 +70811,7 @@
         "quest_pool": "",
         "quest_state": "Active",
         "bucket": "",
-        "last_state_change_time": "2024-03-17T14:56:53.039Z",
+        "last_state_change_time": "2024-03-17T16:23:33.984Z",
         "challenge_linked_quest_parent": "",
         "max_level_bonus": 0,
         "xp": 0,
@@ -70634,7 +70824,7 @@
     "S12-Quest:quest_s12_w5_q10": {
       "templateId": "Quest:quest_s12_w5_q10",
       "attributes": {
-        "creation_time": "2024-03-17T14:56:53.039Z",
+        "creation_time": "2024-03-17T16:23:33.984Z",
         "level": -1,
         "item_seen": true,
         "playlists": [],
@@ -70645,7 +70835,7 @@
         "quest_pool": "",
         "quest_state": "Active",
         "bucket": "",
-        "last_state_change_time": "2024-03-17T14:56:53.039Z",
+        "last_state_change_time": "2024-03-17T16:23:33.984Z",
         "challenge_linked_quest_parent": "",
         "max_level_bonus": 0,
         "xp": 0,
@@ -70660,7 +70850,7 @@
     "S12-Quest:quest_s12_w6_q01": {
       "templateId": "Quest:quest_s12_w6_q01",
       "attributes": {
-        "creation_time": "2024-03-17T14:56:53.039Z",
+        "creation_time": "2024-03-17T16:23:33.984Z",
         "level": -1,
         "item_seen": true,
         "playlists": [],
@@ -70671,7 +70861,7 @@
         "quest_pool": "",
         "quest_state": "Active",
         "bucket": "",
-        "last_state_change_time": "2024-03-17T14:56:53.039Z",
+        "last_state_change_time": "2024-03-17T16:23:33.984Z",
         "challenge_linked_quest_parent": "",
         "max_level_bonus": 0,
         "xp": 0,
@@ -70684,7 +70874,7 @@
     "S12-Quest:quest_s12_w6_q02": {
       "templateId": "Quest:quest_s12_w6_q02",
       "attributes": {
-        "creation_time": "2024-03-17T14:56:53.039Z",
+        "creation_time": "2024-03-17T16:23:33.984Z",
         "level": -1,
         "item_seen": true,
         "playlists": [],
@@ -70695,7 +70885,7 @@
         "quest_pool": "",
         "quest_state": "Active",
         "bucket": "",
-        "last_state_change_time": "2024-03-17T14:56:53.039Z",
+        "last_state_change_time": "2024-03-17T16:23:33.984Z",
         "challenge_linked_quest_parent": "",
         "max_level_bonus": 0,
         "xp": 0,
@@ -70708,7 +70898,7 @@
     "S12-Quest:quest_s12_w6_q03": {
       "templateId": "Quest:quest_s12_w6_q03",
       "attributes": {
-        "creation_time": "2024-03-17T14:56:53.039Z",
+        "creation_time": "2024-03-17T16:23:33.985Z",
         "level": -1,
         "item_seen": true,
         "playlists": [],
@@ -70719,7 +70909,7 @@
         "quest_pool": "",
         "quest_state": "Active",
         "bucket": "",
-        "last_state_change_time": "2024-03-17T14:56:53.039Z",
+        "last_state_change_time": "2024-03-17T16:23:33.985Z",
         "challenge_linked_quest_parent": "",
         "max_level_bonus": 0,
         "xp": 0,
@@ -70732,7 +70922,7 @@
     "S12-Quest:quest_s12_w6_q04": {
       "templateId": "Quest:quest_s12_w6_q04",
       "attributes": {
-        "creation_time": "2024-03-17T14:56:53.039Z",
+        "creation_time": "2024-03-17T16:23:33.985Z",
         "level": -1,
         "item_seen": true,
         "playlists": [],
@@ -70743,7 +70933,7 @@
         "quest_pool": "",
         "quest_state": "Active",
         "bucket": "",
-        "last_state_change_time": "2024-03-17T14:56:53.039Z",
+        "last_state_change_time": "2024-03-17T16:23:33.985Z",
         "challenge_linked_quest_parent": "",
         "max_level_bonus": 0,
         "xp": 0,
@@ -70756,7 +70946,7 @@
     "S12-Quest:quest_s12_w6_q05": {
       "templateId": "Quest:quest_s12_w6_q05",
       "attributes": {
-        "creation_time": "2024-03-17T14:56:53.039Z",
+        "creation_time": "2024-03-17T16:23:33.985Z",
         "level": -1,
         "item_seen": true,
         "playlists": [],
@@ -70767,7 +70957,7 @@
         "quest_pool": "",
         "quest_state": "Active",
         "bucket": "",
-        "last_state_change_time": "2024-03-17T14:56:53.039Z",
+        "last_state_change_time": "2024-03-17T16:23:33.985Z",
         "challenge_linked_quest_parent": "",
         "max_level_bonus": 0,
         "xp": 0,
@@ -70782,7 +70972,7 @@
     "S12-Quest:quest_s12_w6_q06": {
       "templateId": "Quest:quest_s12_w6_q06",
       "attributes": {
-        "creation_time": "2024-03-17T14:56:53.039Z",
+        "creation_time": "2024-03-17T16:23:33.985Z",
         "level": -1,
         "item_seen": true,
         "playlists": [],
@@ -70793,7 +70983,7 @@
         "quest_pool": "",
         "quest_state": "Active",
         "bucket": "",
-        "last_state_change_time": "2024-03-17T14:56:53.039Z",
+        "last_state_change_time": "2024-03-17T16:23:33.985Z",
         "challenge_linked_quest_parent": "",
         "max_level_bonus": 0,
         "xp": 0,
@@ -70806,7 +70996,7 @@
     "S12-Quest:quest_s12_w6_q07": {
       "templateId": "Quest:quest_s12_w6_q07",
       "attributes": {
-        "creation_time": "2024-03-17T14:56:53.039Z",
+        "creation_time": "2024-03-17T16:23:33.985Z",
         "level": -1,
         "item_seen": true,
         "playlists": [],
@@ -70817,7 +71007,7 @@
         "quest_pool": "",
         "quest_state": "Active",
         "bucket": "",
-        "last_state_change_time": "2024-03-17T14:56:53.039Z",
+        "last_state_change_time": "2024-03-17T16:23:33.985Z",
         "challenge_linked_quest_parent": "",
         "max_level_bonus": 0,
         "xp": 0,
@@ -70830,7 +71020,7 @@
     "S12-Quest:quest_s12_w6_q08": {
       "templateId": "Quest:quest_s12_w6_q08",
       "attributes": {
-        "creation_time": "2024-03-17T14:56:53.039Z",
+        "creation_time": "2024-03-17T16:23:33.985Z",
         "level": -1,
         "item_seen": true,
         "playlists": [],
@@ -70841,7 +71031,7 @@
         "quest_pool": "",
         "quest_state": "Active",
         "bucket": "",
-        "last_state_change_time": "2024-03-17T14:56:53.039Z",
+        "last_state_change_time": "2024-03-17T16:23:33.985Z",
         "challenge_linked_quest_parent": "",
         "max_level_bonus": 0,
         "xp": 0,
@@ -70854,7 +71044,7 @@
     "S12-Quest:quest_s12_w6_q09": {
       "templateId": "Quest:quest_s12_w6_q09",
       "attributes": {
-        "creation_time": "2024-03-17T14:56:53.039Z",
+        "creation_time": "2024-03-17T16:23:33.985Z",
         "level": -1,
         "item_seen": true,
         "playlists": [],
@@ -70865,7 +71055,7 @@
         "quest_pool": "",
         "quest_state": "Active",
         "bucket": "",
-        "last_state_change_time": "2024-03-17T14:56:53.039Z",
+        "last_state_change_time": "2024-03-17T16:23:33.985Z",
         "challenge_linked_quest_parent": "",
         "max_level_bonus": 0,
         "xp": 0,
@@ -70880,7 +71070,7 @@
     "S12-Quest:quest_s12_w6_q10": {
       "templateId": "Quest:quest_s12_w6_q10",
       "attributes": {
-        "creation_time": "2024-03-17T14:56:53.039Z",
+        "creation_time": "2024-03-17T16:23:33.985Z",
         "level": -1,
         "item_seen": true,
         "playlists": [],
@@ -70891,7 +71081,7 @@
         "quest_pool": "",
         "quest_state": "Active",
         "bucket": "",
-        "last_state_change_time": "2024-03-17T14:56:53.039Z",
+        "last_state_change_time": "2024-03-17T16:23:33.985Z",
         "challenge_linked_quest_parent": "",
         "max_level_bonus": 0,
         "xp": 0,
@@ -70906,7 +71096,7 @@
     "S12-Quest:quest_s12_w7_q01": {
       "templateId": "Quest:quest_s12_w7_q01",
       "attributes": {
-        "creation_time": "2024-03-17T14:56:53.039Z",
+        "creation_time": "2024-03-17T16:23:33.985Z",
         "level": -1,
         "item_seen": true,
         "playlists": [],
@@ -70917,7 +71107,7 @@
         "quest_pool": "",
         "quest_state": "Active",
         "bucket": "",
-        "last_state_change_time": "2024-03-17T14:56:53.039Z",
+        "last_state_change_time": "2024-03-17T16:23:33.985Z",
         "challenge_linked_quest_parent": "",
         "max_level_bonus": 0,
         "xp": 0,
@@ -70930,7 +71120,7 @@
     "S12-Quest:quest_s12_w7_q02": {
       "templateId": "Quest:quest_s12_w7_q02",
       "attributes": {
-        "creation_time": "2024-03-17T14:56:53.039Z",
+        "creation_time": "2024-03-17T16:23:33.985Z",
         "level": -1,
         "item_seen": true,
         "playlists": [],
@@ -70941,7 +71131,7 @@
         "quest_pool": "",
         "quest_state": "Active",
         "bucket": "",
-        "last_state_change_time": "2024-03-17T14:56:53.039Z",
+        "last_state_change_time": "2024-03-17T16:23:33.985Z",
         "challenge_linked_quest_parent": "",
         "max_level_bonus": 0,
         "xp": 0,
@@ -70954,7 +71144,7 @@
     "S12-Quest:quest_s12_w7_q03": {
       "templateId": "Quest:quest_s12_w7_q03",
       "attributes": {
-        "creation_time": "2024-03-17T14:56:53.039Z",
+        "creation_time": "2024-03-17T16:23:33.985Z",
         "level": -1,
         "item_seen": true,
         "playlists": [],
@@ -70965,7 +71155,7 @@
         "quest_pool": "",
         "quest_state": "Active",
         "bucket": "",
-        "last_state_change_time": "2024-03-17T14:56:53.039Z",
+        "last_state_change_time": "2024-03-17T16:23:33.985Z",
         "challenge_linked_quest_parent": "",
         "max_level_bonus": 0,
         "xp": 0,
@@ -70980,7 +71170,7 @@
     "S12-Quest:Quest_s12_w7_q04_HarvestAfterLanding": {
       "templateId": "Quest:Quest_s12_w7_q04_HarvestAfterLanding",
       "attributes": {
-        "creation_time": "2024-03-17T14:56:53.039Z",
+        "creation_time": "2024-03-17T16:23:33.985Z",
         "level": -1,
         "item_seen": true,
         "playlists": [],
@@ -70991,7 +71181,7 @@
         "quest_pool": "",
         "quest_state": "Active",
         "bucket": "",
-        "last_state_change_time": "2024-03-17T14:56:53.039Z",
+        "last_state_change_time": "2024-03-17T16:23:33.985Z",
         "challenge_linked_quest_parent": "",
         "max_level_bonus": 0,
         "xp": 0,
@@ -71006,7 +71196,7 @@
     "S12-Quest:quest_s12_w7_q05": {
       "templateId": "Quest:quest_s12_w7_q05",
       "attributes": {
-        "creation_time": "2024-03-17T14:56:53.039Z",
+        "creation_time": "2024-03-17T16:23:33.985Z",
         "level": -1,
         "item_seen": true,
         "playlists": [],
@@ -71017,7 +71207,7 @@
         "quest_pool": "",
         "quest_state": "Active",
         "bucket": "",
-        "last_state_change_time": "2024-03-17T14:56:53.039Z",
+        "last_state_change_time": "2024-03-17T16:23:33.985Z",
         "challenge_linked_quest_parent": "",
         "max_level_bonus": 0,
         "xp": 0,
@@ -71030,7 +71220,7 @@
     "S12-Quest:quest_s12_w7_q06": {
       "templateId": "Quest:quest_s12_w7_q06",
       "attributes": {
-        "creation_time": "2024-03-17T14:56:53.039Z",
+        "creation_time": "2024-03-17T16:23:33.985Z",
         "level": -1,
         "item_seen": true,
         "playlists": [],
@@ -71041,7 +71231,7 @@
         "quest_pool": "",
         "quest_state": "Active",
         "bucket": "",
-        "last_state_change_time": "2024-03-17T14:56:53.039Z",
+        "last_state_change_time": "2024-03-17T16:23:33.985Z",
         "challenge_linked_quest_parent": "",
         "max_level_bonus": 0,
         "xp": 0,
@@ -71054,7 +71244,7 @@
     "S12-Quest:quest_s12_w7_q07": {
       "templateId": "Quest:quest_s12_w7_q07",
       "attributes": {
-        "creation_time": "2024-03-17T14:56:53.039Z",
+        "creation_time": "2024-03-17T16:23:33.985Z",
         "level": -1,
         "item_seen": true,
         "playlists": [],
@@ -71065,7 +71255,7 @@
         "quest_pool": "",
         "quest_state": "Active",
         "bucket": "",
-        "last_state_change_time": "2024-03-17T14:56:53.039Z",
+        "last_state_change_time": "2024-03-17T16:23:33.985Z",
         "challenge_linked_quest_parent": "",
         "max_level_bonus": 0,
         "xp": 0,
@@ -71080,7 +71270,7 @@
     "S12-Quest:quest_s12_w7_q08": {
       "templateId": "Quest:quest_s12_w7_q08",
       "attributes": {
-        "creation_time": "2024-03-17T14:56:53.040Z",
+        "creation_time": "2024-03-17T16:23:33.985Z",
         "level": -1,
         "item_seen": true,
         "playlists": [],
@@ -71091,7 +71281,7 @@
         "quest_pool": "",
         "quest_state": "Active",
         "bucket": "",
-        "last_state_change_time": "2024-03-17T14:56:53.040Z",
+        "last_state_change_time": "2024-03-17T16:23:33.985Z",
         "challenge_linked_quest_parent": "",
         "max_level_bonus": 0,
         "xp": 0,
@@ -71104,7 +71294,7 @@
     "S12-Quest:quest_s12_w7_q09": {
       "templateId": "Quest:quest_s12_w7_q09",
       "attributes": {
-        "creation_time": "2024-03-17T14:56:53.040Z",
+        "creation_time": "2024-03-17T16:23:33.985Z",
         "level": -1,
         "item_seen": true,
         "playlists": [],
@@ -71115,7 +71305,7 @@
         "quest_pool": "",
         "quest_state": "Active",
         "bucket": "",
-        "last_state_change_time": "2024-03-17T14:56:53.040Z",
+        "last_state_change_time": "2024-03-17T16:23:33.985Z",
         "challenge_linked_quest_parent": "",
         "max_level_bonus": 0,
         "xp": 0,
@@ -71132,7 +71322,7 @@
     "S12-Quest:quest_s12_w7_q10": {
       "templateId": "Quest:quest_s12_w7_q10",
       "attributes": {
-        "creation_time": "2024-03-17T14:56:53.040Z",
+        "creation_time": "2024-03-17T16:23:33.985Z",
         "level": -1,
         "item_seen": true,
         "playlists": [],
@@ -71143,7 +71333,7 @@
         "quest_pool": "",
         "quest_state": "Active",
         "bucket": "",
-        "last_state_change_time": "2024-03-17T14:56:53.040Z",
+        "last_state_change_time": "2024-03-17T16:23:33.985Z",
         "challenge_linked_quest_parent": "",
         "max_level_bonus": 0,
         "xp": 0,
@@ -71156,7 +71346,7 @@
     "S12-Quest:quest_s12_w8_q01": {
       "templateId": "Quest:quest_s12_w8_q01",
       "attributes": {
-        "creation_time": "2024-03-17T14:56:53.040Z",
+        "creation_time": "2024-03-17T16:23:33.985Z",
         "level": -1,
         "item_seen": true,
         "playlists": [],
@@ -71167,7 +71357,7 @@
         "quest_pool": "",
         "quest_state": "Active",
         "bucket": "",
-        "last_state_change_time": "2024-03-17T14:56:53.040Z",
+        "last_state_change_time": "2024-03-17T16:23:33.985Z",
         "challenge_linked_quest_parent": "",
         "max_level_bonus": 0,
         "xp": 0,
@@ -71180,7 +71370,7 @@
     "S12-Quest:quest_s12_w8_q02": {
       "templateId": "Quest:quest_s12_w8_q02",
       "attributes": {
-        "creation_time": "2024-03-17T14:56:53.040Z",
+        "creation_time": "2024-03-17T16:23:33.985Z",
         "level": -1,
         "item_seen": true,
         "playlists": [],
@@ -71191,7 +71381,7 @@
         "quest_pool": "",
         "quest_state": "Active",
         "bucket": "",
-        "last_state_change_time": "2024-03-17T14:56:53.040Z",
+        "last_state_change_time": "2024-03-17T16:23:33.985Z",
         "challenge_linked_quest_parent": "",
         "max_level_bonus": 0,
         "xp": 0,
@@ -71204,7 +71394,7 @@
     "S12-Quest:quest_s12_w8_q03": {
       "templateId": "Quest:quest_s12_w8_q03",
       "attributes": {
-        "creation_time": "2024-03-17T14:56:53.040Z",
+        "creation_time": "2024-03-17T16:23:33.985Z",
         "level": -1,
         "item_seen": true,
         "playlists": [],
@@ -71215,7 +71405,7 @@
         "quest_pool": "",
         "quest_state": "Active",
         "bucket": "",
-        "last_state_change_time": "2024-03-17T14:56:53.040Z",
+        "last_state_change_time": "2024-03-17T16:23:33.985Z",
         "challenge_linked_quest_parent": "",
         "max_level_bonus": 0,
         "xp": 0,
@@ -71228,7 +71418,7 @@
     "S12-Quest:quest_s12_w8_q04": {
       "templateId": "Quest:quest_s12_w8_q04",
       "attributes": {
-        "creation_time": "2024-03-17T14:56:53.040Z",
+        "creation_time": "2024-03-17T16:23:33.985Z",
         "level": -1,
         "item_seen": true,
         "playlists": [],
@@ -71239,7 +71429,7 @@
         "quest_pool": "",
         "quest_state": "Active",
         "bucket": "",
-        "last_state_change_time": "2024-03-17T14:56:53.040Z",
+        "last_state_change_time": "2024-03-17T16:23:33.985Z",
         "challenge_linked_quest_parent": "",
         "max_level_bonus": 0,
         "xp": 0,
@@ -71254,7 +71444,7 @@
     "S12-Quest:quest_s12_w8_q05": {
       "templateId": "Quest:quest_s12_w8_q05",
       "attributes": {
-        "creation_time": "2024-03-17T14:56:53.040Z",
+        "creation_time": "2024-03-17T16:23:33.985Z",
         "level": -1,
         "item_seen": true,
         "playlists": [],
@@ -71265,7 +71455,7 @@
         "quest_pool": "",
         "quest_state": "Active",
         "bucket": "",
-        "last_state_change_time": "2024-03-17T14:56:53.040Z",
+        "last_state_change_time": "2024-03-17T16:23:33.985Z",
         "challenge_linked_quest_parent": "",
         "max_level_bonus": 0,
         "xp": 0,
@@ -71280,7 +71470,7 @@
     "S12-Quest:quest_s12_w8_q06": {
       "templateId": "Quest:quest_s12_w8_q06",
       "attributes": {
-        "creation_time": "2024-03-17T14:56:53.040Z",
+        "creation_time": "2024-03-17T16:23:33.985Z",
         "level": -1,
         "item_seen": true,
         "playlists": [],
@@ -71291,7 +71481,7 @@
         "quest_pool": "",
         "quest_state": "Active",
         "bucket": "",
-        "last_state_change_time": "2024-03-17T14:56:53.040Z",
+        "last_state_change_time": "2024-03-17T16:23:33.985Z",
         "challenge_linked_quest_parent": "",
         "max_level_bonus": 0,
         "xp": 0,
@@ -71305,7 +71495,7 @@
     "S12-Quest:quest_s12_w8_q07": {
       "templateId": "Quest:quest_s12_w8_q07",
       "attributes": {
-        "creation_time": "2024-03-17T14:56:53.040Z",
+        "creation_time": "2024-03-17T16:23:33.985Z",
         "level": -1,
         "item_seen": true,
         "playlists": [],
@@ -71316,7 +71506,7 @@
         "quest_pool": "",
         "quest_state": "Active",
         "bucket": "",
-        "last_state_change_time": "2024-03-17T14:56:53.040Z",
+        "last_state_change_time": "2024-03-17T16:23:33.985Z",
         "challenge_linked_quest_parent": "",
         "max_level_bonus": 0,
         "xp": 0,
@@ -71329,7 +71519,7 @@
     "S12-Quest:quest_s12_w8_q08": {
       "templateId": "Quest:quest_s12_w8_q08",
       "attributes": {
-        "creation_time": "2024-03-17T14:56:53.040Z",
+        "creation_time": "2024-03-17T16:23:33.985Z",
         "level": -1,
         "item_seen": true,
         "playlists": [],
@@ -71340,7 +71530,7 @@
         "quest_pool": "",
         "quest_state": "Active",
         "bucket": "",
-        "last_state_change_time": "2024-03-17T14:56:53.040Z",
+        "last_state_change_time": "2024-03-17T16:23:33.985Z",
         "challenge_linked_quest_parent": "",
         "max_level_bonus": 0,
         "xp": 0,
@@ -71367,7 +71557,7 @@
     "S12-Quest:quest_s12_w8_q09": {
       "templateId": "Quest:quest_s12_w8_q09",
       "attributes": {
-        "creation_time": "2024-03-17T14:56:53.040Z",
+        "creation_time": "2024-03-17T16:23:33.985Z",
         "level": -1,
         "item_seen": true,
         "playlists": [],
@@ -71378,7 +71568,7 @@
         "quest_pool": "",
         "quest_state": "Active",
         "bucket": "",
-        "last_state_change_time": "2024-03-17T14:56:53.040Z",
+        "last_state_change_time": "2024-03-17T16:23:33.985Z",
         "challenge_linked_quest_parent": "",
         "max_level_bonus": 0,
         "xp": 0,
@@ -71391,7 +71581,7 @@
     "S12-Quest:quest_s12_w8_q10": {
       "templateId": "Quest:quest_s12_w8_q10",
       "attributes": {
-        "creation_time": "2024-03-17T14:56:53.040Z",
+        "creation_time": "2024-03-17T16:23:33.985Z",
         "level": -1,
         "item_seen": true,
         "playlists": [],
@@ -71402,7 +71592,7 @@
         "quest_pool": "",
         "quest_state": "Active",
         "bucket": "",
-        "last_state_change_time": "2024-03-17T14:56:53.040Z",
+        "last_state_change_time": "2024-03-17T16:23:33.985Z",
         "challenge_linked_quest_parent": "",
         "max_level_bonus": 0,
         "xp": 0,
@@ -71415,7 +71605,7 @@
     "S12-Quest:quest_s12_w9_q01": {
       "templateId": "Quest:quest_s12_w9_q01",
       "attributes": {
-        "creation_time": "2024-03-17T14:56:53.040Z",
+        "creation_time": "2024-03-17T16:23:33.985Z",
         "level": -1,
         "item_seen": true,
         "playlists": [],
@@ -71426,7 +71616,7 @@
         "quest_pool": "",
         "quest_state": "Active",
         "bucket": "",
-        "last_state_change_time": "2024-03-17T14:56:53.040Z",
+        "last_state_change_time": "2024-03-17T16:23:33.985Z",
         "challenge_linked_quest_parent": "",
         "max_level_bonus": 0,
         "xp": 0,
@@ -71457,7 +71647,7 @@
     "S12-Quest:quest_s12_w9_q02": {
       "templateId": "Quest:quest_s12_w9_q02",
       "attributes": {
-        "creation_time": "2024-03-17T14:56:53.040Z",
+        "creation_time": "2024-03-17T16:23:33.985Z",
         "level": -1,
         "item_seen": true,
         "playlists": [],
@@ -71468,7 +71658,7 @@
         "quest_pool": "",
         "quest_state": "Active",
         "bucket": "",
-        "last_state_change_time": "2024-03-17T14:56:53.040Z",
+        "last_state_change_time": "2024-03-17T16:23:33.985Z",
         "challenge_linked_quest_parent": "",
         "max_level_bonus": 0,
         "xp": 0,
@@ -71481,7 +71671,7 @@
     "S12-Quest:quest_s12_w9_q03": {
       "templateId": "Quest:quest_s12_w9_q03",
       "attributes": {
-        "creation_time": "2024-03-17T14:56:53.040Z",
+        "creation_time": "2024-03-17T16:23:33.985Z",
         "level": -1,
         "item_seen": true,
         "playlists": [],
@@ -71492,7 +71682,7 @@
         "quest_pool": "",
         "quest_state": "Active",
         "bucket": "",
-        "last_state_change_time": "2024-03-17T14:56:53.040Z",
+        "last_state_change_time": "2024-03-17T16:23:33.985Z",
         "challenge_linked_quest_parent": "",
         "max_level_bonus": 0,
         "xp": 0,
@@ -71505,7 +71695,7 @@
     "S12-Quest:quest_s12_w9_q04": {
       "templateId": "Quest:quest_s12_w9_q04",
       "attributes": {
-        "creation_time": "2024-03-17T14:56:53.040Z",
+        "creation_time": "2024-03-17T16:23:33.985Z",
         "level": -1,
         "item_seen": true,
         "playlists": [],
@@ -71516,7 +71706,7 @@
         "quest_pool": "",
         "quest_state": "Active",
         "bucket": "",
-        "last_state_change_time": "2024-03-17T14:56:53.040Z",
+        "last_state_change_time": "2024-03-17T16:23:33.985Z",
         "challenge_linked_quest_parent": "",
         "max_level_bonus": 0,
         "xp": 0,
@@ -71529,7 +71719,7 @@
     "S12-Quest:quest_s12_w9_q05": {
       "templateId": "Quest:quest_s12_w9_q05",
       "attributes": {
-        "creation_time": "2024-03-17T14:56:53.040Z",
+        "creation_time": "2024-03-17T16:23:33.985Z",
         "level": -1,
         "item_seen": true,
         "playlists": [],
@@ -71540,7 +71730,7 @@
         "quest_pool": "",
         "quest_state": "Active",
         "bucket": "",
-        "last_state_change_time": "2024-03-17T14:56:53.040Z",
+        "last_state_change_time": "2024-03-17T16:23:33.985Z",
         "challenge_linked_quest_parent": "",
         "max_level_bonus": 0,
         "xp": 0,
@@ -71553,7 +71743,7 @@
     "S12-Quest:quest_s12_w9_q06": {
       "templateId": "Quest:quest_s12_w9_q06",
       "attributes": {
-        "creation_time": "2024-03-17T14:56:53.040Z",
+        "creation_time": "2024-03-17T16:23:33.985Z",
         "level": -1,
         "item_seen": true,
         "playlists": [],
@@ -71564,7 +71754,7 @@
         "quest_pool": "",
         "quest_state": "Active",
         "bucket": "",
-        "last_state_change_time": "2024-03-17T14:56:53.040Z",
+        "last_state_change_time": "2024-03-17T16:23:33.985Z",
         "challenge_linked_quest_parent": "",
         "max_level_bonus": 0,
         "xp": 0,
@@ -71577,7 +71767,7 @@
     "S12-Quest:quest_s12_w9_q07": {
       "templateId": "Quest:quest_s12_w9_q07",
       "attributes": {
-        "creation_time": "2024-03-17T14:56:53.040Z",
+        "creation_time": "2024-03-17T16:23:33.985Z",
         "level": -1,
         "item_seen": true,
         "playlists": [],
@@ -71588,7 +71778,7 @@
         "quest_pool": "",
         "quest_state": "Active",
         "bucket": "",
-        "last_state_change_time": "2024-03-17T14:56:53.040Z",
+        "last_state_change_time": "2024-03-17T16:23:33.985Z",
         "challenge_linked_quest_parent": "",
         "max_level_bonus": 0,
         "xp": 0,
@@ -71601,7 +71791,7 @@
     "S12-Quest:quest_s12_w9_q08": {
       "templateId": "Quest:quest_s12_w9_q08",
       "attributes": {
-        "creation_time": "2024-03-17T14:56:53.040Z",
+        "creation_time": "2024-03-17T16:23:33.985Z",
         "level": -1,
         "item_seen": true,
         "playlists": [],
@@ -71612,7 +71802,7 @@
         "quest_pool": "",
         "quest_state": "Active",
         "bucket": "",
-        "last_state_change_time": "2024-03-17T14:56:53.040Z",
+        "last_state_change_time": "2024-03-17T16:23:33.985Z",
         "challenge_linked_quest_parent": "",
         "max_level_bonus": 0,
         "xp": 0,
@@ -71625,7 +71815,7 @@
     "S12-Quest:quest_s12_w9_q09": {
       "templateId": "Quest:quest_s12_w9_q09",
       "attributes": {
-        "creation_time": "2024-03-17T14:56:53.040Z",
+        "creation_time": "2024-03-17T16:23:33.985Z",
         "level": -1,
         "item_seen": true,
         "playlists": [],
@@ -71636,7 +71826,7 @@
         "quest_pool": "",
         "quest_state": "Active",
         "bucket": "",
-        "last_state_change_time": "2024-03-17T14:56:53.040Z",
+        "last_state_change_time": "2024-03-17T16:23:33.985Z",
         "challenge_linked_quest_parent": "",
         "max_level_bonus": 0,
         "xp": 0,
@@ -71649,7 +71839,7 @@
     "S12-Quest:quest_s12_w9_q10": {
       "templateId": "Quest:quest_s12_w9_q10",
       "attributes": {
-        "creation_time": "2024-03-17T14:56:53.040Z",
+        "creation_time": "2024-03-17T16:23:33.985Z",
         "level": -1,
         "item_seen": true,
         "playlists": [],
@@ -71660,7 +71850,7 @@
         "quest_pool": "",
         "quest_state": "Active",
         "bucket": "",
-        "last_state_change_time": "2024-03-17T14:56:53.040Z",
+        "last_state_change_time": "2024-03-17T16:23:33.985Z",
         "challenge_linked_quest_parent": "",
         "max_level_bonus": 0,
         "xp": 0,
@@ -71673,7 +71863,7 @@
     "S12-Quest:quest_s12_w10_q01": {
       "templateId": "Quest:quest_s12_w10_q01",
       "attributes": {
-        "creation_time": "2024-03-17T14:56:53.040Z",
+        "creation_time": "2024-03-17T16:23:33.985Z",
         "level": -1,
         "item_seen": true,
         "playlists": [],
@@ -71684,7 +71874,7 @@
         "quest_pool": "",
         "quest_state": "Active",
         "bucket": "",
-        "last_state_change_time": "2024-03-17T14:56:53.040Z",
+        "last_state_change_time": "2024-03-17T16:23:33.985Z",
         "challenge_linked_quest_parent": "",
         "max_level_bonus": 0,
         "xp": 0,
@@ -71699,7 +71889,7 @@
     "S12-Quest:quest_s12_w10_q02": {
       "templateId": "Quest:quest_s12_w10_q02",
       "attributes": {
-        "creation_time": "2024-03-17T14:56:53.040Z",
+        "creation_time": "2024-03-17T16:23:33.985Z",
         "level": -1,
         "item_seen": true,
         "playlists": [],
@@ -71710,7 +71900,7 @@
         "quest_pool": "",
         "quest_state": "Active",
         "bucket": "",
-        "last_state_change_time": "2024-03-17T14:56:53.040Z",
+        "last_state_change_time": "2024-03-17T16:23:33.985Z",
         "challenge_linked_quest_parent": "",
         "max_level_bonus": 0,
         "xp": 0,
@@ -71723,7 +71913,7 @@
     "S12-Quest:quest_s12_w10_q03": {
       "templateId": "Quest:quest_s12_w10_q03",
       "attributes": {
-        "creation_time": "2024-03-17T14:56:53.040Z",
+        "creation_time": "2024-03-17T16:23:33.985Z",
         "level": -1,
         "item_seen": true,
         "playlists": [],
@@ -71734,7 +71924,7 @@
         "quest_pool": "",
         "quest_state": "Active",
         "bucket": "",
-        "last_state_change_time": "2024-03-17T14:56:53.040Z",
+        "last_state_change_time": "2024-03-17T16:23:33.985Z",
         "challenge_linked_quest_parent": "",
         "max_level_bonus": 0,
         "xp": 0,
@@ -71747,7 +71937,7 @@
     "S12-Quest:quest_s12_w10_q04": {
       "templateId": "Quest:quest_s12_w10_q04",
       "attributes": {
-        "creation_time": "2024-03-17T14:56:53.040Z",
+        "creation_time": "2024-03-17T16:23:33.985Z",
         "level": -1,
         "item_seen": true,
         "playlists": [],
@@ -71758,7 +71948,7 @@
         "quest_pool": "",
         "quest_state": "Active",
         "bucket": "",
-        "last_state_change_time": "2024-03-17T14:56:53.040Z",
+        "last_state_change_time": "2024-03-17T16:23:33.985Z",
         "challenge_linked_quest_parent": "",
         "max_level_bonus": 0,
         "xp": 0,
@@ -71771,7 +71961,7 @@
     "S12-Quest:quest_s12_w10_q05": {
       "templateId": "Quest:quest_s12_w10_q05",
       "attributes": {
-        "creation_time": "2024-03-17T14:56:53.040Z",
+        "creation_time": "2024-03-17T16:23:33.985Z",
         "level": -1,
         "item_seen": true,
         "playlists": [],
@@ -71782,7 +71972,7 @@
         "quest_pool": "",
         "quest_state": "Active",
         "bucket": "",
-        "last_state_change_time": "2024-03-17T14:56:53.040Z",
+        "last_state_change_time": "2024-03-17T16:23:33.985Z",
         "challenge_linked_quest_parent": "",
         "max_level_bonus": 0,
         "xp": 0,
@@ -71795,7 +71985,7 @@
     "S12-Quest:quest_s12_w10_q06": {
       "templateId": "Quest:quest_s12_w10_q06",
       "attributes": {
-        "creation_time": "2024-03-17T14:56:53.040Z",
+        "creation_time": "2024-03-17T16:23:33.985Z",
         "level": -1,
         "item_seen": true,
         "playlists": [],
@@ -71806,7 +71996,7 @@
         "quest_pool": "",
         "quest_state": "Active",
         "bucket": "",
-        "last_state_change_time": "2024-03-17T14:56:53.040Z",
+        "last_state_change_time": "2024-03-17T16:23:33.985Z",
         "challenge_linked_quest_parent": "",
         "max_level_bonus": 0,
         "xp": 0,
@@ -71823,7 +72013,7 @@
     "S12-Quest:quest_s12_w10_q07": {
       "templateId": "Quest:quest_s12_w10_q07",
       "attributes": {
-        "creation_time": "2024-03-17T14:56:53.040Z",
+        "creation_time": "2024-03-17T16:23:33.985Z",
         "level": -1,
         "item_seen": true,
         "playlists": [],
@@ -71834,7 +72024,7 @@
         "quest_pool": "",
         "quest_state": "Active",
         "bucket": "",
-        "last_state_change_time": "2024-03-17T14:56:53.040Z",
+        "last_state_change_time": "2024-03-17T16:23:33.985Z",
         "challenge_linked_quest_parent": "",
         "max_level_bonus": 0,
         "xp": 0,
@@ -71847,7 +72037,7 @@
     "S12-Quest:quest_s12_w10_q08": {
       "templateId": "Quest:quest_s12_w10_q08",
       "attributes": {
-        "creation_time": "2024-03-17T14:56:53.040Z",
+        "creation_time": "2024-03-17T16:23:33.985Z",
         "level": -1,
         "item_seen": true,
         "playlists": [],
@@ -71858,7 +72048,7 @@
         "quest_pool": "",
         "quest_state": "Active",
         "bucket": "",
-        "last_state_change_time": "2024-03-17T14:56:53.040Z",
+        "last_state_change_time": "2024-03-17T16:23:33.985Z",
         "challenge_linked_quest_parent": "",
         "max_level_bonus": 0,
         "xp": 0,
@@ -71872,7 +72062,7 @@
     "S12-Quest:quest_s12_w10_q09": {
       "templateId": "Quest:quest_s12_w10_q09",
       "attributes": {
-        "creation_time": "2024-03-17T14:56:53.040Z",
+        "creation_time": "2024-03-17T16:23:33.985Z",
         "level": -1,
         "item_seen": true,
         "playlists": [],
@@ -71883,7 +72073,7 @@
         "quest_pool": "",
         "quest_state": "Active",
         "bucket": "",
-        "last_state_change_time": "2024-03-17T14:56:53.040Z",
+        "last_state_change_time": "2024-03-17T16:23:33.985Z",
         "challenge_linked_quest_parent": "",
         "max_level_bonus": 0,
         "xp": 0,
@@ -71898,7 +72088,7 @@
     "S12-Quest:quest_s12_w10_q10": {
       "templateId": "Quest:quest_s12_w10_q10",
       "attributes": {
-        "creation_time": "2024-03-17T14:56:53.040Z",
+        "creation_time": "2024-03-17T16:23:33.985Z",
         "level": -1,
         "item_seen": true,
         "playlists": [],
@@ -71909,7 +72099,7 @@
         "quest_pool": "",
         "quest_state": "Active",
         "bucket": "",
-        "last_state_change_time": "2024-03-17T14:56:53.040Z",
+        "last_state_change_time": "2024-03-17T16:23:33.985Z",
         "challenge_linked_quest_parent": "",
         "max_level_bonus": 0,
         "xp": 0,
@@ -71922,7 +72112,7 @@
     "S12-Quest:quest_s12_xpcoins_blue_w1": {
       "templateId": "Quest:quest_s12_xpcoins_blue_w1",
       "attributes": {
-        "creation_time": "2024-03-17T14:56:53.040Z",
+        "creation_time": "2024-03-17T16:23:33.985Z",
         "level": -1,
         "item_seen": true,
         "playlists": [],
@@ -71933,7 +72123,7 @@
         "quest_pool": "",
         "quest_state": "Active",
         "bucket": "",
-        "last_state_change_time": "2024-03-17T14:56:53.040Z",
+        "last_state_change_time": "2024-03-17T16:23:33.985Z",
         "challenge_linked_quest_parent": "",
         "max_level_bonus": 0,
         "xp": 0,
@@ -71949,7 +72139,7 @@
     "S12-Quest:quest_s12_xpcoins_gold_w1": {
       "templateId": "Quest:quest_s12_xpcoins_gold_w1",
       "attributes": {
-        "creation_time": "2024-03-17T14:56:53.040Z",
+        "creation_time": "2024-03-17T16:23:33.985Z",
         "level": -1,
         "item_seen": true,
         "playlists": [],
@@ -71960,7 +72150,7 @@
         "quest_pool": "",
         "quest_state": "Active",
         "bucket": "",
-        "last_state_change_time": "2024-03-17T14:56:53.040Z",
+        "last_state_change_time": "2024-03-17T16:23:33.985Z",
         "challenge_linked_quest_parent": "",
         "max_level_bonus": 0,
         "xp": 0,
@@ -71973,7 +72163,7 @@
     "S12-Quest:quest_s12_xpcoins_green_w1": {
       "templateId": "Quest:quest_s12_xpcoins_green_w1",
       "attributes": {
-        "creation_time": "2024-03-17T14:56:53.040Z",
+        "creation_time": "2024-03-17T16:23:33.985Z",
         "level": -1,
         "item_seen": true,
         "playlists": [],
@@ -71984,7 +72174,7 @@
         "quest_pool": "",
         "quest_state": "Active",
         "bucket": "",
-        "last_state_change_time": "2024-03-17T14:56:53.040Z",
+        "last_state_change_time": "2024-03-17T16:23:33.985Z",
         "challenge_linked_quest_parent": "",
         "max_level_bonus": 0,
         "xp": 0,
@@ -72008,7 +72198,7 @@
     "S12-Quest:quest_s12_xpcoins_purple_w1": {
       "templateId": "Quest:quest_s12_xpcoins_purple_w1",
       "attributes": {
-        "creation_time": "2024-03-17T14:56:53.040Z",
+        "creation_time": "2024-03-17T16:23:33.985Z",
         "level": -1,
         "item_seen": true,
         "playlists": [],
@@ -72019,7 +72209,7 @@
         "quest_pool": "",
         "quest_state": "Active",
         "bucket": "",
-        "last_state_change_time": "2024-03-17T14:56:53.040Z",
+        "last_state_change_time": "2024-03-17T16:23:33.985Z",
         "challenge_linked_quest_parent": "",
         "max_level_bonus": 0,
         "xp": 0,
@@ -72035,7 +72225,7 @@
     "S12-Quest:quest_s12_xpcoins_blue_w2": {
       "templateId": "Quest:quest_s12_xpcoins_blue_w2",
       "attributes": {
-        "creation_time": "2024-03-17T14:56:53.040Z",
+        "creation_time": "2024-03-17T16:23:33.985Z",
         "level": -1,
         "item_seen": true,
         "playlists": [],
@@ -72046,7 +72236,7 @@
         "quest_pool": "",
         "quest_state": "Active",
         "bucket": "",
-        "last_state_change_time": "2024-03-17T14:56:53.040Z",
+        "last_state_change_time": "2024-03-17T16:23:33.985Z",
         "challenge_linked_quest_parent": "",
         "max_level_bonus": 0,
         "xp": 0,
@@ -72062,7 +72252,7 @@
     "S12-Quest:quest_s12_xpcoins_green_w2": {
       "templateId": "Quest:quest_s12_xpcoins_green_w2",
       "attributes": {
-        "creation_time": "2024-03-17T14:56:53.040Z",
+        "creation_time": "2024-03-17T16:23:33.985Z",
         "level": -1,
         "item_seen": true,
         "playlists": [],
@@ -72073,7 +72263,7 @@
         "quest_pool": "",
         "quest_state": "Active",
         "bucket": "",
-        "last_state_change_time": "2024-03-17T14:56:53.040Z",
+        "last_state_change_time": "2024-03-17T16:23:33.985Z",
         "challenge_linked_quest_parent": "",
         "max_level_bonus": 0,
         "xp": 0,
@@ -72097,7 +72287,7 @@
     "S12-Quest:quest_s12_xpcoins_purple_w2": {
       "templateId": "Quest:quest_s12_xpcoins_purple_w2",
       "attributes": {
-        "creation_time": "2024-03-17T14:56:53.040Z",
+        "creation_time": "2024-03-17T16:23:33.985Z",
         "level": -1,
         "item_seen": true,
         "playlists": [],
@@ -72108,7 +72298,7 @@
         "quest_pool": "",
         "quest_state": "Active",
         "bucket": "",
-        "last_state_change_time": "2024-03-17T14:56:53.040Z",
+        "last_state_change_time": "2024-03-17T16:23:33.985Z",
         "challenge_linked_quest_parent": "",
         "max_level_bonus": 0,
         "xp": 0,
@@ -72124,7 +72314,7 @@
     "S12-Quest:quest_s12_xpcoins_blue_w3": {
       "templateId": "Quest:quest_s12_xpcoins_blue_w3",
       "attributes": {
-        "creation_time": "2024-03-17T14:56:53.040Z",
+        "creation_time": "2024-03-17T16:23:33.985Z",
         "level": -1,
         "item_seen": true,
         "playlists": [],
@@ -72135,7 +72325,7 @@
         "quest_pool": "",
         "quest_state": "Active",
         "bucket": "",
-        "last_state_change_time": "2024-03-17T14:56:53.040Z",
+        "last_state_change_time": "2024-03-17T16:23:33.985Z",
         "challenge_linked_quest_parent": "",
         "max_level_bonus": 0,
         "xp": 0,
@@ -72151,7 +72341,7 @@
     "S12-Quest:quest_s12_xpcoins_gold_w3": {
       "templateId": "Quest:quest_s12_xpcoins_gold_w3",
       "attributes": {
-        "creation_time": "2024-03-17T14:56:53.040Z",
+        "creation_time": "2024-03-17T16:23:33.985Z",
         "level": -1,
         "item_seen": true,
         "playlists": [],
@@ -72162,7 +72352,7 @@
         "quest_pool": "",
         "quest_state": "Active",
         "bucket": "",
-        "last_state_change_time": "2024-03-17T14:56:53.040Z",
+        "last_state_change_time": "2024-03-17T16:23:33.985Z",
         "challenge_linked_quest_parent": "",
         "max_level_bonus": 0,
         "xp": 0,
@@ -72175,7 +72365,7 @@
     "S12-Quest:quest_s12_xpcoins_green_w3": {
       "templateId": "Quest:quest_s12_xpcoins_green_w3",
       "attributes": {
-        "creation_time": "2024-03-17T14:56:53.040Z",
+        "creation_time": "2024-03-17T16:23:33.985Z",
         "level": -1,
         "item_seen": true,
         "playlists": [],
@@ -72186,7 +72376,7 @@
         "quest_pool": "",
         "quest_state": "Active",
         "bucket": "",
-        "last_state_change_time": "2024-03-17T14:56:53.040Z",
+        "last_state_change_time": "2024-03-17T16:23:33.985Z",
         "challenge_linked_quest_parent": "",
         "max_level_bonus": 0,
         "xp": 0,
@@ -72210,7 +72400,7 @@
     "S12-Quest:quest_s12_xpcoins_purple_w3": {
       "templateId": "Quest:quest_s12_xpcoins_purple_w3",
       "attributes": {
-        "creation_time": "2024-03-17T14:56:53.040Z",
+        "creation_time": "2024-03-17T16:23:33.985Z",
         "level": -1,
         "item_seen": true,
         "playlists": [],
@@ -72221,7 +72411,7 @@
         "quest_pool": "",
         "quest_state": "Active",
         "bucket": "",
-        "last_state_change_time": "2024-03-17T14:56:53.040Z",
+        "last_state_change_time": "2024-03-17T16:23:33.985Z",
         "challenge_linked_quest_parent": "",
         "max_level_bonus": 0,
         "xp": 0,
@@ -72237,7 +72427,7 @@
     "S12-Quest:quest_s12_xpcoins_blue_w4": {
       "templateId": "Quest:quest_s12_xpcoins_blue_w4",
       "attributes": {
-        "creation_time": "2024-03-17T14:56:53.040Z",
+        "creation_time": "2024-03-17T16:23:33.985Z",
         "level": -1,
         "item_seen": true,
         "playlists": [],
@@ -72248,7 +72438,7 @@
         "quest_pool": "",
         "quest_state": "Active",
         "bucket": "",
-        "last_state_change_time": "2024-03-17T14:56:53.040Z",
+        "last_state_change_time": "2024-03-17T16:23:33.985Z",
         "challenge_linked_quest_parent": "",
         "max_level_bonus": 0,
         "xp": 0,
@@ -72264,7 +72454,7 @@
     "S12-Quest:quest_s12_xpcoins_green_w4": {
       "templateId": "Quest:quest_s12_xpcoins_green_w4",
       "attributes": {
-        "creation_time": "2024-03-17T14:56:53.041Z",
+        "creation_time": "2024-03-17T16:23:33.985Z",
         "level": -1,
         "item_seen": true,
         "playlists": [],
@@ -72275,7 +72465,7 @@
         "quest_pool": "",
         "quest_state": "Active",
         "bucket": "",
-        "last_state_change_time": "2024-03-17T14:56:53.041Z",
+        "last_state_change_time": "2024-03-17T16:23:33.985Z",
         "challenge_linked_quest_parent": "",
         "max_level_bonus": 0,
         "xp": 0,
@@ -72299,7 +72489,7 @@
     "S12-Quest:quest_s12_xpcoins_purple_w4": {
       "templateId": "Quest:quest_s12_xpcoins_purple_w4",
       "attributes": {
-        "creation_time": "2024-03-17T14:56:53.041Z",
+        "creation_time": "2024-03-17T16:23:33.986Z",
         "level": -1,
         "item_seen": true,
         "playlists": [],
@@ -72310,7 +72500,7 @@
         "quest_pool": "",
         "quest_state": "Active",
         "bucket": "",
-        "last_state_change_time": "2024-03-17T14:56:53.041Z",
+        "last_state_change_time": "2024-03-17T16:23:33.986Z",
         "challenge_linked_quest_parent": "",
         "max_level_bonus": 0,
         "xp": 0,
@@ -72326,7 +72516,7 @@
     "S12-Quest:quest_s12_xpcoins_blue_w5": {
       "templateId": "Quest:quest_s12_xpcoins_blue_w5",
       "attributes": {
-        "creation_time": "2024-03-17T14:56:53.041Z",
+        "creation_time": "2024-03-17T16:23:33.986Z",
         "level": -1,
         "item_seen": true,
         "playlists": [],
@@ -72337,7 +72527,7 @@
         "quest_pool": "",
         "quest_state": "Active",
         "bucket": "",
-        "last_state_change_time": "2024-03-17T14:56:53.041Z",
+        "last_state_change_time": "2024-03-17T16:23:33.986Z",
         "challenge_linked_quest_parent": "",
         "max_level_bonus": 0,
         "xp": 0,
@@ -72353,7 +72543,7 @@
     "S12-Quest:quest_s12_xpcoins_gold_w5": {
       "templateId": "Quest:quest_s12_xpcoins_gold_w5",
       "attributes": {
-        "creation_time": "2024-03-17T14:56:53.041Z",
+        "creation_time": "2024-03-17T16:23:33.986Z",
         "level": -1,
         "item_seen": true,
         "playlists": [],
@@ -72364,7 +72554,7 @@
         "quest_pool": "",
         "quest_state": "Active",
         "bucket": "",
-        "last_state_change_time": "2024-03-17T14:56:53.041Z",
+        "last_state_change_time": "2024-03-17T16:23:33.986Z",
         "challenge_linked_quest_parent": "",
         "max_level_bonus": 0,
         "xp": 0,
@@ -72377,7 +72567,7 @@
     "S12-Quest:quest_s12_xpcoins_green_w5": {
       "templateId": "Quest:quest_s12_xpcoins_green_w5",
       "attributes": {
-        "creation_time": "2024-03-17T14:56:53.041Z",
+        "creation_time": "2024-03-17T16:23:33.986Z",
         "level": -1,
         "item_seen": true,
         "playlists": [],
@@ -72388,7 +72578,7 @@
         "quest_pool": "",
         "quest_state": "Active",
         "bucket": "",
-        "last_state_change_time": "2024-03-17T14:56:53.041Z",
+        "last_state_change_time": "2024-03-17T16:23:33.986Z",
         "challenge_linked_quest_parent": "",
         "max_level_bonus": 0,
         "xp": 0,
@@ -72412,7 +72602,7 @@
     "S12-Quest:quest_s12_xpcoins_purple_w5": {
       "templateId": "Quest:quest_s12_xpcoins_purple_w5",
       "attributes": {
-        "creation_time": "2024-03-17T14:56:53.041Z",
+        "creation_time": "2024-03-17T16:23:33.986Z",
         "level": -1,
         "item_seen": true,
         "playlists": [],
@@ -72423,7 +72613,7 @@
         "quest_pool": "",
         "quest_state": "Active",
         "bucket": "",
-        "last_state_change_time": "2024-03-17T14:56:53.041Z",
+        "last_state_change_time": "2024-03-17T16:23:33.986Z",
         "challenge_linked_quest_parent": "",
         "max_level_bonus": 0,
         "xp": 0,
@@ -72439,7 +72629,7 @@
     "S12-Quest:quest_s12_xpcoins_blue_w6": {
       "templateId": "Quest:quest_s12_xpcoins_blue_w6",
       "attributes": {
-        "creation_time": "2024-03-17T14:56:53.041Z",
+        "creation_time": "2024-03-17T16:23:33.986Z",
         "level": -1,
         "item_seen": true,
         "playlists": [],
@@ -72450,7 +72640,7 @@
         "quest_pool": "",
         "quest_state": "Active",
         "bucket": "",
-        "last_state_change_time": "2024-03-17T14:56:53.041Z",
+        "last_state_change_time": "2024-03-17T16:23:33.986Z",
         "challenge_linked_quest_parent": "",
         "max_level_bonus": 0,
         "xp": 0,
@@ -72466,7 +72656,7 @@
     "S12-Quest:quest_s12_xpcoins_green_w6": {
       "templateId": "Quest:quest_s12_xpcoins_green_w6",
       "attributes": {
-        "creation_time": "2024-03-17T14:56:53.041Z",
+        "creation_time": "2024-03-17T16:23:33.986Z",
         "level": -1,
         "item_seen": true,
         "playlists": [],
@@ -72477,7 +72667,7 @@
         "quest_pool": "",
         "quest_state": "Active",
         "bucket": "",
-        "last_state_change_time": "2024-03-17T14:56:53.041Z",
+        "last_state_change_time": "2024-03-17T16:23:33.986Z",
         "challenge_linked_quest_parent": "",
         "max_level_bonus": 0,
         "xp": 0,
@@ -72501,7 +72691,7 @@
     "S12-Quest:quest_s12_xpcoins_purple_w6": {
       "templateId": "Quest:quest_s12_xpcoins_purple_w6",
       "attributes": {
-        "creation_time": "2024-03-17T14:56:53.041Z",
+        "creation_time": "2024-03-17T16:23:33.986Z",
         "level": -1,
         "item_seen": true,
         "playlists": [],
@@ -72512,7 +72702,7 @@
         "quest_pool": "",
         "quest_state": "Active",
         "bucket": "",
-        "last_state_change_time": "2024-03-17T14:56:53.041Z",
+        "last_state_change_time": "2024-03-17T16:23:33.986Z",
         "challenge_linked_quest_parent": "",
         "max_level_bonus": 0,
         "xp": 0,
@@ -72528,7 +72718,7 @@
     "S12-Quest:quest_s12_xpcoins_blue_w7": {
       "templateId": "Quest:quest_s12_xpcoins_blue_w7",
       "attributes": {
-        "creation_time": "2024-03-17T14:56:53.041Z",
+        "creation_time": "2024-03-17T16:23:33.986Z",
         "level": -1,
         "item_seen": true,
         "playlists": [],
@@ -72539,7 +72729,7 @@
         "quest_pool": "",
         "quest_state": "Active",
         "bucket": "",
-        "last_state_change_time": "2024-03-17T14:56:53.041Z",
+        "last_state_change_time": "2024-03-17T16:23:33.986Z",
         "challenge_linked_quest_parent": "",
         "max_level_bonus": 0,
         "xp": 0,
@@ -72555,7 +72745,7 @@
     "S12-Quest:quest_s12_xpcoins_gold_w7": {
       "templateId": "Quest:quest_s12_xpcoins_gold_w7",
       "attributes": {
-        "creation_time": "2024-03-17T14:56:53.041Z",
+        "creation_time": "2024-03-17T16:23:33.986Z",
         "level": -1,
         "item_seen": true,
         "playlists": [],
@@ -72566,7 +72756,7 @@
         "quest_pool": "",
         "quest_state": "Active",
         "bucket": "",
-        "last_state_change_time": "2024-03-17T14:56:53.041Z",
+        "last_state_change_time": "2024-03-17T16:23:33.986Z",
         "challenge_linked_quest_parent": "",
         "max_level_bonus": 0,
         "xp": 0,
@@ -72579,7 +72769,7 @@
     "S12-Quest:quest_s12_xpcoins_green_w7": {
       "templateId": "Quest:quest_s12_xpcoins_green_w7",
       "attributes": {
-        "creation_time": "2024-03-17T14:56:53.041Z",
+        "creation_time": "2024-03-17T16:23:33.986Z",
         "level": -1,
         "item_seen": true,
         "playlists": [],
@@ -72590,7 +72780,7 @@
         "quest_pool": "",
         "quest_state": "Active",
         "bucket": "",
-        "last_state_change_time": "2024-03-17T14:56:53.041Z",
+        "last_state_change_time": "2024-03-17T16:23:33.986Z",
         "challenge_linked_quest_parent": "",
         "max_level_bonus": 0,
         "xp": 0,
@@ -72614,7 +72804,7 @@
     "S12-Quest:quest_s12_xpcoins_purple_w7": {
       "templateId": "Quest:quest_s12_xpcoins_purple_w7",
       "attributes": {
-        "creation_time": "2024-03-17T14:56:53.041Z",
+        "creation_time": "2024-03-17T16:23:33.986Z",
         "level": -1,
         "item_seen": true,
         "playlists": [],
@@ -72625,7 +72815,7 @@
         "quest_pool": "",
         "quest_state": "Active",
         "bucket": "",
-        "last_state_change_time": "2024-03-17T14:56:53.041Z",
+        "last_state_change_time": "2024-03-17T16:23:33.986Z",
         "challenge_linked_quest_parent": "",
         "max_level_bonus": 0,
         "xp": 0,
@@ -72641,7 +72831,7 @@
     "S12-Quest:quest_s12_xpcoins_blue_w8": {
       "templateId": "Quest:quest_s12_xpcoins_blue_w8",
       "attributes": {
-        "creation_time": "2024-03-17T14:56:53.041Z",
+        "creation_time": "2024-03-17T16:23:33.986Z",
         "level": -1,
         "item_seen": true,
         "playlists": [],
@@ -72652,7 +72842,7 @@
         "quest_pool": "",
         "quest_state": "Active",
         "bucket": "",
-        "last_state_change_time": "2024-03-17T14:56:53.041Z",
+        "last_state_change_time": "2024-03-17T16:23:33.986Z",
         "challenge_linked_quest_parent": "",
         "max_level_bonus": 0,
         "xp": 0,
@@ -72668,7 +72858,7 @@
     "S12-Quest:quest_s12_xpcoins_green_w8": {
       "templateId": "Quest:quest_s12_xpcoins_green_w8",
       "attributes": {
-        "creation_time": "2024-03-17T14:56:53.041Z",
+        "creation_time": "2024-03-17T16:23:33.986Z",
         "level": -1,
         "item_seen": true,
         "playlists": [],
@@ -72679,7 +72869,7 @@
         "quest_pool": "",
         "quest_state": "Active",
         "bucket": "",
-        "last_state_change_time": "2024-03-17T14:56:53.041Z",
+        "last_state_change_time": "2024-03-17T16:23:33.986Z",
         "challenge_linked_quest_parent": "",
         "max_level_bonus": 0,
         "xp": 0,
@@ -72703,7 +72893,7 @@
     "S12-Quest:quest_s12_xpcoins_purple_w8": {
       "templateId": "Quest:quest_s12_xpcoins_purple_w8",
       "attributes": {
-        "creation_time": "2024-03-17T14:56:53.041Z",
+        "creation_time": "2024-03-17T16:23:33.986Z",
         "level": -1,
         "item_seen": true,
         "playlists": [],
@@ -72714,7 +72904,7 @@
         "quest_pool": "",
         "quest_state": "Active",
         "bucket": "",
-        "last_state_change_time": "2024-03-17T14:56:53.041Z",
+        "last_state_change_time": "2024-03-17T16:23:33.986Z",
         "challenge_linked_quest_parent": "",
         "max_level_bonus": 0,
         "xp": 0,
@@ -72730,7 +72920,7 @@
     "S12-Quest:quest_s12_xpcoins_blue_w9": {
       "templateId": "Quest:quest_s12_xpcoins_blue_w9",
       "attributes": {
-        "creation_time": "2024-03-17T14:56:53.041Z",
+        "creation_time": "2024-03-17T16:23:33.986Z",
         "level": -1,
         "item_seen": true,
         "playlists": [],
@@ -72741,7 +72931,7 @@
         "quest_pool": "",
         "quest_state": "Active",
         "bucket": "",
-        "last_state_change_time": "2024-03-17T14:56:53.041Z",
+        "last_state_change_time": "2024-03-17T16:23:33.986Z",
         "challenge_linked_quest_parent": "",
         "max_level_bonus": 0,
         "xp": 0,
@@ -72757,7 +72947,7 @@
     "S12-Quest:quest_s12_xpcoins_gold_w9": {
       "templateId": "Quest:quest_s12_xpcoins_gold_w9",
       "attributes": {
-        "creation_time": "2024-03-17T14:56:53.041Z",
+        "creation_time": "2024-03-17T16:23:33.986Z",
         "level": -1,
         "item_seen": true,
         "playlists": [],
@@ -72768,7 +72958,7 @@
         "quest_pool": "",
         "quest_state": "Active",
         "bucket": "",
-        "last_state_change_time": "2024-03-17T14:56:53.041Z",
+        "last_state_change_time": "2024-03-17T16:23:33.986Z",
         "challenge_linked_quest_parent": "",
         "max_level_bonus": 0,
         "xp": 0,
@@ -72781,7 +72971,7 @@
     "S12-Quest:quest_s12_xpcoins_green_w9": {
       "templateId": "Quest:quest_s12_xpcoins_green_w9",
       "attributes": {
-        "creation_time": "2024-03-17T14:56:53.041Z",
+        "creation_time": "2024-03-17T16:23:33.986Z",
         "level": -1,
         "item_seen": true,
         "playlists": [],
@@ -72792,7 +72982,7 @@
         "quest_pool": "",
         "quest_state": "Active",
         "bucket": "",
-        "last_state_change_time": "2024-03-17T14:56:53.041Z",
+        "last_state_change_time": "2024-03-17T16:23:33.986Z",
         "challenge_linked_quest_parent": "",
         "max_level_bonus": 0,
         "xp": 0,
@@ -72816,7 +73006,7 @@
     "S12-Quest:quest_s12_xpcoins_purple_w9": {
       "templateId": "Quest:quest_s12_xpcoins_purple_w9",
       "attributes": {
-        "creation_time": "2024-03-17T14:56:53.041Z",
+        "creation_time": "2024-03-17T16:23:33.986Z",
         "level": -1,
         "item_seen": true,
         "playlists": [],
@@ -72827,7 +73017,7 @@
         "quest_pool": "",
         "quest_state": "Active",
         "bucket": "",
-        "last_state_change_time": "2024-03-17T14:56:53.041Z",
+        "last_state_change_time": "2024-03-17T16:23:33.986Z",
         "challenge_linked_quest_parent": "",
         "max_level_bonus": 0,
         "xp": 0,
@@ -72843,7 +73033,7 @@
     "S12-Quest:quest_s12_xpcoins_blue_w10": {
       "templateId": "Quest:quest_s12_xpcoins_blue_w10",
       "attributes": {
-        "creation_time": "2024-03-17T14:56:53.041Z",
+        "creation_time": "2024-03-17T16:23:33.986Z",
         "level": -1,
         "item_seen": true,
         "playlists": [],
@@ -72854,7 +73044,7 @@
         "quest_pool": "",
         "quest_state": "Active",
         "bucket": "",
-        "last_state_change_time": "2024-03-17T14:56:53.041Z",
+        "last_state_change_time": "2024-03-17T16:23:33.986Z",
         "challenge_linked_quest_parent": "",
         "max_level_bonus": 0,
         "xp": 0,
@@ -72870,7 +73060,7 @@
     "S12-Quest:quest_s12_xpcoins_green_w10": {
       "templateId": "Quest:quest_s12_xpcoins_green_w10",
       "attributes": {
-        "creation_time": "2024-03-17T14:56:53.041Z",
+        "creation_time": "2024-03-17T16:23:33.986Z",
         "level": -1,
         "item_seen": true,
         "playlists": [],
@@ -72881,7 +73071,7 @@
         "quest_pool": "",
         "quest_state": "Active",
         "bucket": "",
-        "last_state_change_time": "2024-03-17T14:56:53.041Z",
+        "last_state_change_time": "2024-03-17T16:23:33.986Z",
         "challenge_linked_quest_parent": "",
         "max_level_bonus": 0,
         "xp": 0,
@@ -72905,7 +73095,7 @@
     "S12-Quest:quest_s12_xpcoins_purple_w10": {
       "templateId": "Quest:quest_s12_xpcoins_purple_w10",
       "attributes": {
-        "creation_time": "2024-03-17T14:56:53.041Z",
+        "creation_time": "2024-03-17T16:23:33.986Z",
         "level": -1,
         "item_seen": true,
         "playlists": [],
@@ -72916,7 +73106,7 @@
         "quest_pool": "",
         "quest_state": "Active",
         "bucket": "",
-        "last_state_change_time": "2024-03-17T14:56:53.041Z",
+        "last_state_change_time": "2024-03-17T16:23:33.986Z",
         "challenge_linked_quest_parent": "",
         "max_level_bonus": 0,
         "xp": 0,
@@ -72932,7 +73122,7 @@
     "S12-Quest:Quest_BR_Styles_Oro_Damage": {
       "templateId": "Quest:Quest_BR_Styles_Oro_Damage",
       "attributes": {
-        "creation_time": "2024-03-17T14:56:53.041Z",
+        "creation_time": "2024-03-17T16:23:33.986Z",
         "level": -1,
         "item_seen": true,
         "playlists": [],
@@ -72943,7 +73133,7 @@
         "quest_pool": "",
         "quest_state": "Active",
         "bucket": "",
-        "last_state_change_time": "2024-03-17T14:56:53.041Z",
+        "last_state_change_time": "2024-03-17T16:23:33.986Z",
         "challenge_linked_quest_parent": "",
         "max_level_bonus": 0,
         "xp": 0,
@@ -72956,7 +73146,7 @@
     "S12-Quest:Quest_BR_Styles_Oro_Earn_Medals": {
       "templateId": "Quest:Quest_BR_Styles_Oro_Earn_Medals",
       "attributes": {
-        "creation_time": "2024-03-17T14:56:53.041Z",
+        "creation_time": "2024-03-17T16:23:33.986Z",
         "level": -1,
         "item_seen": true,
         "playlists": [],
@@ -72967,7 +73157,7 @@
         "quest_pool": "",
         "quest_state": "Active",
         "bucket": "",
-        "last_state_change_time": "2024-03-17T14:56:53.041Z",
+        "last_state_change_time": "2024-03-17T16:23:33.986Z",
         "challenge_linked_quest_parent": "",
         "max_level_bonus": 0,
         "xp": 0,
@@ -72980,7 +73170,7 @@
     "S12-Quest:Quest_BR_Styles_Oro_Elimination_Assists": {
       "templateId": "Quest:Quest_BR_Styles_Oro_Elimination_Assists",
       "attributes": {
-        "creation_time": "2024-03-17T14:56:53.041Z",
+        "creation_time": "2024-03-17T16:23:33.986Z",
         "level": -1,
         "item_seen": true,
         "playlists": [],
@@ -72991,7 +73181,7 @@
         "quest_pool": "",
         "quest_state": "Active",
         "bucket": "",
-        "last_state_change_time": "2024-03-17T14:56:53.041Z",
+        "last_state_change_time": "2024-03-17T16:23:33.986Z",
         "challenge_linked_quest_parent": "",
         "max_level_bonus": 0,
         "xp": 0,
@@ -73004,7 +73194,7 @@
     "S12-Quest:Quest_BR_Styles_Oro_Play_with_Friend": {
       "templateId": "Quest:Quest_BR_Styles_Oro_Play_with_Friend",
       "attributes": {
-        "creation_time": "2024-03-17T14:56:53.041Z",
+        "creation_time": "2024-03-17T16:23:33.986Z",
         "level": -1,
         "item_seen": true,
         "playlists": [],
@@ -73015,7 +73205,7 @@
         "quest_pool": "",
         "quest_state": "Active",
         "bucket": "",
-        "last_state_change_time": "2024-03-17T14:56:53.041Z",
+        "last_state_change_time": "2024-03-17T16:23:33.986Z",
         "challenge_linked_quest_parent": "",
         "max_level_bonus": 0,
         "xp": 0,
@@ -73028,7 +73218,7 @@
     "S12-Quest:quest_peely_frontend_spy_01": {
       "templateId": "Quest:quest_peely_frontend_spy_01",
       "attributes": {
-        "creation_time": "2024-03-17T14:56:53.041Z",
+        "creation_time": "2024-03-17T16:23:33.986Z",
         "level": -1,
         "item_seen": true,
         "playlists": [],
@@ -73039,7 +73229,7 @@
         "quest_pool": "",
         "quest_state": "Active",
         "bucket": "",
-        "last_state_change_time": "2024-03-17T14:56:53.041Z",
+        "last_state_change_time": "2024-03-17T16:23:33.986Z",
         "challenge_linked_quest_parent": "",
         "max_level_bonus": 0,
         "xp": 0,
@@ -73052,7 +73242,7 @@
     "S12-Quest:quest_peely_frontend_spy_02": {
       "templateId": "Quest:quest_peely_frontend_spy_02",
       "attributes": {
-        "creation_time": "2024-03-17T14:56:53.041Z",
+        "creation_time": "2024-03-17T16:23:33.986Z",
         "level": -1,
         "item_seen": true,
         "playlists": [],
@@ -73063,7 +73253,7 @@
         "quest_pool": "",
         "quest_state": "Active",
         "bucket": "",
-        "last_state_change_time": "2024-03-17T14:56:53.041Z",
+        "last_state_change_time": "2024-03-17T16:23:33.986Z",
         "challenge_linked_quest_parent": "",
         "max_level_bonus": 0,
         "xp": 0,
@@ -73076,7 +73266,7 @@
     "S12-Quest:quest_peely_frontend_spy_03": {
       "templateId": "Quest:quest_peely_frontend_spy_03",
       "attributes": {
-        "creation_time": "2024-03-17T14:56:53.041Z",
+        "creation_time": "2024-03-17T16:23:33.986Z",
         "level": -1,
         "item_seen": true,
         "playlists": [],
@@ -73087,7 +73277,7 @@
         "quest_pool": "",
         "quest_state": "Active",
         "bucket": "",
-        "last_state_change_time": "2024-03-17T14:56:53.041Z",
+        "last_state_change_time": "2024-03-17T16:23:33.986Z",
         "challenge_linked_quest_parent": "",
         "max_level_bonus": 0,
         "xp": 0,
@@ -73100,7 +73290,7 @@
     "S12-Quest:Quest_S12_StA_ElimHenchmanDifferentSafehouses": {
       "templateId": "Quest:Quest_S12_StA_ElimHenchmanDifferentSafehouses",
       "attributes": {
-        "creation_time": "2024-03-17T14:56:53.041Z",
+        "creation_time": "2024-03-17T16:23:33.986Z",
         "level": -1,
         "item_seen": true,
         "playlists": [],
@@ -73111,7 +73301,7 @@
         "quest_pool": "",
         "quest_state": "Active",
         "bucket": "",
-        "last_state_change_time": "2024-03-17T14:56:53.041Z",
+        "last_state_change_time": "2024-03-17T16:23:33.986Z",
         "challenge_linked_quest_parent": "",
         "max_level_bonus": 0,
         "xp": 0,
@@ -73128,7 +73318,7 @@
     "S12-Quest:Quest_S12_StA_LandAgency": {
       "templateId": "Quest:Quest_S12_StA_LandAgency",
       "attributes": {
-        "creation_time": "2024-03-17T14:56:53.041Z",
+        "creation_time": "2024-03-17T16:23:33.986Z",
         "level": -1,
         "item_seen": true,
         "playlists": [],
@@ -73139,7 +73329,7 @@
         "quest_pool": "",
         "quest_state": "Active",
         "bucket": "",
-        "last_state_change_time": "2024-03-17T14:56:53.041Z",
+        "last_state_change_time": "2024-03-17T16:23:33.986Z",
         "challenge_linked_quest_parent": "",
         "max_level_bonus": 0,
         "xp": 0,
@@ -73152,7 +73342,7 @@
     "S12-Quest:Quest_S12_StA_OpenFactionChestDifferentSpyBases": {
       "templateId": "Quest:Quest_S12_StA_OpenFactionChestDifferentSpyBases",
       "attributes": {
-        "creation_time": "2024-03-17T14:56:53.041Z",
+        "creation_time": "2024-03-17T16:23:33.986Z",
         "level": -1,
         "item_seen": true,
         "playlists": [],
@@ -73163,7 +73353,7 @@
         "quest_pool": "",
         "quest_state": "Active",
         "bucket": "",
-        "last_state_change_time": "2024-03-17T14:56:53.041Z",
+        "last_state_change_time": "2024-03-17T16:23:33.986Z",
         "challenge_linked_quest_parent": "",
         "max_level_bonus": 0,
         "xp": 0,
@@ -73180,7 +73370,7 @@
     "S12-Quest:Quest_S12_StA_SurviveStormCircles": {
       "templateId": "Quest:Quest_S12_StA_SurviveStormCircles",
       "attributes": {
-        "creation_time": "2024-03-17T14:56:53.041Z",
+        "creation_time": "2024-03-17T16:23:33.986Z",
         "level": -1,
         "item_seen": true,
         "playlists": [],
@@ -73191,7 +73381,7 @@
         "quest_pool": "",
         "quest_state": "Active",
         "bucket": "",
-        "last_state_change_time": "2024-03-17T14:56:53.041Z",
+        "last_state_change_time": "2024-03-17T16:23:33.986Z",
         "challenge_linked_quest_parent": "",
         "max_level_bonus": 0,
         "xp": 0,
@@ -73204,7 +73394,7 @@
     "S12-Quest:Quest_S12_StA_SwimHatches": {
       "templateId": "Quest:Quest_S12_StA_SwimHatches",
       "attributes": {
-        "creation_time": "2024-03-17T14:56:53.041Z",
+        "creation_time": "2024-03-17T16:23:33.986Z",
         "level": -1,
         "item_seen": true,
         "playlists": [],
@@ -73215,7 +73405,7 @@
         "quest_pool": "",
         "quest_state": "Active",
         "bucket": "",
-        "last_state_change_time": "2024-03-17T14:56:53.041Z",
+        "last_state_change_time": "2024-03-17T16:23:33.986Z",
         "challenge_linked_quest_parent": "",
         "max_level_bonus": 0,
         "xp": 0,
@@ -73252,7 +73442,7 @@
       "party_assist_quest": "",
       "purchased_battle_pass_tier_offers": [],
       "rested_xp_exchange": 0.333,
-      "level": 0,
+      "level": 1,
       "xp_overflow": 0,
       "rested_xp": 0,
       "rested_xp_mult": 0,
@@ -73282,5 +73472,5 @@
       "favorite_loadingscreen": ""
     }
   },
-  "commandRevision": 12
+  "commandRevision": 22
 }
