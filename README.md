@@ -1,5 +1,5 @@
 
-  ### LawinServer is a private server that supports all Fortnite versions! (Thanks to Milxnor for event keychain Btw the diffrence between his and mine is just mine is the latest lawin version which added stuff like matchmaker)
+  ### LawinServer is a private server that supports all Fortnite versions! (updated version)
   
 </div>
 <br>
@@ -13,6 +13,7 @@
 ## Features:
 
 ### Save the World:
+-Fixed locker for s12 and above
 - CloudStorage and ClientSettings (Settings saving)
 - Llama purchasing and opening with random loot and choice packs
 - Every Hero, Weapon, Defender and Resource
@@ -49,6 +50,7 @@
 - Event Quests from Season 2 up to Season X & Season 24 (Can change)
 
 ### Battle Royale:
+-Fixed locker for s12 and above
 - CloudStorage and ClientSettings (Settings saving)
 - Winterfest presents opening (11.31, 19.01 & 23.10)
 - Purchasing Item Shop items
@@ -62,7 +64,7 @@
 - Fully working daily challenges system (New daily challenge every day, replacing daily challenges, etc...)
 - Completed Location & Discovery quests (discovered map in game & in lobby) for Chapter 2, 3 & 4 (Can change)
 - Seasonal Quests from Season 3 up to Season 21 (Can change)
-- Purchasable battle pass from Season 2 to Season 10 (Can change)
+- Purchasable battle pass from Season 2 to Season 13 (Can change also s11 - s13 are a bit broken)
 - Discovery Tab
 - Leaderboards (v1)
 - Configurable backend sided in-game events - check out the Events seciton in config.ini for more details
