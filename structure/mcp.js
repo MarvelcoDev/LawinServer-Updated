@@ -52,7 +52,8 @@ express.post("/fortnite/api/game/v2/profile/*/client/SetAffiliateName", async (r
 
     // do not change any of these or you will end up breaking it
     var ApplyProfileChanges = [];
-    var BaseRevision = profile.rvn || 0;
+    var BaseRevision = profile.rvn;
+    var ProfileRevisionCheck = (memory.build >= 12.20) ? profile.commandRevision : profile.rvn;
     var QueryRevision = req.query.rvn || -1;
     var StatChanged = false;
 
@@ -85,8 +86,7 @@ express.post("/fortnite/api/game/v2/profile/*/client/SetAffiliateName", async (r
         fs.writeFileSync("./profiles/common_core.json", JSON.stringify(profile, null, 2));
     }
 
-    // this doesn't work properly on version v12.20 and above but whatever
-    if (QueryRevision != BaseRevision) {
+    if (QueryRevision != ProfileRevisionCheck) {
         ApplyProfileChanges = [{
             "changeType": "fullProfileUpdate",
             "profile": profile
@@ -110,11 +110,11 @@ express.post("/fortnite/api/game/v2/profile/*/dedicated_server/*", async (req, r
 
     // do not change any of these or you will end up breaking it
     var ApplyProfileChanges = [];
-    var BaseRevision = profile.rvn || 0;
+    var BaseRevision = profile.rvn;
+    var ProfileRevisionCheck = (memory.build >= 12.20) ? profile.commandRevision : profile.rvn;
     var QueryRevision = req.query.rvn || -1;
 
-    // this doesn't work properly on version v12.20 and above but whatever
-    if (QueryRevision != BaseRevision) {
+    if (QueryRevision != ProfileRevisionCheck) {
         ApplyProfileChanges = [{
             "changeType": "fullProfileUpdate",
             "profile": profile
@@ -139,7 +139,8 @@ express.post("/fortnite/api/game/v2/profile/*/client/SetHomebaseBanner", async (
 
     // do not change any of these or you will end up breaking it
     var ApplyProfileChanges = [];
-    var BaseRevision = profile.rvn || 0;
+    var BaseRevision = profile.rvn;
+    var ProfileRevisionCheck = (memory.build >= 12.20) ? profile.commandRevision : profile.rvn;
     var QueryRevision = req.query.rvn || -1;
     var StatChanged = false;
 
@@ -190,8 +191,7 @@ express.post("/fortnite/api/game/v2/profile/*/client/SetHomebaseBanner", async (
         fs.writeFileSync(`./profiles/${req.query.profileId || "profile0"}.json`, JSON.stringify(profile, null, 2));
     }
 
-    // this doesn't work properly on version v12.20 and above but whatever
-    if (QueryRevision != BaseRevision) {
+if (QueryRevision != ProfileRevisionCheck) {
         ApplyProfileChanges = [{
             "changeType": "fullProfileUpdate",
             "profile": profile
@@ -216,7 +216,8 @@ express.post("/fortnite/api/game/v2/profile/*/client/SetHomebaseName", async (re
 
     // do not change any of these or you will end up breaking it
     var ApplyProfileChanges = [];
-    var BaseRevision = profile.rvn || 0;
+    var BaseRevision = profile.rvn;
+    var ProfileRevisionCheck = (memory.build >= 12.20) ? profile.commandRevision : profile.rvn;
     var QueryRevision = req.query.rvn || -1;
     var StatChanged = false;
 
@@ -259,8 +260,7 @@ express.post("/fortnite/api/game/v2/profile/*/client/SetHomebaseName", async (re
         fs.writeFileSync(`./profiles/${req.query.profileId || "profile0"}.json`, JSON.stringify(profile, null, 2));
     }
 
-    // this doesn't work properly on version v12.20 and above but whatever
-    if (QueryRevision != BaseRevision) {
+if (QueryRevision != ProfileRevisionCheck) {
         ApplyProfileChanges = [{
             "changeType": "fullProfileUpdate",
             "profile": profile
@@ -285,7 +285,8 @@ express.post("/fortnite/api/game/v2/profile/*/client/PurchaseHomebaseNode", asyn
 
     // do not change any of these or you will end up breaking it
     var ApplyProfileChanges = [];
-    var BaseRevision = profile.rvn || 0;
+    var BaseRevision = profile.rvn;
+    var ProfileRevisionCheck = (memory.build >= 12.20) ? profile.commandRevision : profile.rvn;
     var QueryRevision = req.query.rvn || -1;
     var StatChanged = false;
 
@@ -316,8 +317,7 @@ express.post("/fortnite/api/game/v2/profile/*/client/PurchaseHomebaseNode", asyn
         fs.writeFileSync(`./profiles/${req.query.profileId || "profile0"}.json`, JSON.stringify(profile, null, 2));
     }
 
-    // this doesn't work properly on version v12.20 and above but whatever
-    if (QueryRevision != BaseRevision) {
+if (QueryRevision != ProfileRevisionCheck) {
         ApplyProfileChanges = [{
             "changeType": "fullProfileUpdate",
             "profile": profile
@@ -346,7 +346,8 @@ express.post("/fortnite/api/game/v2/profile/*/client/UnlockRewardNode", async (r
     // do not change any of these or you will end up breaking it
     var ApplyProfileChanges = [];
     var MultiUpdate = [];
-    var BaseRevision = profile.rvn || 0;
+    var BaseRevision = profile.rvn;
+    var ProfileRevisionCheck = (memory.build >= 19.01) ? profile.commandRevision : profile.rvn; 
     var QueryRevision = req.query.rvn || -1;
     var StatChanged = false;
     var CommonCoreChanged = false;
@@ -509,8 +510,7 @@ express.post("/fortnite/api/game/v2/profile/*/client/UnlockRewardNode", async (r
         }
     }
 
-    // this doesn't work properly on version v12.20 and above but whatever
-    if (QueryRevision != BaseRevision) {
+if (QueryRevision != ProfileRevisionCheck) {
         ApplyProfileChanges = [{
             "changeType": "fullProfileUpdate",
             "profile": profile
@@ -536,7 +536,8 @@ express.post("/fortnite/api/game/v2/profile/*/client/RemoveGiftBox", async (req,
 
     // do not change any of these or you will end up breaking it
     var ApplyProfileChanges = [];
-    var BaseRevision = profile.rvn || 0;
+    var BaseRevision = profile.rvn;
+    var ProfileRevisionCheck = (memory.build >= 12.20) ? profile.commandRevision : profile.rvn;
     var QueryRevision = req.query.rvn || -1;
     var StatChanged = false;
 
@@ -577,8 +578,7 @@ express.post("/fortnite/api/game/v2/profile/*/client/RemoveGiftBox", async (req,
         fs.writeFileSync(`./profiles/${req.query.profileId || "athena"}.json`, JSON.stringify(profile, null, 2));
     }
 
-    // this doesn't work properly on version v12.20 and above but whatever
-    if (QueryRevision != BaseRevision) {
+if (QueryRevision != ProfileRevisionCheck) {
         ApplyProfileChanges = [{
             "changeType": "fullProfileUpdate",
             "profile": profile
@@ -603,7 +603,8 @@ express.post("/fortnite/api/game/v2/profile/*/client/SetPartyAssistQuest", async
 
     // do not change any of these or you will end up breaking it
     var ApplyProfileChanges = [];
-    var BaseRevision = profile.rvn || 0;
+    var BaseRevision = profile.rvn;
+    var ProfileRevisionCheck = (memory.build >= 12.20) ? profile.commandRevision : profile.rvn;
     var QueryRevision = req.query.rvn || -1;
     var StatChanged = false;
 
@@ -625,8 +626,7 @@ express.post("/fortnite/api/game/v2/profile/*/client/SetPartyAssistQuest", async
         fs.writeFileSync(`./profiles/${req.query.profileId || "athena"}.json`, JSON.stringify(profile, null, 2));
     }
 
-    // this doesn't work properly on version v12.20 and above but whatever
-    if (QueryRevision != BaseRevision) {
+if (QueryRevision != ProfileRevisionCheck) {
         ApplyProfileChanges = [{
             "changeType": "fullProfileUpdate",
             "profile": profile
@@ -651,7 +651,8 @@ express.post("/fortnite/api/game/v2/profile/*/client/AthenaPinQuest", async (req
 
     // do not change any of these or you will end up breaking it
     var ApplyProfileChanges = [];
-    var BaseRevision = profile.rvn || 0;
+    var BaseRevision = profile.rvn;
+    var ProfileRevisionCheck = (memory.build >= 12.20) ? profile.commandRevision : profile.rvn;
     var QueryRevision = req.query.rvn || -1;
     var StatChanged = false;
 
@@ -673,8 +674,7 @@ express.post("/fortnite/api/game/v2/profile/*/client/AthenaPinQuest", async (req
         fs.writeFileSync(`./profiles/${req.query.profileId || "athena"}.json`, JSON.stringify(profile, null, 2));
     }
 
-    // this doesn't work properly on version v12.20 and above but whatever
-    if (QueryRevision != BaseRevision) {
+if (QueryRevision != ProfileRevisionCheck) {
         ApplyProfileChanges = [{
             "changeType": "fullProfileUpdate",
             "profile": profile
@@ -699,7 +699,8 @@ express.post("/fortnite/api/game/v2/profile/*/client/SetPinnedQuests", async (re
 
     // do not change any of these or you will end up breaking it
     var ApplyProfileChanges = [];
-    var BaseRevision = profile.rvn || 0;
+    var BaseRevision = profile.rvn;
+    var ProfileRevisionCheck = (memory.build >= 12.20) ? profile.commandRevision : profile.rvn;
     var QueryRevision = req.query.rvn || -1;
     var StatChanged = false;
 
@@ -721,8 +722,7 @@ express.post("/fortnite/api/game/v2/profile/*/client/SetPinnedQuests", async (re
         fs.writeFileSync(`./profiles/${req.query.profileId || "campaign"}.json`, JSON.stringify(profile, null, 2));
     }
 
-    // this doesn't work properly on version v12.20 and above but whatever
-    if (QueryRevision != BaseRevision) {
+if (QueryRevision != ProfileRevisionCheck) {
         ApplyProfileChanges = [{
             "changeType": "fullProfileUpdate",
             "profile": profile
@@ -749,7 +749,8 @@ express.post("/fortnite/api/game/v2/profile/*/client/FortRerollDailyQuest", asyn
     // do not change any of these or you will end up breaking it
     var ApplyProfileChanges = [];
     var Notifications = [];
-    var BaseRevision = profile.rvn || 0;
+    var BaseRevision = profile.rvn;
+    var ProfileRevisionCheck = (memory.build >= 12.20) ? profile.commandRevision : profile.rvn;
     var QueryRevision = req.query.rvn || -1;
     var StatChanged = false;
 
@@ -836,8 +837,7 @@ express.post("/fortnite/api/game/v2/profile/*/client/FortRerollDailyQuest", asyn
         fs.writeFileSync(`./profiles/${req.query.profileId || "athena"}.json`, JSON.stringify(profile, null, 2));
     }
 
-    // this doesn't work properly on version v12.20 and above but whatever
-    if (QueryRevision != BaseRevision) {
+if (QueryRevision != ProfileRevisionCheck) {
         ApplyProfileChanges = [{
             "changeType": "fullProfileUpdate",
             "profile": profile
@@ -863,7 +863,8 @@ express.post("/fortnite/api/game/v2/profile/*/client/MarkNewQuestNotificationSen
 
     // do not change any of these or you will end up breaking it
     var ApplyProfileChanges = [];
-    var BaseRevision = profile.rvn || 0;
+    var BaseRevision = profile.rvn;
+    var ProfileRevisionCheck = (memory.build >= 12.20) ? profile.commandRevision : profile.rvn;
     var QueryRevision = req.query.rvn || -1;
     var StatChanged = false;
 
@@ -891,8 +892,7 @@ express.post("/fortnite/api/game/v2/profile/*/client/MarkNewQuestNotificationSen
         fs.writeFileSync(`./profiles/${req.query.profileId || "athena"}.json`, JSON.stringify(profile, null, 2));
     }
 
-    // this doesn't work properly on version v12.20 and above but whatever
-    if (QueryRevision != BaseRevision) {
+if (QueryRevision != ProfileRevisionCheck) {
         ApplyProfileChanges = [{
             "changeType": "fullProfileUpdate",
             "profile": profile
@@ -919,7 +919,8 @@ express.post("/fortnite/api/game/v2/profile/*/client/ClientQuestLogin", async (r
 
     // do not change any of these or you will end up breaking it
     var ApplyProfileChanges = [];
-    var BaseRevision = profile.rvn || 0;
+    var BaseRevision = profile.rvn;
+    var ProfileRevisionCheck = (memory.build >= 12.20) ? profile.commandRevision : profile.rvn;
     var QueryRevision = req.query.rvn || -1;
     var StatChanged = false;
 
@@ -1241,8 +1242,7 @@ express.post("/fortnite/api/game/v2/profile/*/client/ClientQuestLogin", async (r
         fs.writeFileSync(`./profiles/${req.query.profileId || "athena"}.json`, JSON.stringify(profile, null, 2));
     }
 
-    // this doesn't work properly on version v12.20 and above but whatever
-    if (QueryRevision != BaseRevision) {
+if (QueryRevision != ProfileRevisionCheck) {
         ApplyProfileChanges = [{
             "changeType": "fullProfileUpdate",
             "profile": profile
@@ -1267,7 +1267,8 @@ express.post("/fortnite/api/game/v2/profile/*/client/RefundItem", async (req, re
 
     // do not change any of these or you will end up breaking it
     var ApplyProfileChanges = [];
-    var BaseRevision = profile.rvn || 0;
+    var BaseRevision = profile.rvn;
+    var ProfileRevisionCheck = (memory.build >= 12.20) ? profile.commandRevision : profile.rvn;
     var QueryRevision = req.query.rvn || -1;
     var StatChanged = false;
 
@@ -1301,8 +1302,7 @@ express.post("/fortnite/api/game/v2/profile/*/client/RefundItem", async (req, re
         fs.writeFileSync(`./profiles/${req.query.profileId || "campaign"}.json`, JSON.stringify(profile, null, 2));
     }
 
-    // this doesn't work properly on version v12.20 and above but whatever
-    if (QueryRevision != BaseRevision) {
+if (QueryRevision != ProfileRevisionCheck) {
         ApplyProfileChanges = [{
             "changeType": "fullProfileUpdate",
             "profile": profile
@@ -1329,7 +1329,8 @@ express.post("/fortnite/api/game/v2/profile/*/client/RefundMtxPurchase", async (
     // do not change any of these or you will end up breaking it
     var ApplyProfileChanges = [];
     var MultiUpdate = [];
-    var BaseRevision = profile.rvn || 0;
+    var BaseRevision = profile.rvn;
+    var ProfileRevisionCheck = (memory.build >= 12.20) ? profile.commandRevision : profile.rvn;
     var QueryRevision = req.query.rvn || -1;
     var StatChanged = false;
 
@@ -1407,8 +1408,7 @@ express.post("/fortnite/api/game/v2/profile/*/client/RefundMtxPurchase", async (
         fs.writeFileSync(`./profiles/athena.json`, JSON.stringify(ItemProfile, null, 2));
     }
 
-    // this doesn't work properly on version v12.20 and above but whatever
-    if (QueryRevision != BaseRevision) {
+if (QueryRevision != ProfileRevisionCheck) {
         ApplyProfileChanges = [{
             "changeType": "fullProfileUpdate",
             "profile": profile
@@ -1434,7 +1434,8 @@ express.post("/fortnite/api/game/v2/profile/*/client/IncrementNamedCounterStat",
 
     // do not change any of these or you will end up breaking it
     var ApplyProfileChanges = [];
-    var BaseRevision = profile.rvn || 0;
+    var BaseRevision = profile.rvn;
+    var ProfileRevisionCheck = (memory.build >= 12.20) ? profile.commandRevision : profile.rvn;
     var QueryRevision = req.query.rvn || -1;
     var StatChanged = false;
 
@@ -1460,8 +1461,7 @@ express.post("/fortnite/api/game/v2/profile/*/client/IncrementNamedCounterStat",
         fs.writeFileSync(`./profiles/${req.query.profileId || "profile0"}.json`, JSON.stringify(profile, null, 2));
     }
 
-    // this doesn't work properly on version v12.20 and above but whatever
-    if (QueryRevision != BaseRevision) {
+if (QueryRevision != ProfileRevisionCheck) {
         ApplyProfileChanges = [{
             "changeType": "fullProfileUpdate",
             "profile": profile
@@ -1489,7 +1489,8 @@ express.post("/fortnite/api/game/v2/profile/*/client/ClaimLoginReward", async (r
     // do not change any of these or you will end up breaking it
     var ApplyProfileChanges = [];
     var Notifications = [];
-    var BaseRevision = profile.rvn || 0;
+    var BaseRevision = profile.rvn;
+    var ProfileRevisionCheck = (memory.build >= 12.20) ? profile.commandRevision : profile.rvn;
     var QueryRevision = req.query.rvn || -1;
     var StatChanged = false;
 
@@ -1526,8 +1527,7 @@ express.post("/fortnite/api/game/v2/profile/*/client/ClaimLoginReward", async (r
         fs.writeFileSync(`./profiles/${req.query.profileId || "campaign"}.json`, JSON.stringify(profile, null, 2));
     }
 
-    // this doesn't work properly on version v12.20 and above but whatever
-    if (QueryRevision != BaseRevision) {
+if (QueryRevision != ProfileRevisionCheck) {
         ApplyProfileChanges = [{
             "changeType": "fullProfileUpdate",
             "profile": profile
@@ -1553,7 +1553,8 @@ express.post("/fortnite/api/game/v2/profile/*/client/UpdateQuestClientObjectives
 
     // do not change any of these or you will end up breaking it
     var ApplyProfileChanges = [];
-    var BaseRevision = profile.rvn || 0;
+    var BaseRevision = profile.rvn;
+    var ProfileRevisionCheck = (memory.build >= 12.20) ? profile.commandRevision : profile.rvn;
     var QueryRevision = req.query.rvn || -1;
     var StatChanged = false;
 
@@ -1615,9 +1616,8 @@ express.post("/fortnite/api/game/v2/profile/*/client/UpdateQuestClientObjectives
 
         fs.writeFileSync(`./profiles/${req.query.profileId || "campaign"}.json`, JSON.stringify(profile, null, 2));
     }
-
-    // this doesn't work properly on version v12.20 and above but whatever
-    if (QueryRevision != BaseRevision) {
+	
+if (QueryRevision != ProfileRevisionCheck) {
         ApplyProfileChanges = [{
             "changeType": "fullProfileUpdate",
             "profile": profile
@@ -1642,7 +1642,8 @@ express.post("/fortnite/api/game/v2/profile/*/client/AssignTeamPerkToLoadout", a
 
     // do not change any of these or you will end up breaking it
     var ApplyProfileChanges = [];
-    var BaseRevision = profile.rvn || 0;
+    var BaseRevision = profile.rvn;
+    var ProfileRevisionCheck = (memory.build >= 12.20) ? profile.commandRevision : profile.rvn;
     var QueryRevision = req.query.rvn || -1;
     var StatChanged = false;
 
@@ -1665,8 +1666,7 @@ express.post("/fortnite/api/game/v2/profile/*/client/AssignTeamPerkToLoadout", a
         fs.writeFileSync("./profiles/campaign.json", JSON.stringify(profile, null, 2));
     }
 
-    // this doesn't work properly on version v12.20 and above but whatever
-    if (QueryRevision != BaseRevision) {
+if (QueryRevision != ProfileRevisionCheck) {
         ApplyProfileChanges = [{
             "changeType": "fullProfileUpdate",
             "profile": profile
@@ -1691,7 +1691,8 @@ express.post("/fortnite/api/game/v2/profile/*/client/AssignGadgetToLoadout", asy
 
     // do not change any of these or you will end up breaking it
     var ApplyProfileChanges = [];
-    var BaseRevision = profile.rvn || 0;
+    var BaseRevision = profile.rvn;
+    var ProfileRevisionCheck = (memory.build >= 12.20) ? profile.commandRevision : profile.rvn;
     var QueryRevision = req.query.rvn || -1;
     var StatChanged = false;
 
@@ -1731,8 +1732,7 @@ express.post("/fortnite/api/game/v2/profile/*/client/AssignGadgetToLoadout", asy
         fs.writeFileSync("./profiles/campaign.json", JSON.stringify(profile, null, 2));
     }
 
-    // this doesn't work properly on version v12.20 and above but whatever
-    if (QueryRevision != BaseRevision) {
+if (QueryRevision != ProfileRevisionCheck) {
         ApplyProfileChanges = [{
             "changeType": "fullProfileUpdate",
             "profile": profile
@@ -1757,7 +1757,8 @@ express.post("/fortnite/api/game/v2/profile/*/client/AssignWorkerToSquad", async
 
     // do not change any of these or you will end up breaking it
     var ApplyProfileChanges = [];
-    var BaseRevision = profile.rvn || 0;
+    var BaseRevision = profile.rvn;
+    var ProfileRevisionCheck = (memory.build >= 12.20) ? profile.commandRevision : profile.rvn;
     var QueryRevision = req.query.rvn || -1;
     var StatChanged = false;
 
@@ -1817,8 +1818,7 @@ express.post("/fortnite/api/game/v2/profile/*/client/AssignWorkerToSquad", async
         fs.writeFileSync(`./profiles/${req.query.profileId || "profile0"}.json`, JSON.stringify(profile, null, 2));
     }
 
-    // this doesn't work properly on version v12.20 and above but whatever
-    if (QueryRevision != BaseRevision) {
+if (QueryRevision != ProfileRevisionCheck) {
         ApplyProfileChanges = [{
             "changeType": "fullProfileUpdate",
             "profile": profile
@@ -1843,7 +1843,8 @@ express.post("/fortnite/api/game/v2/profile/*/client/AssignWorkerToSquadBatch", 
 
     // do not change any of these or you will end up breaking it
     var ApplyProfileChanges = [];
-    var BaseRevision = profile.rvn || 0;
+    var BaseRevision = profile.rvn;
+    var ProfileRevisionCheck = (memory.build >= 12.20) ? profile.commandRevision : profile.rvn;
     var QueryRevision = req.query.rvn || -1;
     var StatChanged = false;
 
@@ -1904,8 +1905,7 @@ express.post("/fortnite/api/game/v2/profile/*/client/AssignWorkerToSquadBatch", 
         fs.writeFileSync(`./profiles/${req.query.profileId || "profile0"}.json`, JSON.stringify(profile, null, 2));
     }
 
-    // this doesn't work properly on version v12.20 and above but whatever
-    if (QueryRevision != BaseRevision) {
+if (QueryRevision != ProfileRevisionCheck) {
         ApplyProfileChanges = [{
             "changeType": "fullProfileUpdate",
             "profile": profile
@@ -1935,7 +1935,8 @@ express.post("/fortnite/api/game/v2/profile/*/client/ClaimQuestReward", async (r
     var ApplyProfileChanges = [];
     var MultiUpdate = [];
     var Notifications = [];
-    var BaseRevision = profile.rvn || 0;
+    var BaseRevision = profile.rvn;
+    var ProfileRevisionCheck = (memory.build >= 12.20) ? profile.commandRevision : profile.rvn;
     var QueryRevision = req.query.rvn || -1;
     var StatChanged = false;
     var TheaterStatChanged = false;
@@ -2097,8 +2098,7 @@ express.post("/fortnite/api/game/v2/profile/*/client/ClaimQuestReward", async (r
         fs.writeFileSync(`./profiles/${req.query.profileId || "campaign"}.json`, JSON.stringify(profile, null, 2));
     }
 
-    // this doesn't work properly on version v12.20 and above but whatever
-    if (QueryRevision != BaseRevision) {
+if (QueryRevision != ProfileRevisionCheck) {
         ApplyProfileChanges = [{
             "changeType": "fullProfileUpdate",
             "profile": profile
@@ -2125,7 +2125,8 @@ express.post("/fortnite/api/game/v2/profile/*/client/UpgradeItem", async (req, r
 
     // do not change any of these or you will end up breaking it
     var ApplyProfileChanges = [];
-    var BaseRevision = profile.rvn || 0;
+    var BaseRevision = profile.rvn;
+    var ProfileRevisionCheck = (memory.build >= 12.20) ? profile.commandRevision : profile.rvn;
     var QueryRevision = req.query.rvn || -1;
     var StatChanged = false;
 
@@ -2148,8 +2149,7 @@ express.post("/fortnite/api/game/v2/profile/*/client/UpgradeItem", async (req, r
         fs.writeFileSync(`./profiles/${req.query.profileId || "campaign"}.json`, JSON.stringify(profile, null, 2));
     }
 
-    // this doesn't work properly on version v12.20 and above but whatever
-    if (QueryRevision != BaseRevision) {
+if (QueryRevision != ProfileRevisionCheck) {
         ApplyProfileChanges = [{
             "changeType": "fullProfileUpdate",
             "profile": profile
@@ -2174,7 +2174,8 @@ express.post("/fortnite/api/game/v2/profile/*/client/UpgradeSlottedItem", async 
 
     // do not change any of these or you will end up breaking it
     var ApplyProfileChanges = [];
-    var BaseRevision = profile.rvn || 0;
+    var BaseRevision = profile.rvn;
+    var ProfileRevisionCheck = (memory.build >= 12.20) ? profile.commandRevision : profile.rvn;
     var QueryRevision = req.query.rvn || -1;
     var StatChanged = false;
 
@@ -2203,8 +2204,7 @@ express.post("/fortnite/api/game/v2/profile/*/client/UpgradeSlottedItem", async 
         fs.writeFileSync(`./profiles/${req.query.profileId || "collection_book_people0"}.json`, JSON.stringify(profile, null, 2));
     }
 
-    // this doesn't work properly on version v12.20 and above but whatever
-    if (QueryRevision != BaseRevision) {
+if (QueryRevision != ProfileRevisionCheck) {
         ApplyProfileChanges = [{
             "changeType": "fullProfileUpdate",
             "profile": profile
@@ -2229,7 +2229,8 @@ express.post("/fortnite/api/game/v2/profile/*/client/UpgradeItemBulk", async (re
 
     // do not change any of these or you will end up breaking it
     var ApplyProfileChanges = [];
-    var BaseRevision = profile.rvn || 0;
+    var BaseRevision = profile.rvn;
+    var ProfileRevisionCheck = (memory.build >= 12.20) ? profile.commandRevision : profile.rvn;
     var QueryRevision = req.query.rvn || -1;
     var StatChanged = false;
 
@@ -2254,8 +2255,7 @@ express.post("/fortnite/api/game/v2/profile/*/client/UpgradeItemBulk", async (re
         fs.writeFileSync(`./profiles/${req.query.profileId || "campaign"}.json`, JSON.stringify(profile, null, 2));
     }
 
-    // this doesn't work properly on version v12.20 and above but whatever
-    if (QueryRevision != BaseRevision) {
+if (QueryRevision != ProfileRevisionCheck) {
         ApplyProfileChanges = [{
             "changeType": "fullProfileUpdate",
             "profile": profile
@@ -2281,7 +2281,8 @@ express.post("/fortnite/api/game/v2/profile/*/client/ConvertItem", async (req, r
     // do not change any of these or you will end up breaking it
     var ApplyProfileChanges = [];
     var Notifications = [];
-    var BaseRevision = profile.rvn || 0;
+    var BaseRevision = profile.rvn;
+    var ProfileRevisionCheck = (memory.build >= 12.20) ? profile.commandRevision : profile.rvn;
     var QueryRevision = req.query.rvn || -1;
     var StatChanged = false;
 
@@ -2349,8 +2350,7 @@ express.post("/fortnite/api/game/v2/profile/*/client/ConvertItem", async (req, r
         fs.writeFileSync(`./profiles/${req.query.profileId || "campaign"}.json`, JSON.stringify(profile, null, 2));
     }
 
-    // this doesn't work properly on version v12.20 and above but whatever
-    if (QueryRevision != BaseRevision) {
+if (QueryRevision != ProfileRevisionCheck) {
         ApplyProfileChanges = [{
             "changeType": "fullProfileUpdate",
             "profile": profile
@@ -2377,7 +2377,8 @@ express.post("/fortnite/api/game/v2/profile/*/client/ConvertSlottedItem", async 
     // do not change any of these or you will end up breaking it
     var ApplyProfileChanges = [];
     var Notifications = [];
-    var BaseRevision = profile.rvn || 0;
+    var BaseRevision = profile.rvn;
+    var ProfileRevisionCheck = (memory.build >= 12.20) ? profile.commandRevision : profile.rvn;
     var QueryRevision = req.query.rvn || -1;
     var StatChanged = false;
 
@@ -2445,8 +2446,7 @@ express.post("/fortnite/api/game/v2/profile/*/client/ConvertSlottedItem", async 
         fs.writeFileSync(`./profiles/${req.query.profileId || "collection_book_people0"}.json`, JSON.stringify(profile, null, 2));
     }
 
-    // this doesn't work properly on version v12.20 and above but whatever
-    if (QueryRevision != BaseRevision) {
+if (QueryRevision != ProfileRevisionCheck) {
         ApplyProfileChanges = [{
             "changeType": "fullProfileUpdate",
             "profile": profile
@@ -2473,7 +2473,8 @@ express.post("/fortnite/api/game/v2/profile/*/client/UpgradeItemRarity", async (
     // do not change any of these or you will end up breaking it
     var ApplyProfileChanges = [];
     var Notifications = [];
-    var BaseRevision = profile.rvn || 0;
+    var BaseRevision = profile.rvn;
+    var ProfileRevisionCheck = (memory.build >= 12.20) ? profile.commandRevision : profile.rvn;
     var QueryRevision = req.query.rvn || -1;
     var StatChanged = false;
 
@@ -2536,8 +2537,7 @@ express.post("/fortnite/api/game/v2/profile/*/client/UpgradeItemRarity", async (
         fs.writeFileSync(`./profiles/${req.query.profileId || "campaign"}.json`, JSON.stringify(profile, null, 2));
     }
 
-    // this doesn't work properly on version v12.20 and above but whatever
-    if (QueryRevision != BaseRevision) {
+if (QueryRevision != ProfileRevisionCheck) {
         ApplyProfileChanges = [{
             "changeType": "fullProfileUpdate",
             "profile": profile
@@ -2563,7 +2563,8 @@ express.post("/fortnite/api/game/v2/profile/*/client/PromoteItem", async (req, r
 
     // do not change any of these or you will end up breaking it
     var ApplyProfileChanges = [];
-    var BaseRevision = profile.rvn || 0;
+    var BaseRevision = profile.rvn;
+    var ProfileRevisionCheck = (memory.build >= 12.20) ? profile.commandRevision : profile.rvn;
     var QueryRevision = req.query.rvn || -1;
     var StatChanged = false;
 
@@ -2585,9 +2586,8 @@ express.post("/fortnite/api/game/v2/profile/*/client/PromoteItem", async (req, r
 
         fs.writeFileSync(`./profiles/${req.query.profileId || "campaign"}.json`, JSON.stringify(profile, null, 2));
     }
-
-    // this doesn't work properly on version v12.20 and above but whatever
-    if (QueryRevision != BaseRevision) {
+	
+if (QueryRevision != ProfileRevisionCheck) {
         ApplyProfileChanges = [{
             "changeType": "fullProfileUpdate",
             "profile": profile
@@ -2614,7 +2614,8 @@ express.post("/fortnite/api/game/v2/profile/*/client/TransmogItem", async (req, 
     // do not change any of these or you will end up breaking it
     var ApplyProfileChanges = [];
     var Notifications = [];
-    var BaseRevision = profile.rvn || 0;
+    var BaseRevision = profile.rvn;
+    var ProfileRevisionCheck = (memory.build >= 12.20) ? profile.commandRevision : profile.rvn;
     var QueryRevision = req.query.rvn || -1;
     var StatChanged = false;
 
@@ -2676,8 +2677,7 @@ express.post("/fortnite/api/game/v2/profile/*/client/TransmogItem", async (req, 
         fs.writeFileSync(`./profiles/${req.query.profileId || "campaign"}.json`, JSON.stringify(profile, null, 2));
     }
 
-    // this doesn't work properly on version v12.20 and above but whatever
-    if (QueryRevision != BaseRevision) {
+if (QueryRevision != ProfileRevisionCheck) {
         ApplyProfileChanges = [{
             "changeType": "fullProfileUpdate",
             "profile": profile
@@ -2719,7 +2719,8 @@ express.post("/fortnite/api/game/v2/profile/*/client/CraftWorldItem", async (req
     // do not change any of these or you will end up breaking it
     var ApplyProfileChanges = [];
     var Notifications = [];
-    var BaseRevision = profile.rvn || 0;
+    var BaseRevision = profile.rvn;
+    var ProfileRevisionCheck = (memory.build >= 12.20) ? profile.commandRevision : profile.rvn;
     var QueryRevision = req.query.rvn || -1;
     var StatChanged = false;
 
@@ -2846,8 +2847,7 @@ express.post("/fortnite/api/game/v2/profile/*/client/CraftWorldItem", async (req
         fs.writeFileSync(`./profiles/${req.query.profileId || "theater0"}.json`, JSON.stringify(profile, null, 2));
     }
 
-    // this doesn't work properly on version v12.20 and above but whatever
-    if (QueryRevision != BaseRevision) {
+if (QueryRevision != ProfileRevisionCheck) {
         ApplyProfileChanges = [{
             "changeType": "fullProfileUpdate",
             "profile": profile
@@ -2873,7 +2873,8 @@ express.post("/fortnite/api/game/v2/profile/*/client/DestroyWorldItems", async (
 
     // do not change any of these or you will end up breaking it
     var ApplyProfileChanges = [];
-    var BaseRevision = profile.rvn || 0;
+    var BaseRevision = profile.rvn;
+    var ProfileRevisionCheck = (memory.build >= 12.20) ? profile.commandRevision : profile.rvn;
     var QueryRevision = req.query.rvn || -1;
     var StatChanged = false;
 
@@ -2898,8 +2899,7 @@ express.post("/fortnite/api/game/v2/profile/*/client/DestroyWorldItems", async (
         fs.writeFileSync(`./profiles/${req.query.profileId || "theater0"}.json`, JSON.stringify(profile, null, 2));
     }
 
-    // this doesn't work properly on version v12.20 and above but whatever
-    if (QueryRevision != BaseRevision) {
+if (QueryRevision != ProfileRevisionCheck) {
         ApplyProfileChanges = [{
             "changeType": "fullProfileUpdate",
             "profile": profile
@@ -2924,7 +2924,8 @@ express.post("/fortnite/api/game/v2/profile/*/client/DisassembleWorldItems", asy
 
     // do not change any of these or you will end up breaking it
     var ApplyProfileChanges = [];
-    var BaseRevision = profile.rvn || 0;
+    var BaseRevision = profile.rvn;
+    var ProfileRevisionCheck = (memory.build >= 12.20) ? profile.commandRevision : profile.rvn;
     var QueryRevision = req.query.rvn || -1;
     var StatChanged = false;
 
@@ -2964,8 +2965,7 @@ express.post("/fortnite/api/game/v2/profile/*/client/DisassembleWorldItems", asy
         fs.writeFileSync(`./profiles/${req.query.profileId || "theater0"}.json`, JSON.stringify(profile, null, 2));
     }
 
-    // this doesn't work properly on version v12.20 and above but whatever
-    if (QueryRevision != BaseRevision) {
+if (QueryRevision != ProfileRevisionCheck) {
         ApplyProfileChanges = [{
             "changeType": "fullProfileUpdate",
             "profile": profile
@@ -2992,7 +2992,8 @@ express.post("/fortnite/api/game/v2/profile/*/client/StorageTransfer", async (re
     // do not change any of these or you will end up breaking it
     var ApplyProfileChanges = [];
     var MultiUpdate = [];
-    var BaseRevision = theater0.rvn || 0;
+    var BaseRevision = theater0.rvn; //idk wtf is this so may not work
+    var ProfileRevisionCheck = (memory.build >= 12.20) ? profile.commandRevision : theater0.rvn;
     var QueryRevision = req.query.rvn || -1;
     var StatChanged = false;
 
@@ -3403,8 +3404,7 @@ express.post("/fortnite/api/game/v2/profile/*/client/StorageTransfer", async (re
         fs.writeFileSync("./profiles/outpost0.json", JSON.stringify(outpost0, null, 2));
     }
 
-    // this doesn't work properly on version v12.20 and above but whatever
-    if (QueryRevision != BaseRevision) {
+if (QueryRevision != ProfileRevisionCheck) {
         ApplyProfileChanges = [{
             "changeType": "fullProfileUpdate",
             "profile": theater0
@@ -3430,7 +3430,8 @@ express.post("/fortnite/api/game/v2/profile/*/client/ModifyQuickbar", async (req
 
     // do not change any of these or you will end up breaking it
     var ApplyProfileChanges = [];
-    var BaseRevision = profile.rvn || 0;
+    var BaseRevision = profile.rvn;
+    var ProfileRevisionCheck = (memory.build >= 12.20) ? profile.commandRevision : profile.rvn;
     var QueryRevision = req.query.rvn || -1;
     var StatChanged = false;
 
@@ -3471,9 +3472,7 @@ express.post("/fortnite/api/game/v2/profile/*/client/ModifyQuickbar", async (req
 
         fs.writeFileSync(`./profiles/${req.query.profileId || "theater0"}.json`, JSON.stringify(profile, null, 2));
     }
-
-    // this doesn't work properly on version v12.20 and above but whatever
-    if (QueryRevision != BaseRevision) {
+if (QueryRevision != ProfileRevisionCheck) {
         ApplyProfileChanges = [{
             "changeType": "fullProfileUpdate",
             "profile": profile
@@ -3498,7 +3497,8 @@ express.post("/fortnite/api/game/v2/profile/*/client/AssignHeroToLoadout", async
 
     // do not change any of these or you will end up breaking it
     var ApplyProfileChanges = [];
-    var BaseRevision = profile.rvn || 0;
+    var BaseRevision = profile.rvn;
+    var ProfileRevisionCheck = (memory.build >= 12.20) ? profile.commandRevision : profile.rvn;
     var QueryRevision = req.query.rvn || -1;
     var StatChanged = false;
 
@@ -3652,8 +3652,7 @@ express.post("/fortnite/api/game/v2/profile/*/client/AssignHeroToLoadout", async
         fs.writeFileSync(`./profiles/${req.query.profileId || "campaign"}.json`, JSON.stringify(profile, null, 2));
     }
 
-    // this doesn't work properly on version v12.20 and above but whatever
-    if (QueryRevision != BaseRevision) {
+if (QueryRevision != ProfileRevisionCheck) {
         ApplyProfileChanges = [{
             "changeType": "fullProfileUpdate",
             "profile": profile
@@ -3678,7 +3677,8 @@ express.post("/fortnite/api/game/v2/profile/*/client/ClearHeroLoadout", async (r
 
     // do not change any of these or you will end up breaking it
     var ApplyProfileChanges = [];
-    var BaseRevision = profile.rvn || 0;
+    var BaseRevision = profile.rvn;
+    var ProfileRevisionCheck = (memory.build >= 12.20) ? profile.commandRevision : profile.rvn;
     var QueryRevision = req.query.rvn || -1;
     var StatChanged = false;
 
@@ -3738,8 +3738,7 @@ express.post("/fortnite/api/game/v2/profile/*/client/ClearHeroLoadout", async (r
         fs.writeFileSync(`./profiles/${req.query.profileId || "campaign"}.json`, JSON.stringify(profile, null, 2));
     }
 
-    // this doesn't work properly on version v12.20 and above but whatever
-    if (QueryRevision != BaseRevision) {
+if (QueryRevision != ProfileRevisionCheck) {
         ApplyProfileChanges = [{
             "changeType": "fullProfileUpdate",
             "profile": profile
@@ -3768,7 +3767,8 @@ express.post("/fortnite/api/game/v2/profile/*/client/RecycleItemBatch", async (r
     var ApplyProfileChanges = [];
     var MultiUpdate = [];
     var Notifications = [];
-    var BaseRevision = profile.rvn || 0;
+    var BaseRevision = profile.rvn;
+    var ProfileRevisionCheck = (memory.build >= 12.20) ? profile.commandRevision : profile.rvn;
     var QueryRevision = req.query.rvn || -1;
     var StatChanged = false;
     var ItemExists = false;
@@ -3883,8 +3883,7 @@ express.post("/fortnite/api/game/v2/profile/*/client/RecycleItemBatch", async (r
         fs.writeFileSync(`./profiles/${req.query.profileId || "campaign"}.json`, JSON.stringify(profile, null, 2));
     }
 
-    // this doesn't work properly on version v12.20 and above but whatever
-    if (QueryRevision != BaseRevision) {
+if (QueryRevision != ProfileRevisionCheck) {
         ApplyProfileChanges = [{
             "changeType": "fullProfileUpdate",
             "profile": profile
@@ -3911,7 +3910,8 @@ express.post("/fortnite/api/game/v2/profile/*/client/ResearchItemFromCollectionB
 
     // do not change any of these or you will end up breaking it
     var ApplyProfileChanges = [];
-    var BaseRevision = profile.rvn || 0;
+    var BaseRevision = profile.rvn;
+    var ProfileRevisionCheck = (memory.build >= 12.20) ? profile.commandRevision : profile.rvn;
     var QueryRevision = req.query.rvn || -1;
     var StatChanged = false;
 
@@ -3948,8 +3948,7 @@ express.post("/fortnite/api/game/v2/profile/*/client/ResearchItemFromCollectionB
         fs.writeFileSync(`./profiles/${req.query.profileId || "campaign"}.json`, JSON.stringify(profile, null, 2));
     }
 
-    // this doesn't work properly on version v12.20 and above but whatever
-    if (QueryRevision != BaseRevision) {
+if (QueryRevision != ProfileRevisionCheck) {
         ApplyProfileChanges = [{
             "changeType": "fullProfileUpdate",
             "profile": profile
@@ -3976,7 +3975,8 @@ express.post("/fortnite/api/game/v2/profile/*/client/SlotItemInCollectionBook", 
     var ApplyProfileChanges = [];
     var MultiUpdate = [];
     var Notifications = [];
-    var BaseRevision = profile.rvn || 0;
+    var BaseRevision = profile.rvn;
+    var ProfileRevisionCheck = (memory.build >= 12.20) ? profile.commandRevision : profile.rvn;
     var QueryRevision = req.query.rvn || -1;
     var StatChanged = false;
 
@@ -4061,8 +4061,7 @@ express.post("/fortnite/api/game/v2/profile/*/client/SlotItemInCollectionBook", 
         fs.writeFileSync(`./profiles/${collection_book_profile.profileId || "collection_book_people0"}.json`, JSON.stringify(collection_book_profile, null, 2));
     }
 
-    // this doesn't work properly on version v12.20 and above but whatever
-    if (QueryRevision != BaseRevision) {
+if (QueryRevision != ProfileRevisionCheck) {
         ApplyProfileChanges = [{
             "changeType": "fullProfileUpdate",
             "profile": profile
@@ -4091,7 +4090,8 @@ express.post("/fortnite/api/game/v2/profile/*/client/UnslotItemFromCollectionBoo
     var ApplyProfileChanges = [];
     var MultiUpdate = [];
     var Notifications = [];
-    var BaseRevision = profile.rvn || 0;
+    var BaseRevision = profile.rvn;
+    var ProfileRevisionCheck = (memory.build >= 12.20) ? profile.commandRevision : profile.rvn;
     var QueryRevision = req.query.rvn || -1;
     var StatChanged = false;
 
@@ -4158,8 +4158,7 @@ express.post("/fortnite/api/game/v2/profile/*/client/UnslotItemFromCollectionBoo
         fs.writeFileSync(`./profiles/${collection_book_profile.profileId || "collection_book_people0"}.json`, JSON.stringify(collection_book_profile, null, 2));
     }
 
-    // this doesn't work properly on version v12.20 and above but whatever
-    if (QueryRevision != BaseRevision) {
+if (QueryRevision != ProfileRevisionCheck) {
         ApplyProfileChanges = [{
             "changeType": "fullProfileUpdate",
             "profile": profile
@@ -4186,7 +4185,8 @@ express.post("/fortnite/api/game/v2/profile/*/client/ClaimCollectionBookRewards"
 
     // do not change any of these or you will end up breaking it
     var ApplyProfileChanges = [];
-    var BaseRevision = profile.rvn || 0;
+    var BaseRevision = profile.rvn;
+    var ProfileRevisionCheck = (memory.build >= 12.20) ? profile.commandRevision : profile.rvn;
     var QueryRevision = req.query.rvn || -1;
     var StatChanged = false;
 
@@ -4208,8 +4208,7 @@ express.post("/fortnite/api/game/v2/profile/*/client/ClaimCollectionBookRewards"
         fs.writeFileSync(`./profiles/${req.query.profileId || "campaign"}.json`, JSON.stringify(profile, null, 2));
     }
 
-    // this doesn't work properly on version v12.20 and above but whatever
-    if (QueryRevision != BaseRevision) {
+if (QueryRevision != ProfileRevisionCheck) {
         ApplyProfileChanges = [{
             "changeType": "fullProfileUpdate",
             "profile": profile
@@ -4234,7 +4233,8 @@ express.post("/fortnite/api/game/v2/profile/*/client/RespecAlteration", async (r
 
     // do not change any of these or you will end up breaking it
     var ApplyProfileChanges = [];
-    var BaseRevision = profile.rvn || 0;
+    var BaseRevision = profile.rvn;
+    var ProfileRevisionCheck = (memory.build >= 12.20) ? profile.commandRevision : profile.rvn;
     var QueryRevision = req.query.rvn || -1;
     var StatChanged = false;
 
@@ -4261,8 +4261,7 @@ express.post("/fortnite/api/game/v2/profile/*/client/RespecAlteration", async (r
         fs.writeFileSync(`./profiles/${req.query.profileId || "campaign"}.json`, JSON.stringify(profile, null, 2));
     }
 
-    // this doesn't work properly on version v12.20 and above but whatever
-    if (QueryRevision != BaseRevision) {
+if (QueryRevision != ProfileRevisionCheck) {
         ApplyProfileChanges = [{
             "changeType": "fullProfileUpdate",
             "profile": profile
@@ -4287,7 +4286,8 @@ express.post("/fortnite/api/game/v2/profile/*/client/UpgradeAlteration", async (
 
     // do not change any of these or you will end up breaking it
     var ApplyProfileChanges = [];
-    var BaseRevision = profile.rvn || 0;
+    var BaseRevision = profile.rvn;
+    var ProfileRevisionCheck = (memory.build >= 12.20) ? profile.commandRevision : profile.rvn;
     var QueryRevision = req.query.rvn || -1;
     var StatChanged = false;
 
@@ -4325,8 +4325,7 @@ express.post("/fortnite/api/game/v2/profile/*/client/UpgradeAlteration", async (
         fs.writeFileSync(`./profiles/${req.query.profileId || "campaign"}.json`, JSON.stringify(profile, null, 2));
     }
 
-    // this doesn't work properly on version v12.20 and above but whatever
-    if (QueryRevision != BaseRevision) {
+if (QueryRevision != ProfileRevisionCheck) {
         ApplyProfileChanges = [{
             "changeType": "fullProfileUpdate",
             "profile": profile
@@ -4351,7 +4350,8 @@ express.post("/fortnite/api/game/v2/profile/*/client/RespecResearch", async (req
 
     // do not change any of these or you will end up breaking it
     var ApplyProfileChanges = [];
-    var BaseRevision = profile.rvn || 0;
+    var BaseRevision = profile.rvn;
+    var ProfileRevisionCheck = (memory.build >= 12.20) ? profile.commandRevision : profile.rvn;
     var QueryRevision = req.query.rvn || -1;
     var StatChanged = false;
 
@@ -4376,9 +4376,8 @@ express.post("/fortnite/api/game/v2/profile/*/client/RespecResearch", async (req
 
         fs.writeFileSync(`./profiles/${req.query.profileId || "campaign"}.json`, JSON.stringify(profile, null, 2));
     }
-
-    // this doesn't work properly on version v12.20 and above but whatever
-    if (QueryRevision != BaseRevision) {
+	
+if (QueryRevision != ProfileRevisionCheck) {
         ApplyProfileChanges = [{
             "changeType": "fullProfileUpdate",
             "profile": profile
@@ -4403,7 +4402,8 @@ express.post("/fortnite/api/game/v2/profile/*/client/RespecUpgrades", async (req
 
     // do not change any of these or you will end up breaking it
     var ApplyProfileChanges = [];
-    var BaseRevision = profile.rvn || 0;
+    var BaseRevision = profile.rvn;
+    var ProfileRevisionCheck = (memory.build >= 12.20) ? profile.commandRevision : profile.rvn;
     var QueryRevision = req.query.rvn || -1;
     var StatChanged = false;
     
@@ -4428,8 +4428,7 @@ express.post("/fortnite/api/game/v2/profile/*/client/RespecUpgrades", async (req
         fs.writeFileSync(`./profiles/${req.query.profileId || "campaign"}.json`, JSON.stringify(profile, null, 2));
     }
 
-    // this doesn't work properly on version v12.20 and above but whatever
-    if (QueryRevision != BaseRevision) {
+if (QueryRevision != ProfileRevisionCheck) {
         ApplyProfileChanges = [{
             "changeType": "fullProfileUpdate",
             "profile": profile
@@ -4454,7 +4453,8 @@ express.post("/fortnite/api/game/v2/profile/*/client/PurchaseResearchStatUpgrade
 
     // do not change any of these or you will end up breaking it
     var ApplyProfileChanges = [];
-    var BaseRevision = profile.rvn || 0;
+    var BaseRevision = profile.rvn;
+    var ProfileRevisionCheck = (memory.build >= 12.20) ? profile.commandRevision : profile.rvn;
     var QueryRevision = req.query.rvn || -1;
     var StatChanged = false;
 
@@ -4477,8 +4477,7 @@ express.post("/fortnite/api/game/v2/profile/*/client/PurchaseResearchStatUpgrade
         fs.writeFileSync(`./profiles/${req.query.profileId || "campaign"}.json`, JSON.stringify(profile, null, 2));
     }
 
-    // this doesn't work properly on version v12.20 and above but whatever
-    if (QueryRevision != BaseRevision) {
+if (QueryRevision != ProfileRevisionCheck) {
         ApplyProfileChanges = [{
             "changeType": "fullProfileUpdate",
             "profile": profile
@@ -4503,7 +4502,8 @@ express.post("/fortnite/api/game/v2/profile/*/client/PurchaseOrUpgradeHomebaseNo
 
     // do not change any of these or you will end up breaking it
     var ApplyProfileChanges = [];
-    var BaseRevision = profile.rvn || 0;
+    var BaseRevision = profile.rvn;
+    var ProfileRevisionCheck = (memory.build >= 12.20) ? profile.commandRevision : profile.rvn;
     var QueryRevision = req.query.rvn || -1;
     var StatChanged = false;
     var CreateHomebaseNode = true;
@@ -4551,8 +4551,7 @@ express.post("/fortnite/api/game/v2/profile/*/client/PurchaseOrUpgradeHomebaseNo
         fs.writeFileSync(`./profiles/${req.query.profileId || "campaign"}.json`, JSON.stringify(profile, null, 2));
     }
 
-    // this doesn't work properly on version v12.20 and above but whatever
-    if (QueryRevision != BaseRevision) {
+if (QueryRevision != ProfileRevisionCheck) {
         ApplyProfileChanges = [{
             "changeType": "fullProfileUpdate",
             "profile": profile
@@ -4578,7 +4577,8 @@ express.post("/fortnite/api/game/v2/profile/*/client/RefreshExpeditions", async 
 
     // do not change any of these or you will end up breaking it
     var ApplyProfileChanges = [];
-    var BaseRevision = profile.rvn || 0;
+    var BaseRevision = profile.rvn;
+    var ProfileRevisionCheck = (memory.build >= 12.20) ? profile.commandRevision : profile.rvn;
     var QueryRevision = req.query.rvn || -1;
     var StatChanged = false;
 
@@ -4675,8 +4675,7 @@ express.post("/fortnite/api/game/v2/profile/*/client/RefreshExpeditions", async 
         fs.writeFileSync(`./profiles/${req.query.profileId || "campaign"}.json`, JSON.stringify(profile, null, 2));
     }
 
-    // this doesn't work properly on version v12.20 and above but whatever
-    if (QueryRevision != BaseRevision) {
+if (QueryRevision != ProfileRevisionCheck) {
         ApplyProfileChanges = [{
             "changeType": "fullProfileUpdate",
             "profile": profile
@@ -4703,7 +4702,8 @@ express.post("/fortnite/api/game/v2/profile/*/client/StartExpedition", async (re
 
     // do not change any of these or you will end up breaking it
     var ApplyProfileChanges = [];
-    var BaseRevision = profile.rvn || 0;
+    var BaseRevision = profile.rvn;
+    var ProfileRevisionCheck = (memory.build >= 12.20) ? profile.commandRevision : profile.rvn;
     var QueryRevision = req.query.rvn || -1;
     var StatChanged = false;
     
@@ -4846,8 +4846,7 @@ express.post("/fortnite/api/game/v2/profile/*/client/StartExpedition", async (re
         fs.writeFileSync(`./profiles/${req.query.profileId || "campaign"}.json`, JSON.stringify(profile, null, 2));
     }
 
-    // this doesn't work properly on version v12.20 and above but whatever
-    if (QueryRevision != BaseRevision) {
+if (QueryRevision != ProfileRevisionCheck) {
         ApplyProfileChanges = [{
             "changeType": "fullProfileUpdate",
             "profile": profile
@@ -4873,7 +4872,8 @@ express.post("/fortnite/api/game/v2/profile/*/client/AbandonExpedition", async (
 
     // do not change any of these or you will end up breaking it
     var ApplyProfileChanges = [];
-    var BaseRevision = profile.rvn || 0;
+    var BaseRevision = profile.rvn;
+    var ProfileRevisionCheck = (memory.build >= 12.20) ? profile.commandRevision : profile.rvn;
     var QueryRevision = req.query.rvn || -1;
     var StatChanged = false;
     
@@ -4991,8 +4991,7 @@ express.post("/fortnite/api/game/v2/profile/*/client/AbandonExpedition", async (
         fs.writeFileSync(`./profiles/${req.query.profileId || "campaign"}.json`, JSON.stringify(profile, null, 2));
     }
 
-    // this doesn't work properly on version v12.20 and above but whatever
-    if (QueryRevision != BaseRevision) {
+if (QueryRevision != ProfileRevisionCheck) {
         ApplyProfileChanges = [{
             "changeType": "fullProfileUpdate",
             "profile": profile
@@ -5021,7 +5020,8 @@ express.post("/fortnite/api/game/v2/profile/*/client/CollectExpedition", async (
     var MultiUpdate = [];
     var Notifications = [];
     var OtherProfiles = [];
-    var BaseRevision = profile.rvn || 0;
+    var BaseRevision = profile.rvn;
+    var ProfileRevisionCheck = (memory.build >= 12.20) ? profile.commandRevision : profile.rvn;
     var QueryRevision = req.query.rvn || -1;
     var StatChanged = false;
     
@@ -5202,8 +5202,7 @@ express.post("/fortnite/api/game/v2/profile/*/client/CollectExpedition", async (
         }
     }
 
-    // this doesn't work properly on version v12.20 and above but whatever
-    if (QueryRevision != BaseRevision) {
+ if (QueryRevision != ProfileRevisionCheck) {
         ApplyProfileChanges = [{
             "changeType": "fullProfileUpdate",
             "profile": profile
@@ -5230,7 +5229,8 @@ express.post("/fortnite/api/game/v2/profile/*/client/SetActiveHeroLoadout", asyn
 
     // do not change any of these or you will end up breaking it
     var ApplyProfileChanges = [];
-    var BaseRevision = profile.rvn || 0;
+    var BaseRevision = profile.rvn;
+    var ProfileRevisionCheck = (memory.build >= 12.20) ? profile.commandRevision : profile.rvn;
     var QueryRevision = req.query.rvn || -1;
     var StatChanged = false;
 
@@ -5253,8 +5253,7 @@ express.post("/fortnite/api/game/v2/profile/*/client/SetActiveHeroLoadout", asyn
         fs.writeFileSync(`./profiles/${req.query.profileId || "campaign"}.json`, JSON.stringify(profile, null, 2));
     }
 
-    // this doesn't work properly on version v12.20 and above but whatever
-    if (QueryRevision != BaseRevision) {
+if (QueryRevision != ProfileRevisionCheck) {
         ApplyProfileChanges = [{
             "changeType": "fullProfileUpdate",
             "profile": profile
@@ -5279,7 +5278,8 @@ express.post("/fortnite/api/game/v2/profile/*/client/ActivateConsumable", async 
 
     // do not change any of these or you will end up breaking it
     var ApplyProfileChanges = [];
-    var BaseRevision = profile.rvn || 0;
+    var BaseRevision = profile.rvn;
+    var ProfileRevisionCheck = (memory.build >= 12.20) ? profile.commandRevision : profile.rvn;
     var QueryRevision = req.query.rvn || -1;
     var StatChanged = false;
 
@@ -5325,8 +5325,7 @@ express.post("/fortnite/api/game/v2/profile/*/client/ActivateConsumable", async 
         fs.writeFileSync(`./profiles/${req.query.profileId || "campaign"}.json`, JSON.stringify(profile, null, 2));
     }
 
-    // this doesn't work properly on version v12.20 and above but whatever
-    if (QueryRevision != BaseRevision) {
+if (QueryRevision != ProfileRevisionCheck) {
         ApplyProfileChanges = [{
             "changeType": "fullProfileUpdate",
             "profile": profile
@@ -5351,7 +5350,8 @@ express.post("/fortnite/api/game/v2/profile/*/client/UnassignAllSquads", async (
 
     // do not change any of these or you will end up breaking it
     var ApplyProfileChanges = [];
-    var BaseRevision = profile.rvn || 0;
+    var BaseRevision = profile.rvn;
+    var ProfileRevisionCheck = (memory.build >= 12.20) ? profile.commandRevision : profile.rvn;
     var QueryRevision = req.query.rvn || -1;
     var StatChanged = false;
 
@@ -5385,8 +5385,7 @@ express.post("/fortnite/api/game/v2/profile/*/client/UnassignAllSquads", async (
         fs.writeFileSync(`./profiles/${req.query.profileId || "campaign"}.json`, JSON.stringify(profile, null, 2));
     }
 
-    // this doesn't work properly on version v12.20 and above but whatever
-    if (QueryRevision != BaseRevision) {
+if (QueryRevision != ProfileRevisionCheck) {
         ApplyProfileChanges = [{
             "changeType": "fullProfileUpdate",
             "profile": profile
@@ -5413,7 +5412,8 @@ express.post("/fortnite/api/game/v2/profile/*/client/OpenCardPack", async (req, 
     // do not change any of these or you will end up breaking it
     var ApplyProfileChanges = [];
     var Notifications = [];
-    var BaseRevision = profile.rvn || 0;
+    var BaseRevision = profile.rvn;
+    var ProfileRevisionCheck = (memory.build >= 12.20) ? profile.commandRevision : profile.rvn;
     var QueryRevision = req.query.rvn || -1;
     var StatChanged = false;
 
@@ -5522,7 +5522,7 @@ express.post("/fortnite/api/game/v2/profile/*/client/OpenCardPack", async (req, 
         fs.writeFileSync(`./profiles/${req.query.profileId || "campaign"}.json`, JSON.stringify(profile, null, 2));
     }
 
-    // this doesn't work properly on version v12.20 and above but whatever
+    // this doesn't work properly on version v12.20 and above but whatever ( Should i uncomment?
     // if (QueryRevision != BaseRevision) {
     //     ApplyProfileChanges = [{
     //         "changeType": "fullProfileUpdate",
@@ -5550,7 +5550,8 @@ express.post("/fortnite/api/game/v2/profile/*/client/PopulatePrerolledOffers", a
 
     // do not change any of these or you will end up breaking it
     var ApplyProfileChanges = [];
-    var BaseRevision = profile.rvn || 0;
+    var BaseRevision = profile.rvn;
+    var ProfileRevisionCheck = (memory.build >= 12.20) ? profile.commandRevision : profile.rvn;
     var QueryRevision = req.query.rvn || -1;
     var StatChanged = false;
 
@@ -5617,8 +5618,7 @@ express.post("/fortnite/api/game/v2/profile/*/client/PopulatePrerolledOffers", a
         fs.writeFileSync(`./profiles/${req.query.profileId || "campaign"}.json`, JSON.stringify(profile, null, 2));
     }
 
-    // this doesn't work properly on version v12.20 and above but whatever
-    if (QueryRevision != BaseRevision) {
+if (QueryRevision != ProfileRevisionCheck) {
         ApplyProfileChanges = [{
             "changeType": "fullProfileUpdate",
             "profile": profile
@@ -5648,7 +5648,8 @@ express.post("/fortnite/api/game/v2/profile/*/client/PurchaseCatalogEntry", asyn
     var ApplyProfileChanges = [];
     var MultiUpdate = [];
     var Notifications = [];
-    var BaseRevision = profile.rvn || 0;
+    var BaseRevision = profile.rvn;
+    var ProfileRevisionCheck = (memory.build >= 12.20) ? profile.commandRevision : profile.rvn;
     var QueryRevision = req.query.rvn || -1;
     var PurchasedLlama = false;
     var AthenaModified = false;
@@ -7247,8 +7248,7 @@ express.post("/fortnite/api/game/v2/profile/*/client/PurchaseCatalogEntry", asyn
         }
     }
 
-    // this doesn't work properly on version v12.20 and above but whatever
-    if (QueryRevision != BaseRevision) {
+if (QueryRevision != ProfileRevisionCheck) {
         ApplyProfileChanges = [{
             "changeType": "fullProfileUpdate",
             "profile": profile
@@ -7275,7 +7275,8 @@ express.post("/fortnite/api/game/v2/profile/*/client/SetItemArchivedStatusBatch"
 
     // do not change any of these or you will end up breaking it
     var ApplyProfileChanges = [];
-    var BaseRevision = profile.rvn || 0;
+    var BaseRevision = profile.rvn;
+    var ProfileRevisionCheck = (memory.build >= 12.20) ? profile.commandRevision : profile.rvn;
     var QueryRevision = req.query.rvn || -1;
     var StatChanged = false;
 
@@ -7300,8 +7301,7 @@ express.post("/fortnite/api/game/v2/profile/*/client/SetItemArchivedStatusBatch"
         fs.writeFileSync(`./profiles/${req.query.profileId || "athena"}.json`, JSON.stringify(profile, null, 2));
     }
 
-    // this doesn't work properly on version v12.20 and above but whatever
-    if (QueryRevision != BaseRevision) {
+if (QueryRevision != ProfileRevisionCheck) {
         ApplyProfileChanges = [{
             "changeType": "fullProfileUpdate",
             "profile": profile
@@ -7326,7 +7326,8 @@ express.post("/fortnite/api/game/v2/profile/*/client/SetItemFavoriteStatusBatch"
 
     // do not change any of these or you will end up breaking it
     var ApplyProfileChanges = [];
-    var BaseRevision = profile.rvn || 0;
+    var BaseRevision = profile.rvn;
+    var ProfileRevisionCheck = (memory.build >= 12.20) ? profile.commandRevision : profile.rvn;
     var QueryRevision = req.query.rvn || -1;
     var StatChanged = false;
 
@@ -7351,8 +7352,7 @@ express.post("/fortnite/api/game/v2/profile/*/client/SetItemFavoriteStatusBatch"
         fs.writeFileSync(`./profiles/${req.query.profileId || "athena"}.json`, JSON.stringify(profile, null, 2));
     }
 
-    // this doesn't work properly on version v12.20 and above but whatever
-    if (QueryRevision != BaseRevision) {
+if (QueryRevision != ProfileRevisionCheck) {
         ApplyProfileChanges = [{
             "changeType": "fullProfileUpdate",
             "profile": profile
@@ -7377,7 +7377,8 @@ express.post("/fortnite/api/game/v2/profile/*/client/SetItemFavoriteStatus", asy
 
     // do not change any of these or you will end up breaking it
     var ApplyProfileChanges = [];
-    var BaseRevision = profile.rvn || 0;
+    var BaseRevision = profile.rvn;
+    var ProfileRevisionCheck = (memory.build >= 12.20) ? profile.commandRevision : profile.rvn;
     var QueryRevision = req.query.rvn || -1;
     var StatChanged = false;
 
@@ -7400,8 +7401,7 @@ express.post("/fortnite/api/game/v2/profile/*/client/SetItemFavoriteStatus", asy
         fs.writeFileSync(`./profiles/${req.query.profileId || "athena"}.json`, JSON.stringify(profile, null, 2));
     }
 
-    // this doesn't work properly on version v12.20 and above but whatever
-    if (QueryRevision != BaseRevision) {
+if (QueryRevision != ProfileRevisionCheck) {
         ApplyProfileChanges = [{
             "changeType": "fullProfileUpdate",
             "profile": profile
@@ -7426,7 +7426,8 @@ express.post("/fortnite/api/game/v2/profile/*/client/MarkItemSeen", async (req, 
 
     // do not change any of these or you will end up breaking it
     var ApplyProfileChanges = [];
-    var BaseRevision = profile.rvn || 0;
+    var BaseRevision = profile.rvn;
+    var ProfileRevisionCheck = (memory.build >= 12.20) ? profile.commandRevision : profile.rvn;
     var QueryRevision = req.query.rvn || -1;
     var StatChanged = false;
 
@@ -7451,8 +7452,7 @@ express.post("/fortnite/api/game/v2/profile/*/client/MarkItemSeen", async (req, 
         fs.writeFileSync(`./profiles/${req.query.profileId || "athena"}.json`, JSON.stringify(profile, null, 2));
     }
 
-    // this doesn't work properly on version v12.20 and above but whatever
-    if (QueryRevision != BaseRevision) {
+if (QueryRevision != ProfileRevisionCheck) {
         ApplyProfileChanges = [{
             "changeType": "fullProfileUpdate",
             "profile": profile
@@ -7486,7 +7486,8 @@ express.post("/fortnite/api/game/v2/profile/*/client/EquipBattleRoyaleCustomizat
 
     // do not change any of these or you will end up breaking it
     var ApplyProfileChanges = [];
-    var BaseRevision = profile.rvn || 0;
+    var BaseRevision = profile.rvn;
+    var ProfileRevisionCheck = (memory.build >= 12.20) ? profile.commandRevision : profile.rvn;
     var QueryRevision = req.query.rvn || -1;
     var StatChanged = false;
     var VariantChanged = false;
@@ -7615,8 +7616,7 @@ express.post("/fortnite/api/game/v2/profile/*/client/EquipBattleRoyaleCustomizat
         fs.writeFileSync("./profiles/athena.json", JSON.stringify(profile, null, 2));
     }
 
-    // this doesn't work properly on version v12.20 and above but whatever
-    if (QueryRevision != BaseRevision) {
+if (QueryRevision != ProfileRevisionCheck) {
         ApplyProfileChanges = [{
             "changeType": "fullProfileUpdate",
             "profile": profile
@@ -7641,7 +7641,8 @@ express.post("/fortnite/api/game/v2/profile/*/client/SetBattleRoyaleBanner", asy
 
     // do not change any of these or you will end up breaking it
     var ApplyProfileChanges = [];
-    var BaseRevision = profile.rvn || 0;
+    var BaseRevision = profile.rvn;
+    var ProfileRevisionCheck = (memory.build >= 12.20) ? profile.commandRevision : profile.rvn;
     var QueryRevision = req.query.rvn || -1;
     var StatChanged = false;
 
@@ -7670,8 +7671,7 @@ express.post("/fortnite/api/game/v2/profile/*/client/SetBattleRoyaleBanner", asy
         fs.writeFileSync("./profiles/athena.json", JSON.stringify(profile, null, 2));
     }
 
-    // this doesn't work properly on version v12.20 and above but whatever
-    if (QueryRevision != BaseRevision) {
+if (QueryRevision != ProfileRevisionCheck) {
         ApplyProfileChanges = [{
             "changeType": "fullProfileUpdate",
             "profile": profile
@@ -7696,7 +7696,8 @@ express.post("/fortnite/api/game/v2/profile/*/client/SetCosmeticLockerBanner", a
 
     // do not change any of these or you will end up breaking it
     var ApplyProfileChanges = [];
-    var BaseRevision = profile.rvn || 0;
+    var BaseRevision = profile.rvn;
+    var ProfileRevisionCheck = (memory.build >= 12.20) ? profile.commandRevision : profile.rvn;
     var QueryRevision = req.query.rvn || -1;
     var StatChanged = false;
 
@@ -7727,8 +7728,7 @@ express.post("/fortnite/api/game/v2/profile/*/client/SetCosmeticLockerBanner", a
         fs.writeFileSync(`./profiles/${req.query.profileId || "athena"}.json`, JSON.stringify(profile, null, 2));
     }
 
-    // this doesn't work properly on version v12.20 and above but whatever
-    if (QueryRevision != BaseRevision) {
+if (QueryRevision != ProfileRevisionCheck) {
         ApplyProfileChanges = [{
             "changeType": "fullProfileUpdate",
             "profile": profile
@@ -7753,7 +7753,8 @@ express.post("/fortnite/api/game/v2/profile/*/client/SetCosmeticLockerSlot", asy
 
     // do not change any of these or you will end up breaking it
     var ApplyProfileChanges = [];
-    var BaseRevision = profile.rvn || 0;
+    var BaseRevision = profile.rvn;
+    var ProfileRevisionCheck = (memory.build >= 12.20) ? profile.commandRevision : profile.rvn;
     var QueryRevision = req.query.rvn || -1;
     var StatChanged = false;
 
@@ -7883,8 +7884,7 @@ express.post("/fortnite/api/game/v2/profile/*/client/SetCosmeticLockerSlot", asy
         fs.writeFileSync(`./profiles/${req.query.profileId || "athena"}.json`, JSON.stringify(profile, null, 2));
     }
 
-    // this doesn't work properly on version v12.20 and above but whatever
-    if (QueryRevision != BaseRevision) {
+if (QueryRevision != ProfileRevisionCheck) {
         ApplyProfileChanges = [{
             "changeType": "fullProfileUpdate",
             "profile": profile
@@ -7909,7 +7909,8 @@ express.post("/fortnite/api/game/v2/profile/*/client/SetHeroCosmeticVariants", a
 
     // do not change any of these or you will end up breaking it
     var ApplyProfileChanges = [];
-    var BaseRevision = profile.rvn || 0;
+    var BaseRevision = profile.rvn;
+    var ProfileRevisionCheck = (memory.build >= 12.20) ? profile.commandRevision : profile.rvn;
     var QueryRevision = req.query.rvn || -1;
     var StatChanged = false;
 
@@ -7940,8 +7941,7 @@ express.post("/fortnite/api/game/v2/profile/*/client/SetHeroCosmeticVariants", a
         fs.writeFileSync(`./profiles/${req.query.profileId || "campaign"}.json`, JSON.stringify(profile, null, 2));
     }
 
-    // this doesn't work properly on version v12.20 and above but whatever
-    if (QueryRevision != BaseRevision) {
+if (QueryRevision != ProfileRevisionCheck) {
         ApplyProfileChanges = [{
             "changeType": "fullProfileUpdate",
             "profile": profile
@@ -7966,11 +7966,11 @@ express.post("/fortnite/api/game/v2/profile/*/client/*", async (req, res) => {
 
     // do not change any of these or you will end up breaking it
     var ApplyProfileChanges = [];
-    var BaseRevision = profile.rvn || 0;
+    var BaseRevision = profile.rvn;
+    var ProfileRevisionCheck = (memory.build >= 12.20) ? profile.commandRevision : profile.rvn;
     var QueryRevision = req.query.rvn || -1;
 
-    // this doesn't work properly on version v12.20 and above but whatever
-    if (QueryRevision != BaseRevision) {
+if (QueryRevision != ProfileRevisionCheck) {
         ApplyProfileChanges = [{
             "changeType": "fullProfileUpdate",
             "profile": profile
