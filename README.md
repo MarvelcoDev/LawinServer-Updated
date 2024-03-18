@@ -1,7 +1,5 @@
 
-  ### LawinServer is a private server that supports all Fortnite versions! (updated version)
-  <br>
-  ### (I do this in my free time and tbh I am having fun modifying / fixing it)
+  ### LawinServer is a private server that supports all Fortnite versions! (updated version) (I do this in my free time and tbh I am having fun modifying / fixing it)
   
 </div>
 <br>
