@@ -1,5 +1,7 @@
 
   ### LawinServer is a private server that supports all Fortnite versions! (updated version)
+  <br>
+  ### (I do this in my free time and tbh I am having fun modifying / fixing it)
   
 </div>
 <br>
@@ -14,6 +16,7 @@
 
 ### Save the World:
 - Fixed locker for s12 and above
+- Events
 - CloudStorage and ClientSettings (Settings saving)
 - Llama purchasing and opening with random loot and choice packs
 - Every Hero, Weapon, Defender and Resource
@@ -51,6 +54,7 @@
 
 ### Battle Royale:
 - Fixed locker for s12 and above
+- Working Events (like travis event)
 - CloudStorage and ClientSettings (Settings saving)
 - Winterfest presents opening (11.31, 19.01 & 23.10)
 - Purchasing Item Shop items
