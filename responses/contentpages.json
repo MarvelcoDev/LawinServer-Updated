@@ -10,7 +10,7 @@
       "message": {
         "_type": "CommonUI Simple Message Base",
         "title": "LawinServer",
-        "body": "Join our discord: https://discord.gg/KJ8UaHZ\nYouTube: Lawin\nTwitter: @lawin_010"
+        "body": "Join our discord: https://discord.gg/KJ8UaHZ Modified By Marvelco"
       }
     },
     "_activeDate": "2017-07-19T13:14:04.490Z",
@@ -6209,7 +6209,7 @@
           "tileImage": "https://fortnite-public-service-prod11.ol.epicgames.com/images/motd-s.png",
           "videoMute": false,
           "hidden": false,
-          "tabTitleOverride": "LawinServer",
+          "tabTitleOverride": "LawinServer Modified By Marvelco",
           "_type": "CommonUI Simple Message MOTD",
           "title": {
             "ar": "مرحبًا بك في LawinServer!",
@@ -6306,7 +6306,7 @@
           "_type": "CommonUI Simple Message Base",
           "adspace": "ENJOY!",
           "title": "LawinServer",
-          "body": "Enjoy LawinServer!",
+          "body": "Enjoy LawinServer! Modified By Marvelco ",
           "spotlight": false
         }
       ]
