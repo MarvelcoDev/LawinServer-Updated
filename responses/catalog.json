@@ -3538,7 +3538,7 @@
   "name": "BRSeason12",
   "catalogEntries": [
     {
-      "offerId": "3D30A5B3128A4D539A548792BBFFACD4",
+      "offerId": "E72002954292DCD8B8013B9E59A89921",
       "devName": "BR.Season12.BattlePass.01",
       "offerType": "StaticPrice",
       "prices": [
@@ -3561,7 +3561,7 @@
       "requirements": [
         {
           "requirementType": "DenyOnFulfillment",
-          "requiredId": "3D30A5B3128A4D539A548792BBFFACD4",
+          "requiredId": "E72002954292DCD8B8013B9E59A89921",
           "minQuantity": 1
         }
       ],
@@ -3672,7 +3672,7 @@
   "name": "BRSeason13",
   "catalogEntries": [
     {
-      "offerId": "A3A60070669140F198A0AFD38220CF22",
+      "offerId": "3C1777684B7D65BECE90F28BB05CB4AF",
       "devName": "BR.Season13.BattlePass.01",
       "offerType": "StaticPrice",
       "prices": [
@@ -3695,7 +3695,7 @@
       "requirements": [
         {
           "requirementType": "DenyOnFulfillment",
-          "requiredId": "A3A60070669140F198A0AFD38220CF22",
+          "requiredId": "3C1777684B7D65BECE90F28BB05CB4AF",
           "minQuantity": 1
         }
       ],
