@@ -66,7 +66,7 @@
 - Fully working daily challenges system (New daily challenge every day, replacing daily challenges, etc...)
 - Completed Location & Discovery quests (discovered map in game & in lobby) for Chapter 2, 3 & 4 (Can change)
 - Seasonal Quests from Season 3 up to Season 21 (Can change)
-- Purchasable battle pass from Season 2 to Season 13 (Can change also s11 - s13 are a bit broken)
+- Purchasable battle pass from Season 2 to Season 13 (Can change also s11 is a bit broken)
 - Discovery Tab
 - Leaderboards (v1)
 - Configurable backend sided in-game events - check out the Events seciton in config.ini for more details
